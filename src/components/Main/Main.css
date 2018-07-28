@@ -1,0 +1,63 @@
+.main {
+  padding: 10rem 0 3rem 3rem;
+  position: relative;
+  background-color: #2c3a47;
+  height: calc(100vh - 18rem); }
+  .main_heading {
+    text-transform: uppercase;
+    margin-top: 8rem; }
+    .main_heading--primary {
+      color: #fff;
+      letter-spacing: 1rem;
+      font-size: 5.7rem;
+      font-weight: bolder;
+      text-shadow: 6px 0 6px #239081, 5px 5px 5px #14534a, 0 6px 6px #0f3e38; }
+    .main_heading--sub {
+      font-size: 4rem;
+      color: #fff;
+      text-shadow: 5px 0 5px #239081, 4px 4px 4px #14534a, 0 5px 5px #0f3e38;
+      letter-spacing: 0.5rem; }
+      .main_heading--sub span {
+        text-shadow: none;
+        color: #85e1d4;
+        font-size: 6.5rem;
+        font-weight: bolder;
+        text-shadow: 4px 2px 6px #239081; }
+  .main_subscribe {
+    margin-top: 5rem; }
+    .main_subscribe--input {
+      padding: 1.5rem 2rem;
+      border-radius: 0.6rem;
+      font-size: 1.5rem;
+      width: 30rem;
+      margin-right: 2rem;
+      outline: none;
+      border: none; }
+      .main_subscribe--input::placeholder {
+        font-family: "Roboto", sans-serif; }
+    .main_subscribe--button {
+      padding: 1.2rem 2rem;
+      background-color: #86e1d4;
+      color: #2c3a47;
+      border-radius: 0.6rem;
+      font-weight: bold;
+      letter-spacing: 3px;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none; }
+    .main_subscribe--note {
+      margin-top: 2.5rem;
+      font-size: 1.3rem;
+      color: #aaa;
+      display: inline-block; }
+      .main_subscribe--note span {
+        color: #f8efba;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 1rem;
+        font-size: 1.5rem; }
+
+@media screen and (max-width: 900px) {
+  .main {
+    margin-top: 3rem; } }

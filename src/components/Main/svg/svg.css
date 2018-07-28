@@ -1,0 +1,281 @@
+.st0 {
+  clip-path: url(#SVGID_2_); }
+
+.st1 {
+  fill: #7C9ABF; }
+
+.st2 {
+  fill: #FFFFFF; }
+
+.st3 {
+  fill: #86E2D5; }
+
+.st4 {
+  fill: none; }
+
+.st5 {
+  fill: #DEB300; }
+
+.st6 {
+  fill: #F6C700; }
+
+.st7 {
+  fill: #F0F21C; }
+
+.st8 {
+  fill: #F86221; }
+
+.st9 {
+  fill: #44403E; }
+
+.st10 {
+  display: none;
+  fill: #D9561D; }
+
+.st11 {
+  display: none;
+  fill: #F6C700; }
+
+.st12 {
+  display: none;
+  fill: #F0F268; }
+
+.st13 {
+  display: none;
+  fill: #F88452; }
+
+.st14 {
+  fill: #F8763E; }
+
+.st15 {
+  fill: #D1531C; }
+
+.st16 {
+  fill: #D9561D; }
+
+.st17 {
+  fill: #EB5D1F; }
+
+.st18 {
+  fill: #E8BC00; }
+
+.st19 {
+  fill: #3D3A38; }
+
+.st20 {
+  fill: #6C707E; }
+
+.st21 {
+  fill: #626673; }
+
+.st22 {
+  fill: #F8D5A8; }
+
+.st23 {
+  fill: #4A4D57; }
+
+.st24 {
+  fill: #FFFEFF; }
+
+.st25 {
+  fill: #D5525C; }
+
+.st26 {
+  fill: #C74D56; }
+
+.st27 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+  stroke-miterlimit: 10; }
+
+.st28 {
+  display: none; }
+
+.st29 {
+  display: none;
+  fill: #86E2D5; }
+
+.st30 {
+  display: none;
+  fill: #FFFFFF; }
+
+#svg {
+  transform: scale(0.8);
+  position: absolute;
+  right: -5rem;
+  bottom: -5rem;
+  width: 50%; }
+
+#rocket {
+  animation: bounceInTop 1.5s both 0.3s; }
+
+#man {
+  transform-origin: 50% 50% 0;
+  animation: fade-in-fwd 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+#manwithrocket,
+#board {
+  animation: animate 3s ease infinite; }
+
+.flames,
+.inner-flame {
+  animation: flicker-in 1s linear both 1.7s;
+  transform-origin: 48% 50% 0; }
+
+.flame2,
+.inner-flame2 {
+  animation: flicker-in 1s linear both 1.7s;
+  transform-origin: 68% 50% 0; }
+
+.flames-small {
+  animation: flames 1s ease 1s infinite;
+  transform-origin: 48% 50% 0; }
+
+.flames-small-2 {
+  animation: flames 1s linear 1s infinite;
+  transform-origin: 68% 50% 0; }
+
+#smoke > * {
+  animation: fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.8s both;
+  z-index: 10;
+  transform-origin: 50% 100% 0; }
+
+.smoke-s {
+  animation: flicker-in 2s linear both 0.8s; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flicker-in {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0; }
+  10.1% {
+    opacity: 1; }
+  10.2% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  20.1% {
+    opacity: 1; }
+  20.6% {
+    opacity: 0; }
+  30% {
+    opacity: 0; }
+  30.1% {
+    opacity: 1; }
+  30.5% {
+    opacity: 1; }
+  30.6% {
+    opacity: 0; }
+  45% {
+    opacity: 0; }
+  45.1% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  55% {
+    opacity: 1; }
+  55.1% {
+    opacity: 0; }
+  57% {
+    opacity: 0; }
+  57.1% {
+    opacity: 1; }
+  60% {
+    opacity: 1; }
+  60.1% {
+    opacity: 0; }
+  65% {
+    opacity: 0; }
+  65.1% {
+    opacity: 1; }
+  75% {
+    opacity: 1; }
+  75.1% {
+    opacity: 0; }
+  77% {
+    opacity: 0; }
+  77.1% {
+    opacity: 1; }
+  85% {
+    opacity: 1; }
+  85.1% {
+    opacity: 0; }
+  86% {
+    opacity: 0; }
+  86.1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flames {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes animate {
+  0% {
+    transform: translate(9px, -30px); }
+  50% {
+    transform: translate(-5px, 50px); }
+  100% {
+    transform: translate(8px, -45px); } }
+
+@keyframes bounceInTop {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0; }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1; }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in; }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out; }
+  81% {
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in; }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out; }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in; }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out; } }
+
+@keyframes fade-in-fwd {
+  0% {
+    transform: scale(0);
+    opacity: 0; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+
+@media screen and (max-width: 1000px) {
+  #svg {
+    width: 50%;
+    right: -3rem; } }
+
+@media screen and (max-width: 900px) {
+  #svg {
+    bottom: 5rem;
+    right: -5rem; } }
+
+@media screen and (max-width: 800px) {
+  #svg {
+    right: -4rem; } }
