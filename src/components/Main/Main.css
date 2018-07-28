@@ -2,7 +2,8 @@
   padding: 12rem 0 3rem 3rem;
   position: relative;
   background-color: #2c3a47;
-  height: calc(100vh - 15rem); }
+  height: calc(100vh - 15rem);
+  clip-path: polygon(0% 10%, 10% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 100%); }
   .main_heading {
     text-transform: uppercase;
     margin-top: 10rem; }
