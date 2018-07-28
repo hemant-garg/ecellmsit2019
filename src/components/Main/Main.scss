@@ -1,11 +1,12 @@
 .main {
-  padding: 10rem 0 3rem 3rem;
+  padding: 12rem 0 3rem 3rem;
   position: relative;
   background-color: rgba(44, 58, 71, 1);
-  height: calc(100vh - 18rem);
+  height: calc(100vh - 15rem);
+  
   &_heading {
     text-transform: uppercase;
-    margin-top: 8rem; 
+    margin-top: 10rem; 
     &--primary {
       color: #fff;
       letter-spacing: 1rem;

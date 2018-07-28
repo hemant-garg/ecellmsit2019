@@ -1,11 +1,11 @@
 .main {
-  padding: 10rem 0 3rem 3rem;
+  padding: 12rem 0 3rem 3rem;
   position: relative;
   background-color: #2c3a47;
-  height: calc(100vh - 18rem); }
+  height: calc(100vh - 15rem); }
   .main_heading {
     text-transform: uppercase;
-    margin-top: 8rem; }
+    margin-top: 10rem; }
     .main_heading--primary {
       color: #fff;
       letter-spacing: 1rem;
