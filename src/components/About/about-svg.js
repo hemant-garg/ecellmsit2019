@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import WOW from 'wowjs';
+import WOW from '../../wow';
 class AboutSVG extends React.Component {
 componentDidMount(){
   new WOW.WOW().init();
