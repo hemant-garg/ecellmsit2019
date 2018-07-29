@@ -11,9 +11,17 @@ const Initiatives = () => {
         <section className="initiatives-section">
         	<div className="heading">What We Do</div>
         	<div className="initiatives">
-	        	<SVG1 />
+	        	<div>
+	        		<SVG1 />
+	        		<h2 className="initiatives-title">B-plan Competitions</h2>
+	        	</div>
+	        	<div>
 	        	<SVG2 />
-	        	<SVG3 />
+	        	<h2 className="initiatives-title">Internship Fair</h2>
+	        	</div>
+	        	<div><SVG3 />
+	        	<h2 className="initiatives-title">E-Summit</h2>
+	        	</div>
         	</div>
         </section>
     );

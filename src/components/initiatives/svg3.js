@@ -3,9 +3,9 @@ import Logo from '../Header/logo.png';
 import './initiatives.css';
 const SVG3 = () => {
     return (
-        <div className="svg3 initiative-svgs">
+        <div className="svg3 initiatives-svgs">
         	<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect id="backboard" class="cls-1" width="400" height="236.19" rx="33.59" ry="33.59"/>
+  <rect id="backboard" className="cls-1" width="400" height="236.19" rx="33.59" ry="33.59"/>
   <path className="cls-1" d="M256,512c141,0,256-115,256-256S397,0,256,0,0,115,0,256,115,512,256,512Z"/>
   <path className="cls-2" d="M243.21,104.41h25.57L270.86,126l3.68,3,7.75,4.94L256,196l-26.29-62.11,7.76-4.94,3.68-3,2.07-21.55Z"/>
   <path className="cls-3" d="M234.77,130.5l-21.19,6.77L256,196l36.08-60.66-15-4.75-13.19,9.31h-15.8Z"/>

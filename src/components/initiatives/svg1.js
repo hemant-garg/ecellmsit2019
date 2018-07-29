@@ -3,7 +3,7 @@ import './initiatives.css';
 
 const SVG1 = () => {
     return (
-        <div className="svg1 initiative-svgs">
+        <div className="svg1 initiatives-svgs">
         	 
 <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 508.99">
   <defs>
