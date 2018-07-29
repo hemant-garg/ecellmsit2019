@@ -14,7 +14,7 @@ componentDidMount(){
   </defs>
   
   <g id="Objects">
-    <g id="rocket-2" className="wow bounceInUp" data-wow-duration="1s">
+    <g id="rocket-2" className="wow bounceInUp" data-wow-duration="1s" data-wow-delay=".2s">
       <g id="svg-flames">
         <path className="cls-2" d="M369,482.27a5.66,5.66,0,0,0-11.32,0c0,3.09,5.66,37.46,5.66,37.46S369,485.36,369,482.27Z" transform="translate(0 1.17)"/>
         <path className="cls-2" d="M386.27,516.23a5.66,5.66,0,0,0-11.32,0c0,3.09,5.66,37.46,5.66,37.46S386.27,519.32,386.27,516.23Z" transform="translate(0 1.17)"/>

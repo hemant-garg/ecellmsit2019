@@ -59,8 +59,8 @@ $font-ceveat: 'Caveat', cursive;
 }
 
 
-.button-light, .button-light-2 {
-  background-color: transparent;
+.button-light, .button-light-2, .button-dark-1{
+  
   border-radius: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -68,13 +68,15 @@ $font-ceveat: 'Caveat', cursive;
   font-size: 1.7rem;
   box-sizing: border-box;
   letter-spacing: 1px;
+  font-weight: bold;
   &:hover,
   &:active {
-  font-weight: bold;
+  
     outline: none;
   }
 }
 .button-light{
+	background-color: transparent;
 	border: 2px solid $primary-color-2;
   color: $primary-color-2;
   &:hover,
@@ -83,12 +85,25 @@ $font-ceveat: 'Caveat', cursive;
     color: $primary-color-1;
   }
 }
-.button-light-2 { 
+.button-light-2 {
+background-color: transparent; 
   border: 2px solid $secondary-color;
   color: $secondary-color;
   &:hover,
   &:active {
     background-color: $secondary-color;
+    color: $primary-color-1;
+  }
+}
+
+.button-dark-1 { 
+  border: 2px solid $primary-color-1;
+	background-color: $primary-color-1;
+  color: $primary-color-4;
+  padding: 1.3rem 2.4rem;
+  &:hover,
+  &:active {
+    background-color: transparent;
     color: $primary-color-1;
   }
 }
