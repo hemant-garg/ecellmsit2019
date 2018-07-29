@@ -39,7 +39,13 @@
 	}
 }
 
+
+.arrow, #rocket-2, .about--svg-cloud{
+  opacity: 0;
+} 
+
 .about--svg{
+
   & .cls-1 {
         fill: #15b0bf;
       }
