@@ -100,7 +100,7 @@
       background-color: #eee; }
       .main_subscribe--input::placeholder {
         font-family: "Roboto", sans-serif;
-        color: #333; }
+        color: #555; }
     .main_subscribe--button {
       padding: 1.2rem 2rem;
       background-color: #86e1d4;

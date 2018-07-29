@@ -4,6 +4,7 @@ import Main from '../Main/Main'
 import Initiatives from '../initiatives/initiatives';
 import About from '../About/About';
 import Events from '../Events/Events';
+import Gallery from '../Gallery/Gallery';
 
 
 
@@ -16,7 +17,7 @@ class Home extends Component {
         <Main />
         <Initiatives />
         <About />
-        <Events /> 
+        <Gallery /> 
       </div>
     )
   }
