@@ -1,0 +1,8 @@
+@import '../../variables.scss';
+
+.events-section{
+	height: 100vh;
+	background-color: $primary-color-1;
+	margin-top: -10rem;
+  	clip-path: polygon(0% 10%, 50% 10%, 100% 0%, 100% 90%, 50% 100%, 0% 100%);	
+}

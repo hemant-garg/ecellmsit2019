@@ -3,6 +3,7 @@ import "./Home.css";
 
 import Main from '../Main/Main'
 import Initiatives from '../initiatives/initiatives';
+import Events from '../Events/Events';
 
 
 class Home extends Component {
@@ -11,6 +12,7 @@ class Home extends Component {
       <div className="Home">
         <Main />
         <Initiatives />
+        <Events />
       </div>
     )
   }

@@ -1,5 +1,4 @@
 .initiatives-section {
-  height: auto;
   margin-top: -8rem;
   padding: 15rem 10rem; }
 
@@ -9,8 +8,9 @@
   .initiatives-title {
     text-align: center;
     font-size: 1.8rem;
+    color: #2c3a47;
     margin-top: 1.7rem;
-    letter-spacing: 1px; }
+    letter-spacing: 1.5px; }
   .initiatives-svgs {
     width: 17rem;
     padding: 3rem;
