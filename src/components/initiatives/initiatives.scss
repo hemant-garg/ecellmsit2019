@@ -1,6 +1,252 @@
 @import '../../variables.scss';
-.initiatives{
+
+.initiatives-section{
 	height: 100vh;
-	background-color: $primary-color-3;
 	margin-top: -8rem;
+	padding: 0 10rem;
+	padding-top: 15rem;
 }
+.initiatives{
+	display: flex;
+	justify-content: space-around;
+}
+
+.initiative-svgs{
+	width: 17rem;
+	padding: 3rem;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 6px solid $primary-color-1;
+	overflow: hidden;
+	background-color: $primary-color-1;
+}
+
+.heading{
+	color: $primary-color-1;
+	margin-bottom: 5rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 4rem;
+	font-family: 'Kirang Haerang', cursive;
+}
+
+
+.svg1{
+		
+	&:hover #scale{
+	animation: teacherScale 1s ease infinite;
+	transform-origin: 50% 30% 0;
+	}
+	&:hover #lines{
+		animation: fadeIn 1.7s ease infinite;
+	}
+
+  & .cls-1 {
+        fill: #46738c;
+      }
+
+      & .cls-2 {
+        fill: #ff8c46;
+      }
+
+      & .cls-3 {
+        fill: #ffb69e;
+      }
+
+      & .cls-4 {
+        fill: #343e6b;
+      }
+
+      & .cls-5 {
+        fill: #414b82;
+      }
+
+      & .cls-6 {
+        fill: #252d5c;
+      }
+
+      & .cls-7 {
+        fill: #1b224a;
+      }
+
+      & .cls-14, & .cls-8 {
+        fill: #fff;
+      }
+
+      & .cls-9 {
+        fill: #ff3c3c;
+      }
+
+      & .cls-10 {
+        fill: #80391b;
+      }
+
+      & .cls-11 {
+        fill: #55c7a6;
+      }
+
+      & .cls-12 {
+        fill: #78beff;
+      }
+
+      & .cls-13 {
+        fill: #ba6746;
+      }
+
+      & .cls-14 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+	
+}
+
+
+@keyframes teacherScale{
+	0%{
+		transform: rotateZ(-20deg);
+	}
+	50%{
+		transform: rotateZ(10deg);	
+	}
+	100%{
+		transform: rotateZ(-20deg);
+	}
+}
+
+ 
+.svg2{
+	#internship-lines > *{
+		fill: #82ccdd;
+	}
+	#internship-message, #internship-message-2, #internship-lines, #internship-lines-2{
+		opacity: 0;
+	}
+	&:hover #internship-message{
+		animation: fadeIn .4s ease both;
+	}
+	&:hover #internship-message-2{
+		animation: fadeIn .6s ease .5s both;
+	}
+	&:hover #internship-lines{
+		animation: fadeIn .7s ease 1.2s forwards ;
+	}
+	&:hover #internship-lines-2{
+		animation: fadeIn .8s ease 2s forwards;
+	}
+
+
+	& .cls-1 {
+        fill: #f2bb80;
+      }
+
+      & .cls-2 {
+        fill: #4398d1;
+      }
+
+      & .cls-3 {
+        fill: #87ced9;
+      }
+
+      & .cls-4 {
+        fill: #6b402a;
+      }
+
+      & .cls-5 {
+        fill: #126099;
+      }
+
+      & .cls-6 {
+        fill: #d1d1d1;
+      }
+
+      & .cls-7 {
+        fill: #3582bd;
+      }
+
+      & .cls-8 {
+        fill: #539fbd;
+      }
+
+}
+
+
+.svg3{
+	& #backboard{
+		 fill: #dceaf4;
+		 transform: translate(50px, -260px);
+		 transition: all .8s ease;
+	}
+	& #ecelllogosvg{
+		opacity: 0;
+		transition: all .5s ease .9s;
+	}
+	&:hover #ecelllogosvg{
+		opacity: 1;
+	}
+	&:hover #backboard{
+		transform: translate(50px, 0);
+	}
+	& .cls-1 {
+        fill: none;
+      }
+
+      & .cls-2 {
+        fill: #f0b97d;
+      }
+
+      & .cls-3 {
+        fill: #ecf0f1;
+      }
+
+      & .cls-4 {
+        fill: #ff5b61;
+      }
+
+      & .cls-5 {
+        fill: #15bdb1;
+      }
+
+      & .cls-6 {
+        fill: #20d0c2;
+      }
+
+      & .cls-7 {
+        fill: #fed198;
+      }
+
+      & .cls-8 {
+        fill: #666;
+      }
+
+      & .cls-9 {
+        fill: #fff;
+      }
+
+      & .cls-10 {
+        fill: #ccc;
+      }
+
+      & .cls-11 {
+        fill: #fbb429;
+      }
+
+      & .cls-12 {
+        fill: #f5a209;
+      }
+
+      & .cls-13 {
+        font-size: 21px;
+        font-family: 'Kirang Haerang', cursive;
+      }
+
+      & .cls-14 {
+        letter-spacing: -0.01em;
+      }
+
+      & .cls-15 {
+        letter-spacing: -0.01em;
+      }
+}
+
+ 

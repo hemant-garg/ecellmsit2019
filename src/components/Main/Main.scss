@@ -10,27 +10,23 @@
   &_heading {
     text-transform: uppercase;
     margin-top: 10rem; 
-    &--primary {
-      color: #fff;
-      letter-spacing: 1rem;
-      font-size: 5.7rem;
-      font-weight: bolder;
-      text-shadow: 6px 0 6px darken($primary-color-2, 35%),
+    color: #fff;
+      font-weight: bold;
+    text-shadow: 6px 0 6px darken($primary-color-2, 35%),
         5px 5px 5px darken($primary-color-2, 50%), 0 6px 6px darken($primary-color-2, 55%);
+    &--primary {
+      letter-spacing: .8rem;
+      font-size: 5.5rem;
     }
     &--sub {
-      font-size: 4rem;
-      color: #fff;
+      font-size: 3.8rem;
       // margin-top: 0.5rem;
-      text-shadow: 5px 0 5px darken($primary-color-2, 35%),
-        4px 4px 4px darken($primary-color-2, 50%), 0 5px 5px darken($primary-color-2, 55%);
       letter-spacing: 0.5rem;
 
       span {
-        text-shadow: none;
         color: $primary-color-2;
         font-size: 6.5rem;
-        font-weight: bolder;
+        // font-weight: bolder;
         text-shadow: 4px 2px 6px darken($primary-color-2, 35%);
       }
     }
@@ -39,7 +35,7 @@
     margin-top: 5rem;
 
     &--input {
-      padding: 1.5rem 2rem;
+      padding: 1.3rem 2rem;
       border-radius: 0.6rem;
       font-size: 1.5rem;
       width: 30rem;
@@ -58,7 +54,7 @@
       border-radius: 0.6rem;
       font-weight: bold;
       letter-spacing: 3px;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       text-transform: uppercase;
       cursor: pointer;
       border: none;

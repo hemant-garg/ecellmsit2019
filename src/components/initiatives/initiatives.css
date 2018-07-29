@@ -1,4 +1,188 @@
-.initiatives {
+.initiatives-section {
   height: 100vh;
-  background-color: rgba(44, 58, 71, 0.1);
-  margin-top: -8rem; }
+  margin-top: -8rem;
+  padding: 0 10rem;
+  padding-top: 15rem; }
+
+.initiatives {
+  display: flex;
+  justify-content: space-around; }
+
+.initiative-svgs {
+  width: 17rem;
+  padding: 3rem;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 6px solid #2c3a47;
+  overflow: hidden;
+  background-color: #2c3a47; }
+
+.heading {
+  color: #2c3a47;
+  margin-bottom: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-family: 'Kirang Haerang', cursive; }
+
+.svg1:hover #scale {
+  animation: teacherScale 1s ease infinite;
+  transform-origin: 50% 30% 0; }
+
+.svg1:hover #lines {
+  animation: fadeIn 1.7s ease infinite; }
+
+.svg1 .cls-1 {
+  fill: #46738c; }
+
+.svg1 .cls-2 {
+  fill: #ff8c46; }
+
+.svg1 .cls-3 {
+  fill: #ffb69e; }
+
+.svg1 .cls-4 {
+  fill: #343e6b; }
+
+.svg1 .cls-5 {
+  fill: #414b82; }
+
+.svg1 .cls-6 {
+  fill: #252d5c; }
+
+.svg1 .cls-7 {
+  fill: #1b224a; }
+
+.svg1 .cls-14, .svg1 .cls-8 {
+  fill: #fff; }
+
+.svg1 .cls-9 {
+  fill: #ff3c3c; }
+
+.svg1 .cls-10 {
+  fill: #80391b; }
+
+.svg1 .cls-11 {
+  fill: #55c7a6; }
+
+.svg1 .cls-12 {
+  fill: #78beff; }
+
+.svg1 .cls-13 {
+  fill: #ba6746; }
+
+.svg1 .cls-14 {
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 4px; }
+
+@keyframes teacherScale {
+  0% {
+    transform: rotateZ(-20deg); }
+  50% {
+    transform: rotateZ(10deg); }
+  100% {
+    transform: rotateZ(-20deg); } }
+
+.svg2 #internship-lines > * {
+  fill: #82ccdd; }
+
+.svg2 #internship-message, .svg2 #internship-message-2, .svg2 #internship-lines, .svg2 #internship-lines-2 {
+  opacity: 0; }
+
+.svg2:hover #internship-message {
+  animation: fadeIn .4s ease both; }
+
+.svg2:hover #internship-message-2 {
+  animation: fadeIn .6s ease .5s both; }
+
+.svg2:hover #internship-lines {
+  animation: fadeIn .7s ease 1.2s forwards; }
+
+.svg2:hover #internship-lines-2 {
+  animation: fadeIn .8s ease 2s forwards; }
+
+.svg2 .cls-1 {
+  fill: #f2bb80; }
+
+.svg2 .cls-2 {
+  fill: #4398d1; }
+
+.svg2 .cls-3 {
+  fill: #87ced9; }
+
+.svg2 .cls-4 {
+  fill: #6b402a; }
+
+.svg2 .cls-5 {
+  fill: #126099; }
+
+.svg2 .cls-6 {
+  fill: #d1d1d1; }
+
+.svg2 .cls-7 {
+  fill: #3582bd; }
+
+.svg2 .cls-8 {
+  fill: #539fbd; }
+
+.svg3 #backboard {
+  fill: #dceaf4;
+  transform: translate(50px, -260px);
+  transition: all .8s ease; }
+
+.svg3 #ecelllogosvg {
+  opacity: 0;
+  transition: all .5s ease .9s; }
+
+.svg3:hover #ecelllogosvg {
+  opacity: 1; }
+
+.svg3:hover #backboard {
+  transform: translate(50px, 0); }
+
+.svg3 .cls-1 {
+  fill: none; }
+
+.svg3 .cls-2 {
+  fill: #f0b97d; }
+
+.svg3 .cls-3 {
+  fill: #ecf0f1; }
+
+.svg3 .cls-4 {
+  fill: #ff5b61; }
+
+.svg3 .cls-5 {
+  fill: #15bdb1; }
+
+.svg3 .cls-6 {
+  fill: #20d0c2; }
+
+.svg3 .cls-7 {
+  fill: #fed198; }
+
+.svg3 .cls-8 {
+  fill: #666; }
+
+.svg3 .cls-9 {
+  fill: #fff; }
+
+.svg3 .cls-10 {
+  fill: #ccc; }
+
+.svg3 .cls-11 {
+  fill: #fbb429; }
+
+.svg3 .cls-12 {
+  fill: #f5a209; }
+
+.svg3 .cls-13 {
+  font-size: 21px;
+  font-family: 'Kirang Haerang', cursive; }
+
+.svg3 .cls-14 {
+  letter-spacing: -0.01em; }
+
+.svg3 .cls-15 {
+  letter-spacing: -0.01em; }
