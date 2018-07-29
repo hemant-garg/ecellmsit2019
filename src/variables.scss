@@ -1,6 +1,94 @@
 $primary-color-1: #2c3a47;
-$primary-color-3: rgba(44, 58, 71, .1);
 $primary-color-2: #85e1d4;
+$primary-color-3: rgba(44, 58, 71, .1);
+$primary-color-4: #eee;
+$secondary-color: #F8EFAF;
 $font-roboto: "Roboto", sans-serif;
 $font-kirang: 'Kirang Haerang', cursive;
+$font-hanalei: 'Hanalei Fill', cursive;
+$font-ceveat: 'Caveat', cursive;
 
+.heading, .heading-2{
+	
+	position: relative;
+	margin-bottom: 5rem;
+	display: inline-block;
+	left: 50%;
+	transform: translateX(-50%);
+	text-transform: uppercase;
+	font-size: 4.2rem;
+	font-family: $font-kirang;
+
+	&::before, &::after{
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		width: 8rem;
+		height: .5rem;
+		
+	}
+	&::before{
+		left: -10rem;
+	}
+	&::after{
+		right: -10rem;
+	}
+}
+.heading{
+	color: $primary-color-1;
+	&::before, &::after{
+		background-color: $primary-color-1;
+	}
+}
+.heading-2{
+	color: $primary-color-4;
+	&::before, &::after{
+		background-color: $primary-color-4;
+	}
+}
+
+.para{
+	margin-top: 2.5rem;
+	margin-bottom: 2rem;
+	color: $primary-color-4;
+	letter-spacing: 1px;
+	line-height: 2.5rem;
+	font-family: $font-roboto;
+	font-size: 1.6rem;
+}
+
+
+.button-light, .button-light-2 {
+  background-color: transparent;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.8rem 1.7rem;
+  font-size: 1.7rem;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  &:hover,
+  &:active {
+  font-weight: bold;
+    outline: none;
+  }
+}
+.button-light{
+	border: 2px solid $primary-color-2;
+  color: $primary-color-2;
+  &:hover,
+  &:active {
+    background-color: $primary-color-2;
+    color: $primary-color-1;
+  }
+}
+.button-light-2 { 
+  border: 2px solid $secondary-color;
+  color: $secondary-color;
+  &:hover,
+  &:active {
+    background-color: $secondary-color;
+    color: $primary-color-1;
+  }
+}

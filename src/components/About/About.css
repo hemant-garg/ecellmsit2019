@@ -1,0 +1,166 @@
+.heading, .heading-2 {
+  position: relative;
+  margin-bottom: 5rem;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 4.2rem;
+  font-family: "Kirang Haerang", cursive; }
+  .heading::before, .heading::after, .heading-2::before, .heading-2::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    width: 8rem;
+    height: .5rem; }
+  .heading::before, .heading-2::before {
+    left: -10rem; }
+  .heading::after, .heading-2::after {
+    right: -10rem; }
+
+.heading {
+  color: #2c3a47; }
+  .heading::before, .heading::after {
+    background-color: #2c3a47; }
+
+.heading-2 {
+  color: #eee; }
+  .heading-2::before, .heading-2::after {
+    background-color: #eee; }
+
+.para {
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  color: #eee;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem; }
+
+.button-light, .button-light-2 {
+  background-color: transparent;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.8rem 1.7rem;
+  font-size: 1.7rem;
+  box-sizing: border-box;
+  letter-spacing: 1px; }
+  .button-light:hover, .button-light:active, .button-light-2:hover, .button-light-2:active {
+    font-weight: bold;
+    outline: none; }
+
+.button-light {
+  border: 2px solid #85e1d4;
+  color: #85e1d4; }
+  .button-light:hover, .button-light:active {
+    background-color: #85e1d4;
+    color: #2c3a47; }
+
+.button-light-2 {
+  border: 2px solid #F8EFAF;
+  color: #F8EFAF; }
+  .button-light-2:hover, .button-light-2:active {
+    background-color: #F8EFAF;
+    color: #2c3a47; }
+
+.about-section {
+  background-color: #2c3a47;
+  clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 90%, 50% 100%, 0% 100%);
+  padding: 13rem 5rem 10rem 7rem; }
+
+.about {
+  display: flex;
+  justify-content: space-between; }
+  .about--text {
+    width: 55%;
+    margin-top: 2rem; }
+    .about--text-heading {
+      font-size: 3.2rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #e66767;
+      font-family: "Hanalei Fill", cursive; }
+    .about--text-moto {
+      color: #85e1d4;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-top: 1.3rem;
+      letter-spacing: 2px;
+      font-family: "Caveat", cursive; }
+  .about--svg {
+    margin-top: 1rem;
+    width: 40%; }
+    .about--svg-text {
+      font-family: "Roboto", sans-serif !important; }
+
+.about--svg .cls-1 {
+  fill: #15b0bf; }
+
+.about--svg .cls-16, .about--svg .cls-2, .about--svg .cls-20, .about--svg .cls-4 {
+  fill: #fff; }
+
+.about--svg .cls-2 {
+  opacity: 0.7; }
+
+.about--svg .cls-3 {
+  fill: #ededef; }
+
+.about--svg .cls-5 {
+  fill: #ed3a5a; }
+
+.about--svg .cls-6 {
+  fill: #bc3347; }
+
+.about--svg .cls-7 {
+  fill: #feac1c; }
+
+.about--svg .cls-8 {
+  fill: #fe8222; }
+
+.about--svg .cls-9 {
+  fill: #de445e; }
+
+.about--svg .cls-10 {
+  fill: #1695a4; }
+
+.about--svg .cls-11 {
+  fill: #d1ecfb; }
+
+.about--svg .cls-12, .about--svg .cls-13, .about--svg .cls-14, .about--svg .cls-15 {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 5px; }
+
+.about--svg .cls-13 {
+  stroke-dasharray: 12.18 12.18; }
+
+.about--svg .cls-14 {
+  stroke-dasharray: 10; }
+
+.about--svg .cls-15 {
+  stroke-dasharray: 12.42 12.42; }
+
+.about--svg .cls-16 {
+  opacity: 0.9; }
+
+.about--svg .cls-17 {
+  font-size: 41.32px; }
+
+.about--svg .cls-17, .about--svg .cls-19, .about--svg .cls-21 {
+  fill: #194e7a;
+  font-family: BebasNeue, BebasNeue; }
+
+.about--svg .cls-18 {
+  letter-spacing: -0.08em; }
+
+.about--svg .cls-19 {
+  font-size: 52.83px; }
+
+.about--svg .cls-20 {
+  opacity: 0.95; }
+
+.about--svg .cls-21 {
+  font-size: 42.16px; }

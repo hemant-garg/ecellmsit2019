@@ -25,7 +25,7 @@
     }
     &--link {
       text-decoration: none;
-      color: #eee;
+      color: $primary-color-4;
       font-size: 1.7rem;
       font-weight: lighter;
       letter-spacing: 2px;
@@ -37,23 +37,5 @@
         color: $primary-color-2;
       }
     }
-  }
-}
-.subscribe-light {
-  background-color: transparent;
-  border: 2px solid $primary-color-2;
-  border-radius: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  padding: 0.8rem 1.7rem;
-  font-size: 1.7rem;
-  color: $primary-color-2;
-  box-sizing: border-box;
-  letter-spacing: 1px;
-  &:hover,
-  &:active {
-    background-color: $primary-color-2;
-    color: $primary-color-1;
-    outline: none;
   }
 }

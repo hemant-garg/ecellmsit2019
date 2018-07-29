@@ -8,13 +8,15 @@
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 100%);
   
   &_heading {
+    
     text-transform: uppercase;
     margin-top: 10rem; 
-    color: #fff;
+    color: $primary-color-4;
       font-weight: bold;
     text-shadow: 6px 0 6px darken($primary-color-2, 35%),
         5px 5px 5px darken($primary-color-2, 50%), 0 6px 6px darken($primary-color-2, 55%);
     &--primary {
+
       letter-spacing: .8rem;
       font-size: 5.5rem;
     }
@@ -42,8 +44,10 @@
       margin-right: 2rem;
       outline: none;
       border: none;
+      background-color: $primary-color-4;
       &::placeholder {
         font-family: $font-roboto;
+        color: #555;
       }
     }
 

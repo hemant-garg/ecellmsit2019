@@ -3,12 +3,13 @@
 .initiatives-section{
 	margin-top: -8rem;
 	padding: 15rem 10rem;
-
+  padding-bottom: 7rem;
 }
 .initiatives{
 	display: flex;
 	justify-content: space-around;
-
+  padding-top: 3rem;
+  // margin-top: 9rem;
 	&-title{
 		text-align: center;
 		// font-family: $font-roboto;
@@ -20,7 +21,7 @@
 	}
 
 	&-svgs{
-		width: 17rem;
+		width: 15rem;
 		padding: 3rem;
 		cursor: pointer;
 		border-radius: 50%;
@@ -32,34 +33,6 @@
 }
 
 
-
-.heading{
-	color: $primary-color-1;
-	position: relative;
-	margin-bottom: 5rem;
-	display: inline-block;
-	left: 50%;
-	transform: translateX(-50%);
-	text-transform: uppercase;
-	font-size: 4.2rem;
-	font-family: $font-kirang;
-
-	&::before, &::after{
-		content: "";
-		display: inline-block;
-		position: absolute;
-		top: 50%;
-		width: 8rem;
-		height: .5rem;
-		background-color: $primary-color-1;
-	}
-	&::before{
-		left: -10rem;
-	}
-	&::after{
-		right: -10rem;
-	}
-}
 
 
 .svg1{

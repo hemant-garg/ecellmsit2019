@@ -12,7 +12,7 @@ class Header extends Component {
 			<li className="header_nav--item"><a className="header_nav--link" href="#">Gallery</a></li>
 			<li className="header_nav--item"><a className="header_nav--link" href="#">Blogs</a></li>
 			<li className="header_nav--item"><a className="header_nav--link" href="#">About</a></li>
-			<li className="header_nav--item"><button className="subscribe-light">Join Us</button></li>
+			<li className="header_nav--item"><button className="button-light">Join Us</button></li>
 		</ul>
 	 </div>
     )
