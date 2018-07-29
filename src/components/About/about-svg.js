@@ -55,15 +55,15 @@ componentDidMount(){
       </g>
       <polyline className="cls-14" points="559.29 185.46 546.39 159.06 587.27 158.29"/>
     </g>
-    <g className="about--svg-cloud wow fadeInUp" data-wow-duration=".8s" data-wow-delay="1s">
+    <g className="about--svg-cloud wow bounceInUp" data-wow-duration=".8s" data-wow-delay="1s">
       <path className="about--svg-ideate cls-16" d="M200.84,412.53c0-.17,0-.35,0-.52,0-15.42-11.72-27.92-26.18-27.92a24.84,24.84,0,0,0-9.16,1.76c-6.35-14.19-19.93-24-35.66-24-18.08,0-33.32,13-38,30.65a27,27,0,0,0-14.36-4.16c-15.69,0-28.4,13.56-28.4,30.28-15.69,0-28.4,13.56-28.4,30.28s12.71,30.28,28.4,30.28H181.77c18.87,0,34.17-16.31,34.17-36.43A37.08,37.08,0,0,0,200.84,412.53Z" transform="translate(0 1.17)"/>
       <text className="about--svg-text cls-17" transform="translate(56.71 450.59) scale(0.94 1)">IDEATE</text>
     </g>
-    <g className="about--svg-cloud wow fadeInDown" data-wow-duration=".8s" data-wow-delay="4s">
+    <g className="about--svg-cloud wow bounceInDown" data-wow-duration=".8s" data-wow-delay="4s">
       <path className="about--svg-invest cls-4" d="M503.33,95.91c0-.24,0-.47,0-.71,0-21.07-16.68-38.15-37.26-38.15a36.37,36.37,0,0,0-13,2.4c-9-19.39-28.37-32.79-50.76-32.79-25.74,0-47.42,17.72-54.09,41.89a39.52,39.52,0,0,0-20.43-5.68c-22.33,0-40.42,18.53-40.42,41.38-22.33,0-40.42,18.53-40.42,41.39S265,187,287.36,187H476.19c26.86,0,48.64-22.3,48.64-49.8A50.05,50.05,0,0,0,503.33,95.91Z" transform="translate(0 1.17)"/>
       <text className="about--svg-text cls-19" transform="translate(300.44 147.9) scale(0.98 1)">INVEST</text>
     </g>
-    <g className="about--svg-cloud wow fadeInRight" data-wow-duration=".8s" data-wow-delay="2.5s">
+    <g className="about--svg-cloud wow bounceInRight" data-wow-duration=".8s" data-wow-delay="2.5s">
       <path className="about--svg-inspire cls-20" d="M739.85,400.06c0-.19,0-.38,0-.57a30.12,30.12,0,0,0-30-30.28,29.71,29.71,0,0,0-10.48,1.91,45,45,0,0,0-84.28,7.22,32.08,32.08,0,0,0-16.43-4.51,32.67,32.67,0,0,0-32.49,32.85,32.85,32.85,0,0,0,0,65.69H718a39.6,39.6,0,0,0,21.81-72.31Z" transform="translate(0 1.17)"/>
       <text className="about--svg-text cls-21" transform="translate(572.9 444.72) scale(0.99 1)">INSPIRE</text>
     </g>
