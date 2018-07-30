@@ -1,12 +1,12 @@
 @import '../../variables.scss';
 
 .main {
-  padding: 12rem 0 3rem 3rem;
+  padding: 2rem 0 3rem 3rem;
   position: relative;
   background-color: $primary-color-1;
   height: calc(100vh - 15rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 100%);
-  
+  margin: 0;
   &_heading {
     
     text-transform: uppercase;
@@ -38,7 +38,7 @@
 
     &--input {
       padding: 1.3rem 2rem;
-      border-radius: 0.6rem;
+      border-radius: 4rem;
       font-size: 1.5rem;
       width: 30rem;
       margin-right: 2rem;
@@ -55,7 +55,7 @@
       padding: 1.2rem 2rem;
       background-color: rgb(134, 225, 212);
       color: #2c3a47;
-      border-radius: 0.6rem;
+      border-radius: 4rem;
       font-weight: bold;
       letter-spacing: 3px;
       font-size: 1.5rem;
@@ -79,9 +79,3 @@
   }
 }
 
-
-@media screen and (max-width: 900px) {
-  .main {
-    margin-top: 3rem;
-  }
-}

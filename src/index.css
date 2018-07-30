@@ -38,8 +38,8 @@
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem; }
 
-.button-light, .button-light-2, .button-dark-1 {
-  border-radius: 1rem;
+.button-light, .button-light-2, .button-light-3, .button-dark-1 {
+  border-radius: 3rem;
   cursor: pointer;
   transition: all 0.3s ease;
   padding: 0.8rem 1.7rem;
@@ -47,7 +47,7 @@
   box-sizing: border-box;
   letter-spacing: 1px;
   font-weight: bold; }
-  .button-light:hover, .button-light:active, .button-light-2:hover, .button-light-2:active, .button-dark-1:hover, .button-dark-1:active {
+  .button-light:hover, .button-light:active, .button-light-2:hover, .button-light-2:active, .button-light-3:hover, .button-light-3:active, .button-dark-1:hover, .button-dark-1:active {
     outline: none; }
 
 .button-light {
@@ -66,6 +66,14 @@
     background-color: #F8EFAF;
     color: #2c3a47; }
 
+.button-light-3 {
+  background-color: transparent;
+  border: 2px solid #2c3a47;
+  color: #2c3a47; }
+  .button-light-3:hover, .button-light-3:active {
+    background-color: #2c3a47;
+    color: #eee; }
+
 .button-dark-1 {
   border: 2px solid #2c3a47;
   background-color: #2c3a47;
@@ -83,6 +91,9 @@ body {
 
 html {
   font-size: 10px; }
+
+#root {
+  padding-top: 10rem; }
 
 @media screen and (max-width: 900px) {
   html {

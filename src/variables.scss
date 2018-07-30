@@ -59,9 +59,9 @@ $font-ceveat: 'Caveat', cursive;
 }
 
 
-.button-light, .button-light-2, .button-dark-1{
+.button-light, .button-light-2, .button-light-3, .button-dark-1{
   
-  border-radius: 1rem;
+  border-radius: 3rem;
   cursor: pointer;
   transition: all 0.3s ease;
   padding: 0.8rem 1.7rem;
@@ -96,6 +96,16 @@ background-color: transparent;
   }
 }
 
+.button-light-3 {
+background-color: transparent; 
+  border: 2px solid $primary-color-1;
+  color: $primary-color-1;
+  &:hover,
+  &:active {
+    background-color: $primary-color-1;
+    color: $primary-color-4;
+  }
+}
 .button-dark-1 { 
   border: 2px solid $primary-color-1;
 	background-color: $primary-color-1;

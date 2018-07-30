@@ -23,6 +23,9 @@
     &--item {
       margin-left: 2rem;
     }
+    &--item.activeNav a{
+      color: $primary-color-2!important;
+    }
     &--link {
       text-decoration: none;
       color: $primary-color-4;
@@ -30,9 +33,7 @@
       font-weight: lighter;
       letter-spacing: 2px;
       transition: all 0.3s ease;
-
-      &:active,
-      &:focus,
+      
       &:hover {
         color: $primary-color-2;
       }

@@ -10,7 +10,20 @@ import Gallery from '../Gallery/Gallery';
 
 
 class Home extends Component {
-
+ componentDidMount(){
+    const Navs = document.getElementById('header-navs').childNodes;
+    Navs.forEach(nav => nav.classList.remove('activeNav'));
+    // console.log(document.getElementsByClassName('LinkButton'));
+    document.querySelectorAll('.LinkButton').forEach( button => {
+      button.addEventListener('click', () => {
+        window.scroll({
+          top: 0, 
+          left: 0
+        });
+    })
+    })
+ }
+ 
   render() {
     return (
       <div className="Home">
