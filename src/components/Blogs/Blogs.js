@@ -7,21 +7,28 @@ class Blogs extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			blogs: []
+			filters: [],
+			blogs: [],
+			activeBlogs: []
 		}
 	}
 
 	componentDidMount(){
+
 		axios.get("https://public-api.wordpress.com/rest/v1/sites/ecellblogs.wordpress.com/posts")
 	      	.then(res => {
-		        this.setState({ blogs: res.data.posts });
-		        console.log(this.state.blogs);
+		        this.setState({ blogs: res.data.posts, activeBlogs: res.data.posts});
+		        const filterArr = this.state.blogs.map(blog => {
+		        	return Object.keys(blog.categories)[0]
+		        })
+		        this.setState({filters: Array.from(new Set(filterArr))});
 		      })
 	      	.catch(error => console.log(error));
-	}
 
+	}
 	renderBlogs = () => {
-		const blog = this.state.blogs.map(blog => {
+		const blogs = this.state.activeBlogs.map(blog => {
+			var date = new Date(blog.date);
 			return(
 				<div className="blogs-box" key={blog.ID}>
 					<Link to={"/blog/" + blog.ID} className="blackLink">
@@ -33,20 +40,49 @@ class Blogs extends Component {
 		            </Link>
 		            <div className="blogs-description">
 			            <h1 className=" blogs-title text-center">{blog.title}</h1>
+			            <div className="blogs-dateandbutton">
 			            <Link to={"/blog/" + blog.ID}>
-			            	<button className="btn button-light">Read More</button>
+			            	<button className="btn button-light-2">Read More</button>
 			         	</Link>
+			         	<div className="blogs-date">{date.toLocaleDateString()}</div>
+			         	</div>
 		         	</div>
 				</div>
 			)
 		})
-		return blog;
+		
+		return blogs;
 	}
+
+	updateBlogs = (target) => {
+		const allFilters = target.parentNode.childNodes;
+		allFilters.forEach(filter => filter.classList.remove('activeFilter'))
+		target.classList.add('activeFilter');
+
+		if(target.id === "allblogs"){
+			this.setState({activeBlogs: this.state.blogs.slice()})
+		}
+		else{
+			let filteredBlogs = this.state.blogs.filter(blog => {
+				return blog.categories.hasOwnProperty(target.id)
+			})
+			this.setState({activeBlogs: filteredBlogs.slice()})
+		}
+	}
+	renderFilters = () => {
+	 	return this.state.filters.map((filteroption,i) => {
+				 	return <li className="filter-item button-light-3" key={i} onClick={(e) => this.updateBlogs(e.target)} id={filteroption}>{filteroption}</li>
+				});
+	 }
 
 	render(){
 		return (
 	        <section className="blogs-section">
 	        	<div className="heading">Blogs & Articles</div>
+	        	<ul className="filter">
+	        		<li className="filter-item button-light-3 activeFilter" onClick={(e) => this.updateBlogs(e.target)} id="allblogs">All</li>
+		        	{this.renderFilters()}
+		        </ul>
 	        	<div className="blogs">
 	        		<div className="blogs-container">
 	        			{this.renderBlogs()}

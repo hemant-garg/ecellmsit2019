@@ -29,7 +29,7 @@
 }
 .gallery{
 	display: flex;
-	margin-top: 2rem;
+	margin-top: 1rem;
 	margin-bottom: 4rem;
 	justify-content: flex-start;
 	flex-wrap: wrap;
@@ -37,13 +37,15 @@
 
 	&-imageBox{
 		position: relative;
-		width: 30%;
-		height: 25rem;
-		margin: 1.5rem 1.6666%;
-		border-radius: 2rem;
+		box-sizing: border-box;
+		width: 31%;
+		height: 26rem;
+		margin: 1.5rem 1.1666%;
+		border: 5px solid #efefef;
 		overflow: hidden;
 		cursor:pointer;
 		transition: all .3s ease;
+		box-shadow: 0rem .1rem 1rem rgba(0,0,0,.2);
 	}
 	&-imageBox:hover &-image{
 		transform: scale(1.1);
@@ -57,19 +59,4 @@
 	}
 
 
-}
-.gallery-filter{
-	padding-left: 2rem;
-	margin-top: 2rem;
-	margin-bottom: 3rem;
-	// justify-content: flex-end;
-	display: flex;
-	list-style-type: none;
-	&-item:not(:last-child){
-		margin-right: 1rem;
-	}
-	&-item.activeFilter{
-		background-color: $primary-color-1;
-		color: $primary-color-4;
-	}
 }

@@ -78,10 +78,22 @@
   border: 2px solid #2c3a47;
   background-color: #2c3a47;
   color: #eee;
-  padding: 1.3rem 2.4rem; }
+  padding: 1rem 2.1rem; }
   .button-dark-1:hover, .button-dark-1:active {
     background-color: transparent;
     color: #2c3a47; }
+
+.filter {
+  padding-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  list-style-type: none; }
+  .filter-item:not(:last-child) {
+    margin-right: 1rem; }
+  .filter-item.activeFilter {
+    background-color: #2c3a47;
+    color: #eee; }
 
 .main {
   padding: 2rem 0 3rem 3rem;

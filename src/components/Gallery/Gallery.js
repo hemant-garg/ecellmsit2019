@@ -139,12 +139,12 @@ class Gallery extends React.Component {
 		return (
 		        <section className="gallery-section">
 		        	<div className="heading"> Gallery 2k18</div>
-		        	<ul className="gallery-filter">
-		        		<li className="gallery-filter-item button-light-3 activeFilter" onClick={(e) => this.updateImages(e.target)} id="sel-all">All</li>
-		        		<li className="gallery-filter-item button-light-3" onClick={(e) => this.updateImages(e.target)} id="sel-esummit">E-Summit</li>
-		        		<li className="gallery-filter-item button-light-3" onClick={(e) => this.updateImages(e.target)} id="sel-internship">Internship Fair</li>
-		        		<li className="gallery-filter-item button-light-3" onClick={(e) => this.updateImages(e.target)} id="sel-awareness">Entrepreneurship Awareness Camp</li>
-		        		<li className="gallery-filter-item button-light-3" onClick={(e) => this.updateImages(e.target)} id="sel-felicitation">Felicitation Ceremony</li>
+		        	<ul className="filter">
+		        		<li className="filter-item button-light-3 activeFilter" onClick={(e) => this.updateImages(e.target)} id="sel-all">All</li>
+		        		<li className="filter-item button-light-3" onClick={(e) => this.updateImages(e.target)} id="sel-esummit">E-Summit</li>
+		        		<li className="filter-item button-light-3" onClick={(e) => this.updateImages(e.target)} id="sel-internship">Internship Fair</li>
+		        		<li className="filter-item button-light-3" onClick={(e) => this.updateImages(e.target)} id="sel-awareness">Entrepreneurship Awareness Camp</li>
+		        		<li className="filter-item button-light-3" onClick={(e) => this.updateImages(e.target)} id="sel-felicitation">Felicitation Ceremony</li>
 		        	</ul>
 		        	<div className="gallery">
 		        		{this.renderImages()}
