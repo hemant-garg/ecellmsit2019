@@ -12,7 +12,7 @@ class Blogs extends Component {
 	}
 
 	componentDidMount(){
-		axios.get("http://public-api.wordpress.com/rest/v1/sites/ecellblogs.wordpress.com/posts")
+		axios.get("https://public-api.wordpress.com/rest/v1/sites/ecellblogs.wordpress.com/posts")
 	      	.then(res => {
 		        this.setState({ blogs: res.data.posts });
 		        console.log(this.state.blogs);
