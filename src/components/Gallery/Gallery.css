@@ -31,7 +31,7 @@
 
 .para {
   margin-top: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   color: #eee;
   letter-spacing: 1px;
   line-height: 2.5rem;
@@ -85,7 +85,26 @@
 
 .gallery-section {
   height: 100vh;
-  padding: 7rem 10rem 15rem 10rem; }
+  padding: 7rem 10rem 15rem 10rem;
+  position: absolute; }
+  .gallery-section::before, .gallery-section::after {
+    content: "";
+    position: absolute;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    z-index: -1;
+    background-color: rgba(44, 58, 71, 0.04); }
+  .gallery-section::before {
+    width: 30rem;
+    height: 30rem;
+    top: 4rem;
+    left: 1rem;
+    transform: rotate(10deg); }
+  .gallery-section::after {
+    width: 15rem;
+    height: 15rem;
+    top: 2rem;
+    right: 4rem;
+    transform: rotate(50deg); }
 
 .gallery {
   display: flex;
@@ -102,23 +121,14 @@
     overflow: hidden;
     cursor: pointer;
     transition: all .3s ease; }
-    .gallery-imageBox::before {
-      content: "";
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition: all .3s ease;
-      background: rgba(44, 58, 71, 0.2); }
-    .gallery-imageBox:hover::before {
-      background: rgba(44, 58, 71, 0.3); }
-    .gallery-imageBox:hover {
-      transform: scale(1.05); }
+  .gallery-imageBox:hover .gallery-image {
+    transform: scale(1.1);
+    filter: brightness(1); }
   .gallery-image {
     width: 100%;
-    height: 100%; }
+    filter: brightness(0.9);
+    height: 100%;
+    transition: all .3s ease; }
 
 .gallery-filter {
   padding-left: 2rem;

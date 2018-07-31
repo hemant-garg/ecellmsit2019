@@ -3,6 +3,29 @@
 .gallery-section{
 	height: 100vh;
 	padding: 7rem 10rem 15rem 10rem;
+	position: absolute;
+	&::before, &::after{
+		content: "";
+		position: absolute;
+		clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+		z-index: -1;
+		background-color: rgba(44, 58, 71, .04);
+	}
+
+	&::before{
+		width: 30rem;
+		height: 30rem;
+		top: 4rem;
+		left: 1rem;
+		transform: rotate(10deg);
+	}
+	&::after{
+		width: 15rem;
+		height: 15rem;
+		top: 2rem;
+		right: 4rem;
+		transform: rotate(50deg);
+	}
 }
 .gallery{
 	display: flex;
@@ -10,6 +33,8 @@
 	margin-bottom: 4rem;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+	
+
 	&-imageBox{
 		position: relative;
 		width: 30%;
@@ -18,30 +43,20 @@
 		border-radius: 2rem;
 		overflow: hidden;
 		cursor:pointer;
-			transition: all .3s ease;
-	
-		&::before{
-			content: "";
-			display: inline-block;
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			transition: all .3s ease;
-			background: rgba(44, 58, 71, .2);
-		}
-		&:hover::before{
-			background: rgba(44, 58, 71, .3);
-		}
-		&:hover{
-			transform: scale(1.05);
-		}
+		transition: all .3s ease;
+	}
+	&-imageBox:hover &-image{
+		transform: scale(1.1);
+		filter: brightness(1);
 	}
 	&-image{
 		width: 100%;
+		filter: brightness(.9);
 		height: 100%;
+		transition: all .3s ease;
 	}
+
+
 }
 .gallery-filter{
 	padding-left: 2rem;

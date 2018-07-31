@@ -2,6 +2,8 @@ import React from 'react';
 import './About.css';
 import AboutSVG from './about-svg';
 
+
+
 const About = () => {
     return (
         <section className="about-section">

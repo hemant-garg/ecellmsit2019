@@ -83,62 +83,35 @@
     background-color: transparent;
     color: #2c3a47; }
 
-.main {
-  padding: 2rem 0 3rem 3rem;
-  position: relative;
+.blogs-section {
+  padding: 4rem 8rem; }
+
+.blogs-container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.blogs-box {
+  width: 30%;
+  border-radius: 2rem;
+  overflow: hidden;
   background-color: #2c3a47;
-  height: calc(100vh - 15rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 100%);
-  margin: 0; }
-  .main_heading {
-    text-transform: uppercase;
-    margin-top: 10rem;
-    color: #eee;
-    font-weight: bold;
-    text-shadow: 6px 0 6px #239081, 5px 5px 5px #14534a, 0 6px 6px #0f3e38; }
-    .main_heading--primary {
-      letter-spacing: .8rem;
-      font-size: 5.5rem; }
-    .main_heading--sub {
-      font-size: 3.8rem;
-      letter-spacing: 0.5rem; }
-      .main_heading--sub span {
-        color: #85e1d4;
-        font-size: 6.5rem;
-        text-shadow: 4px 2px 6px #239081; }
-  .main_subscribe {
-    margin-top: 5rem; }
-    .main_subscribe--input {
-      padding: 1.3rem 2rem;
-      border-radius: 4rem;
-      font-size: 1.5rem;
-      width: 30rem;
-      margin-right: 2rem;
-      outline: none;
-      border: none;
-      background-color: #eee; }
-      .main_subscribe--input::placeholder {
-        font-family: "Roboto", sans-serif;
-        color: #555; }
-    .main_subscribe--button {
-      padding: 1.2rem 2rem;
-      background-color: #86e1d4;
-      color: #2c3a47;
-      border-radius: 4rem;
-      font-weight: bold;
-      letter-spacing: 3px;
-      font-size: 1.5rem;
-      text-transform: uppercase;
-      cursor: pointer;
-      border: none; }
-    .main_subscribe--note {
-      margin-top: 2.5rem;
-      font-size: 1.3rem;
-      color: #aaa;
-      display: inline-block; }
-      .main_subscribe--note span {
-        color: #f8efba;
-        letter-spacing: 1px;
-        display: block;
-        margin-bottom: 1rem;
-        font-size: 1.5rem; }
+  margin: 1.666%;
+  margin-bottom: 3rem;
+  align-self: flex-start; }
+
+.blogs-featureimage {
+  width: 100%;
+  height: 25rem; }
+
+.blogs-description {
+  padding: 1rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.blogs-title {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  color: #eee; }

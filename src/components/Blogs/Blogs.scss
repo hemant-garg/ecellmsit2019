@@ -1,0 +1,40 @@
+@import '../../variables.scss';
+
+.blogs-section{
+	padding: 4rem 8rem;
+}
+
+.blogs{
+
+
+	&-container{
+		display: flex;
+		flex-wrap:wrap;
+	}
+	&-box{
+		width: 30%;
+		border-radius: 2rem;
+		overflow: hidden;
+		background-color: $primary-color-1;
+		margin: 1.666%;
+		margin-bottom: 3rem;
+		align-self: flex-start;
+	}
+	&-featureimage{
+		width: 100%;
+		height: 25rem;
+	}
+	&-description{
+		padding: 1rem 2rem 2rem 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&-title{
+		font-size: 1.7rem;
+		letter-spacing: 1px;
+		font-weight: lighter;
+		font-family: $font-roboto;
+		color: $primary-color-4;
+	}
+}
