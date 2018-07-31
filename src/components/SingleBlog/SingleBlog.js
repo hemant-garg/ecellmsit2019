@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Disqus from 'disqus-react';
 import {Link} from 'react-router-dom';
+import back from './left-arrow.svg';
 import './SingleBlog.css';
 
 class SingleBlog extends Component {
@@ -51,6 +52,7 @@ class SingleBlog extends Component {
 		}
 		return (
 	        <section className="singleblog-section">
+	        	<Link to="/blogs" ><img src={back} className="backicon" alt="back"/></Link>
 	        	<div className="singleblog">
 	      			 <h1 className=" singleblog-title text-center">{blog.title}</h1>
 	      			 <div className="singleblog-details">

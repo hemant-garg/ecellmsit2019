@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import checked from './checked.svg';
 import {Link} from 'react-router-dom';
 import './Blogs.css';
 
@@ -70,7 +71,7 @@ class Blogs extends Component {
 	}
 	renderFilters = () => {
 	 	return this.state.filters.map((filteroption,i) => {
-				 	return <li className="filter-item button-light-3" key={i} onClick={(e) => this.updateBlogs(e.target)} id={filteroption}>{filteroption}</li>
+				 	return <li className="filter-item button-dark-1" key={i} onClick={(e) => this.updateBlogs(e.target)} id={filteroption}>{filteroption} <img className="checksvg" src={checked} />  </li>
 				});
 	 }
 
@@ -79,7 +80,7 @@ class Blogs extends Component {
 	        <section className="blogs-section">
 	        	<div className="heading">Blogs & Articles</div>
 	        	<ul className="filter">
-	        		<li className="filter-item button-light-3 activeFilter" onClick={(e) => this.updateBlogs(e.target)} id="allblogs">All</li>
+	        		<li className="filter-item button-dark-1 activeFilter" onClick={(e) => this.updateBlogs(e.target)} id="allblogs">All <img className="checksvg" src={checked} />  </li>
 		        	{this.renderFilters()}
 		        </ul>
 	        	<div className="blogs">

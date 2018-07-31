@@ -48,19 +48,7 @@ $font-ceveat: 'Caveat', cursive;
 		background-color: $primary-color-4;
 	}
 }
-// .sub-heading{
-// 	margin-bottom: 5rem;
-// 	display: block;
-// 	// margin: 0 auto;
-// 	position: relative;
-// 	text-align: center;
-// 	margin-top: -5rem;
-// 	color: #E66767;
-// 	font-size: 2.4rem;
-// 	letter-spacing: 2px;
-// 	font-family: $font-ceveat;
-// 	font-weight: bold;
-// }
+
 
 .para{
 	margin-top: 2.5rem;
@@ -151,11 +139,27 @@ background-color: transparent;
 	// justify-content: flex-end;
 	display: flex;
 	list-style-type: none;
+	&-item{
+		position: relative;
+	}
 	&-item:not(:last-child){
 		margin-right: 1rem;
 	}
 	&-item.activeFilter{
 		background-color: $primary-color-1;
 		color: $primary-color-4;
+		padding-left: 4rem;
+
+		& img{
+			width: 2rem
+		}
 	}
+}
+.checksvg{
+	width: 0;
+	transition: all .3s ease;
+	position: absolute;
+	left: 1rem;
+	top: 50%;
+	transform: translateY(-50%);
 }

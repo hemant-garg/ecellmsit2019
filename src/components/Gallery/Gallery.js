@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './Gallery.css';
+import checked from './checked.svg';
 
 const imagesForHome = ['https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/29497735_889588544578976_8308239433050098694_n.jpg?_nc_cat=0&oh=465dd2e41f11191b6cbee13daa57abfa&oe=5BC72FAD',
 						'https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/21686478_797397623798069_8022458416660516926_n.jpg?_nc_cat=0&oh=c010e5835ccad8ec4aa7cebfdc3f68b9&oe=5BCC69CA',
@@ -140,11 +141,11 @@ class Gallery extends React.Component {
 		        <section className="gallery-section">
 		        	<div className="heading"> Gallery 2k18</div>
 		        	<ul className="filter">
-		        		<li className="filter-item button-light-3 activeFilter" onClick={(e) => this.updateImages(e.target)} id="sel-all">All</li>
-		        		<li className="filter-item button-light-3" onClick={(e) => this.updateImages(e.target)} id="sel-esummit">E-Summit</li>
-		        		<li className="filter-item button-light-3" onClick={(e) => this.updateImages(e.target)} id="sel-internship">Internship Fair</li>
-		        		<li className="filter-item button-light-3" onClick={(e) => this.updateImages(e.target)} id="sel-awareness">Entrepreneurship Awareness Camp</li>
-		        		<li className="filter-item button-light-3" onClick={(e) => this.updateImages(e.target)} id="sel-felicitation">Felicitation Ceremony</li>
+		        		<li className="filter-item button-dark-1 activeFilter" onClick={(e) => this.updateImages(e.target)} id="sel-all">All <img className="checksvg" src={checked} /> </li>
+		        		<li className="filter-item button-dark-1" onClick={(e) => this.updateImages(e.target)} id="sel-esummit">E-Summit  <img className="checksvg" src={checked} /> </li>
+		        		<li className="filter-item button-dark-1" onClick={(e) => this.updateImages(e.target)} id="sel-internship">Internship Fair <img className="checksvg" src={checked} /> </li>
+		        		<li className="filter-item button-dark-1" onClick={(e) => this.updateImages(e.target)} id="sel-awareness">Entrepreneurship Awareness Camp <img className="checksvg" src={checked} /> </li>
+		        		<li className="filter-item button-dark-1" onClick={(e) => this.updateImages(e.target)} id="sel-felicitation">Felicitation Ceremony <img className="checksvg" src={checked} /> </li>
 		        	</ul>
 		        	<div className="gallery">
 		        		{this.renderImages()}
