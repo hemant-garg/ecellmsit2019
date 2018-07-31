@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './Gallery.css';
 import checked from './checked.svg';
+import ImageZoom from 'react-medium-image-zoom'
 
 const imagesForHome = ['https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/29497735_889588544578976_8308239433050098694_n.jpg?_nc_cat=0&oh=465dd2e41f11191b6cbee13daa57abfa&oe=5BC72FAD',
 						'https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/21686478_797397623798069_8022458416660516926_n.jpg?_nc_cat=0&oh=c010e5835ccad8ec4aa7cebfdc3f68b9&oe=5BCC69CA',
@@ -81,7 +82,17 @@ class Gallery extends React.Component {
 			const renderImageArr = this.state.images.map((image, i) => {
 				return(
 					<div className="gallery-imageBox" key={i}>
-						<img src={image} className="gallery-image" alt=""/>
+						<ImageZoom
+					        image={{
+					          src: image,
+					          alt: 'ecell msit',
+					          className: 'gallery-image'
+					        }}
+					        zoomImage={{
+					          src: image,
+					          alt: 'ecell msit'
+					        }}
+					      />
 					</div>
 				)
 			})
