@@ -28,7 +28,6 @@ class Blogs extends Component {
 	}
 	renderBlogs = () => {
 		const blogs = this.state.activeBlogs.map(blog => {
-			var date = new Date(blog.date);
 			return(
 				<div className="blogs-box" key={blog.ID}>
 					<Link to={"/blog/" + blog.ID} className="blackLink">
@@ -44,7 +43,7 @@ class Blogs extends Component {
 			            <Link to={"/blog/" + blog.ID}>
 			            	<button className="btn button-light-2">Read More</button>
 			         	</Link>
-			         	<div className="blogs-date">{date.toLocaleDateString()}</div>
+			         	<div className="blogs-date">{new Date(blog.date).toLocaleDateString()}</div>
 			         	</div>
 		         	</div>
 				</div>
