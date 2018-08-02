@@ -2,14 +2,14 @@ $primary-color-1: #2c3a47;
 $primary-color-2: #85e1d4;
 $primary-color-3: #efefef;
 $primary-color-4: #eee;
-$secondary-color: #F8EFAF;
+$secondary-color: #f8efaf;
 $font-roboto: "Roboto", sans-serif;
-$font-kirang: 'Kirang Haerang', cursive;
-$font-hanalei: 'Hanalei Fill', cursive;
-$font-ceveat: 'Caveat', cursive;
+$font-kirang: "Kirang Haerang", cursive;
+$font-hanalei: "Hanalei Fill", cursive;
+$font-ceveat: "Caveat", cursive;
 
-.heading, .heading-2{
-	
+.heading,
+.heading-2 {
 	position: relative;
 	margin-bottom: 5rem;
 	display: inline-block;
@@ -19,38 +19,39 @@ $font-ceveat: 'Caveat', cursive;
 	font-size: 4.2rem;
 	font-family: $font-kirang;
 
-	&::before, &::after{
+	&::before,
+	&::after {
 		content: "";
 		display: inline-block;
 		position: absolute;
 		top: 50%;
 		width: 8rem;
-		height: .5rem;
-		
+		height: 0.5rem;
 	}
-	&::before{
+	&::before {
 		left: -10rem;
 	}
-	&::after{
+	&::after {
 		right: -10rem;
 	}
 }
-.heading{
+.heading {
 	color: $primary-color-1;
-	&::before, &::after{
+	&::before,
+	&::after {
 		background-color: $primary-color-1;
 	}
 }
 
-.heading-2{
+.heading-2 {
 	color: $primary-color-4;
-	&::before, &::after{
+	&::before,
+	&::after {
 		background-color: $primary-color-4;
 	}
 }
 
-
-.para{
+.para {
 	margin-top: 2.5rem;
 	margin-bottom: 3rem;
 	color: $primary-color-4;
@@ -60,56 +61,57 @@ $font-ceveat: 'Caveat', cursive;
 	font-size: 1.6rem;
 }
 
-
-.button-light, .button-light-2, .button-light-3, .button-dark-1 {
-  
-  border-radius: 3rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  padding: 0.8rem 1.7rem;
-  font-size: 1.7rem;
-  box-sizing: border-box;
-  letter-spacing: 1px;
-  font-weight: bold;
-  &:hover,
-  &:active {
-  
-    outline: none;
-  }
+.button-light,
+.button-light-2,
+.button-light-3,
+.button-dark-1 {
+	border-radius: 3rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	padding: 0.8rem 1.7rem;
+	font-size: 1.7rem;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	font-weight: bold;
+	&:hover,
+	&:active,
+	&:focus {
+		outline: none;
+	}
 }
-.button-light{
+.button-light {
 	background-color: transparent;
 	border: 2px solid $primary-color-2;
-  color: $primary-color-2;
-  &:hover,
-  &:active {
-    background-color: $primary-color-2;
-    color: $primary-color-1;
-  }
+	color: $primary-color-2;
+	&:hover,
+	&:active {
+		background-color: $primary-color-2;
+		color: $primary-color-1;
+	}
 }
 .button-light-2 {
-background-color: transparent; 
-  border: 2px solid $secondary-color;
-  color: $secondary-color;
-  &:hover,
-  &:active {
-    background-color: $secondary-color;
-    color: $primary-color-1;
-  }
+	background-color: transparent;
+	border: 2px solid $secondary-color;
+	color: $secondary-color;
+	&:hover,
+	&:active {
+		background-color: $secondary-color;
+		color: $primary-color-1;
+	}
 }
 
 .button-light-3 {
-background-color: transparent; 
-  border: 2px solid $primary-color-1;
-  color: $primary-color-1;
-  &:hover,
-  &:active {
-    background-color: $primary-color-1;
-    color: $primary-color-4;
-  }
+	background-color: transparent;
+	border: 2px solid $primary-color-1;
+	color: $primary-color-1;
+	&:hover,
+	&:active {
+		background-color: $primary-color-1;
+		color: $primary-color-4;
+	}
 }
 // .button-light-4 {
-// background-color: transparent; 
+// background-color: transparent;
 //   border: 2px solid #F8EFAF;
 //   color: #F8EFAF;
 //   padding: .5rem 1.5rem;
@@ -119,47 +121,115 @@ background-color: transparent;
 //     color: $primary-color-1;
 //   }
 // }
-.button-dark-1 { 
-  border: 2px solid $primary-color-1;
+.button-dark-1 {
+	border: 2px solid $primary-color-1;
 	background-color: $primary-color-1;
-  color: $primary-color-4;
-  padding: 1rem 2.1rem;
-  &:hover,
-  &:active {
-    background-color: transparent;
-    color: $primary-color-1;
-  }
+	color: $primary-color-4;
+	padding: 1rem 2.1rem;
+	&:hover,
+	&:active {
+		background-color: transparent;
+		color: $primary-color-1;
+	}
 }
 
-
-.filter{
+.filter {
 	padding-left: 2rem;
 	margin-top: 2rem;
 	margin-bottom: 3rem;
 	// justify-content: flex-end;
 	display: flex;
 	list-style-type: none;
-	&-item{
+	&-item {
 		position: relative;
 	}
-	&-item:not(:last-child){
+	&-item:not(:last-child) {
 		margin-right: 1rem;
 	}
-	&-item.activeFilter{
+	&-item.activeFilter {
 		background-color: $primary-color-1;
 		color: $primary-color-4;
-		padding-left: 4rem;
+		padding-left: 3.5rem;
 
-		& img{
-			width: 2rem
+		& img {
+			width: 1.7rem;
 		}
 	}
 }
-.checksvg{
+.checksvg {
 	width: 0;
-	transition: all .3s ease;
+	transition: all 0.3s ease;
 	position: absolute;
 	left: 1rem;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+.showJoinMessage,
+.showSubscribeMessage {
+	position: absolute;
+	background-color: #fae6e6;
+	font-size: 1.8rem;
+	top: -11rem;
+	padding: 0.8rem 2rem;
+	// font-family: $font-roboto;
+	border-left: 4px solid #f78c8c;
+	color: #665555;
+	border-radius: 5px;
+	left: 50%;
+	box-sizing: border-box;
+	transform: translateX(-50%);
+	box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+
+.showJoinMessage.show {
+	animation: fadeinblogmessage 5s ease both;
+}
+.showSubscribeMessage.success {
+	border-left: 4px solid #1ac950;
+	background-color: #f7fffa;
+	color: #556655;
+	animation: fadeinsubscribemessage 5s ease both;
+}
+.showSubscribeMessage.failure {
+	border-left: 4px solid #f78c8c;
+	background-color: #fae6e6;
+	color: #665555;
+	animation: fadeinsubscribemessage 5s ease both;
+}
+@keyframes fadeinblogmessage {
+	0% {
+		top: -10rem;
+		opacity: 0;
+	}
+	7% {
+		top: 11rem;
+		opacity: 1;
+	}
+	90% {
+		top: 11rem;
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		top: -10rem;
+	}
+}
+@keyframes fadeinsubscribemessage {
+	0% {
+		top: -10rem;
+		opacity: 0;
+	}
+	7% {
+		top: 4rem;
+		opacity: 1;
+	}
+	90% {
+		top: 4rem;
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		top: -10rem;
+	}
 }

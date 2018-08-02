@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .main {
   padding: 2rem 0 3rem 3rem;
@@ -8,16 +8,15 @@
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 100%);
   margin: 0;
   &_heading {
-    
     text-transform: uppercase;
-    margin-top: 10rem; 
+    margin-top: 10rem;
     color: $primary-color-4;
-      font-weight: bold;
+    font-weight: bold;
     text-shadow: 6px 0 6px darken($primary-color-2, 35%),
-        5px 5px 5px darken($primary-color-2, 50%), 0 6px 6px darken($primary-color-2, 55%);
+      5px 5px 5px darken($primary-color-2, 50%),
+      0 6px 6px darken($primary-color-2, 55%);
     &--primary {
-
-      letter-spacing: .8rem;
+      letter-spacing: 0.8rem;
       font-size: 5.5rem;
     }
     &--sub {
@@ -52,6 +51,7 @@
     }
 
     &--button {
+      position: relative;
       padding: 1.2rem 2rem;
       background-color: rgb(134, 225, 212);
       color: #2c3a47;
@@ -62,6 +62,11 @@
       text-transform: uppercase;
       cursor: pointer;
       border: none;
+      overflow: hidden;
+      &:active,
+      &:focus {
+        outline: none;
+      }
     }
     &--note {
       margin-top: 2.5rem;
@@ -79,3 +84,164 @@
   }
 }
 
+#lds-ellipsis {
+  display: none;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 45%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+#lds-ellipsis div {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+#lds-ellipsis div:nth-child(1) {
+  left: -14px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+#lds-ellipsis div:nth-child(2) {
+  left: -7px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+#lds-ellipsis div:nth-child(3) {
+  left: 7px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+#lds-ellipsis div:nth-child(4) {
+  left: 14px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(10px, 0);
+  }
+}
+
+$color--green: #7ac142;
+$curve: cubic-bezier(0.65, 0, 0.45, 1);
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: $color--green;
+  fill: none;
+  animation: stroke 0.6s $curve forwards;
+}
+
+#checkmark {
+  position: absolute;
+  left: 40%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: none;
+  stroke-width: 7;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px $color--green;
+  animation: fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
+  z-index: 10;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s $curve 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px $color--green;
+  }
+}
+
+#backgroundButton {
+  & {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 1;
+  }
+  &.success {
+    animation: scaleup 1s ease both;
+    width: 10px;
+    height: 10px;
+    background-color: #7ac142;
+  }
+  &.error {
+    animation: scaleup 1s ease both;
+    width: 10px;
+    height: 10px;
+    background-color: #d45959;
+  }
+}
+@keyframes scaleup {
+  100% {
+    transform: translate(-50%, -50%) scale(20);
+  }
+}
+
+#errorSubscribe {
+  display: none;
+  width: 2.5rem;
+  position: absolute;
+  top: 50%;
+  z-index: 11;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeIn 1s ease;
+  filter: contrast(0.6);
+}
