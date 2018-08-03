@@ -4,11 +4,15 @@ import Main from "../Main/Main";
 import Initiatives from "../initiatives/initiatives";
 import About from "../About/About";
 import Gallery from "../Gallery/Gallery";
+import Sponsors from "../sponsors/sponsors";
+import Blogs from "../Blogs/Blogs";
+import Footer from "../Footer/Footer";
 
 class Home extends Component {
   componentDidMount() {
     const Navs = document.getElementById("header-navs").childNodes;
     Navs.forEach(nav => nav.classList.remove("activeNav"));
+    document.getElementById("home").classList.add("activeNav");
 
     document.querySelectorAll(".LinkButton").forEach(button => {
       button.addEventListener("click", () => {
@@ -27,6 +31,9 @@ class Home extends Component {
         <Initiatives />
         <About />
         <Gallery />
+        <Sponsors />
+        <Blogs />
+        <Footer />
       </div>
     );
   }

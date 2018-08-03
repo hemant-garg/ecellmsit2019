@@ -4,6 +4,7 @@
   margin-bottom: 5rem;
   display: inline-block;
   left: 50%;
+  letter-spacing: 2px;
   transform: translateX(-50%);
   text-transform: uppercase;
   font-size: 4.2rem;
@@ -141,19 +142,19 @@
   box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.3); }
 
 .showJoinMessage.show {
-  animation: fadeinblogmessage 5s ease both; }
+  animation: fadeinblogmessage 4s ease both; }
 
 .showSubscribeMessage.success {
   border-left: 4px solid #1ac950;
   background-color: #f7fffa;
   color: #556655;
-  animation: fadeinsubscribemessage 5s ease both; }
+  animation: fadeinsubscribemessage 4s ease both; }
 
 .showSubscribeMessage.failure {
   border-left: 4px solid #f78c8c;
   background-color: #fae6e6;
   color: #665555;
-  animation: fadeinsubscribemessage 5s ease both; }
+  animation: fadeinsubscribemessage 4s ease both; }
 
 @keyframes fadeinblogmessage {
   0% {

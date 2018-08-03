@@ -28,7 +28,15 @@ class Header extends Component {
 					<img className="header_logo" src={Logo} alt="" />
 				</Link>
 				<ul className="header_nav" id="header-navs">
-					{/*<li onClick={(e)=> this.changeActiveClass(e.target)} id="events" className="header_nav--item LinkButton"><a className="header_nav--link" href="#">Events</a></li>*/}
+					<li
+						onClick={e => this.changeActiveClass(e.target)}
+						id="home"
+						className="header_nav--item"
+					>
+						<Link className=" LinkButton header_nav--link" to="/">
+							Home
+						</Link>
+					</li>
 					<li
 						onClick={e => this.changeActiveClass(e.target)}
 						id="gallery"
@@ -56,9 +64,9 @@ class Header extends Component {
 						onClick={e => this.changeActiveClass(e.target)}
 						className="header_nav--item"
 					>
-						<a className="LinkButton header_nav--link" href="#">
+						<Link className=" LinkButton header_nav--link" to="/">
 							About
-						</a>
+						</Link>
 					</li>
 
 					<li

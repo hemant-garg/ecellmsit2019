@@ -10,26 +10,48 @@ class Blogs extends Component {
 		this.state = {
 			filters: [],
 			blogs: [],
-			activeBlogs: []
+			activeBlogs: [],
+			inBlogs: false
 		};
 	}
 
 	componentDidMount() {
-		axios
-			.get(
-				"https://public-api.wordpress.com/rest/v1/sites/ecellblogs.wordpress.com/posts"
-			)
-			.then(res => {
-				this.setState({
-					blogs: res.data.posts,
-					activeBlogs: res.data.posts
-				});
-				const filterArr = this.state.blogs.map(blog => {
-					return Object.keys(blog.categories)[0];
-				});
-				this.setState({ filters: Array.from(new Set(filterArr)) });
-			})
-			.catch(error => console.log(error));
+		if (this.props.match !== undefined) {
+			if (this.props.match.path === "/blogs") {
+				this.setState({ inBlogs: true });
+				axios
+					.get(
+						"https://public-api.wordpress.com/rest/v1/sites/ecellblogs.wordpress.com/posts"
+					)
+					.then(res => {
+						this.setState({
+							blogs: res.data.posts,
+							activeBlogs: res.data.posts
+						});
+						const filterArr = this.state.blogs.map(blog => {
+							return Object.keys(blog.categories)[0];
+						});
+						this.setState({
+							filters: Array.from(new Set(filterArr))
+						});
+					})
+					.catch(error => console.log(error));
+			}
+		} else {
+			axios
+				.get(
+					"https://public-api.wordpress.com/rest/v1/sites/ecellblogs.wordpress.com/posts"
+				)
+				.then(res => {
+					const activeBlogs = res.data.posts.filter((post, i) => {
+						if (i < 3) {
+							return post;
+						}
+					});
+					this.setState({ activeBlogs });
+				})
+				.catch(error => console.log(error));
+		}
 	}
 	renderBlogs = () => {
 		const blogs = this.state.activeBlogs.map(blog => {
@@ -95,6 +117,26 @@ class Blogs extends Component {
 	};
 
 	render() {
+		const { inBlogs } = this.state;
+		if (!inBlogs) {
+			return (
+				<section className="blogs-section">
+					<div className="heading">Blogs & Articles</div>
+					<div className="blogs">
+						<div className="blogs-container">
+							{this.renderBlogs()}
+						</div>
+						<div style={{ textAlign: "center", marginTop: "3rem" }}>
+							<Link to="/blogs">
+								<button className="button-dark-1 LinkButton">
+									See all Blogs
+								</button>
+							</Link>
+						</div>
+					</div>
+				</section>
+			);
+		}
 		return (
 			<section className="blogs-section">
 				<div className="heading">Blogs & Articles</div>

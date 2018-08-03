@@ -1,10 +1,10 @@
 @import "../../variables.scss";
 
 .main {
-  padding: 2rem 0 3rem 3rem;
+  padding: 2rem 0 11rem 3rem;
   position: relative;
   background-color: $primary-color-1;
-  height: calc(100vh - 15rem);
+  // height: calc(100vh - 15rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 100%);
   margin: 0;
   &_heading {
@@ -44,9 +44,15 @@
       outline: none;
       border: none;
       background-color: $primary-color-4;
+      transition: all 0.4s ease;
+      box-sizing: border-box;
       &::placeholder {
         font-family: $font-roboto;
         color: #555;
+      }
+      &:focus,
+      &:active {
+        width: 33rem;
       }
     }
 

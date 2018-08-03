@@ -1,0 +1,8 @@
+@import "../../variables.scss";
+
+.footer-section {
+	height: 50vh;
+	background-color: $primary-color-1;
+	clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 100%, 0% 100%);
+	margin-top: -4rem;
+}

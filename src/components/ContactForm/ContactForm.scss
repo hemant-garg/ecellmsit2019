@@ -1,0 +1,8 @@
+@import "../../variables.scss";
+
+.contactForm {
+	// height: 100vh;
+	clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 90%, 50% 100%, 0% 100%);
+	background-color: $primary-color-1;
+	padding: 10rem;
+}

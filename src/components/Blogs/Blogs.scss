@@ -1,56 +1,55 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
-.blogs-section{
+.blogs-section {
 	padding: 6rem 7rem;
+	@include sectionStars;
 }
 
-.blogs{
-
-
-	&-container{
+.blogs {
+	&-container {
 		display: flex;
-		flex-wrap:wrap;
+		flex-wrap: wrap;
 	}
-	&-box{
+	&-box {
 		width: 30%;
 		border-radius: 1rem;
 		border: 5px solid #fff;
 		box-sizing: border-box;
 		overflow: hidden;
-		background-color: rgba(44, 58, 71, .9);
-		box-shadow: 0rem .1rem 1rem rgba(0,0,0,.2);
+		background-color: rgba(44, 58, 71, 0.9);
+		box-shadow: 0rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
 		margin: 1.666%;
 		margin-bottom: 3rem;
-		align-self: flex-start;
+		align-self: center;
 	}
-	&-box:hover &-featureimage{
+	&-box:hover &-featureimage {
 		transform: scale(1.05);
 	}
-	&-featureimage{
-		transition: all .4s ease;
+	&-featureimage {
+		transition: all 0.4s ease;
 		overflow: hidden;
 		width: 100%;
 		height: 25rem;
-		filter: brightness(.9);
+		filter: brightness(0.9);
 	}
-	&-description{
+	&-description {
 		padding: 1rem 2rem 2rem 2rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 	}
-	&-title{
+	&-title {
 		font-size: 1.7rem;
 		letter-spacing: 1px;
 		font-weight: lighter;
 		font-family: $font-roboto;
 		color: $primary-color-4;
 	}
-	&-dateandbutton{
+	&-dateandbutton {
 		display: flex;
 		justify-content: space-between;
 	}
-	&-date{
+	&-date {
 		display: inline-block;
 		color: $primary-color-4;
 		font-size: 1.5rem;

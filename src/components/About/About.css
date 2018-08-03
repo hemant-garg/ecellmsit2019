@@ -4,6 +4,7 @@
   margin-bottom: 5rem;
   display: inline-block;
   left: 50%;
+  letter-spacing: 2px;
   transform: translateX(-50%);
   text-transform: uppercase;
   font-size: 4.2rem;
@@ -141,19 +142,19 @@
   box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.3); }
 
 .showJoinMessage.show {
-  animation: fadeinblogmessage 5s ease both; }
+  animation: fadeinblogmessage 4s ease both; }
 
 .showSubscribeMessage.success {
   border-left: 4px solid #1ac950;
   background-color: #f7fffa;
   color: #556655;
-  animation: fadeinsubscribemessage 5s ease both; }
+  animation: fadeinsubscribemessage 4s ease both; }
 
 .showSubscribeMessage.failure {
   border-left: 4px solid #f78c8c;
   background-color: #fae6e6;
   color: #665555;
-  animation: fadeinsubscribemessage 5s ease both; }
+  animation: fadeinsubscribemessage 4s ease both; }
 
 @keyframes fadeinblogmessage {
   0% {
@@ -185,7 +186,7 @@
 
 .about-section {
   background-color: #2c3a47;
-  clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 90%, 50% 100%, 0% 100%);
+  clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
   padding: 13rem 5rem 10rem 7rem; }
 
 .about {
@@ -216,7 +217,10 @@
 .about--svg .cls-1 {
   fill: #15b0bf; }
 
-.about--svg .cls-16, .about--svg .cls-2, .about--svg .cls-20, .about--svg .cls-4 {
+.about--svg .cls-16,
+.about--svg .cls-2,
+.about--svg .cls-20,
+.about--svg .cls-4 {
   fill: #fff; }
 
 .about--svg .cls-2 {
@@ -246,7 +250,10 @@
 .about--svg .cls-11 {
   fill: #d1ecfb; }
 
-.about--svg .cls-12, .about--svg .cls-13, .about--svg .cls-14, .about--svg .cls-15 {
+.about--svg .cls-12,
+.about--svg .cls-13,
+.about--svg .cls-14,
+.about--svg .cls-15 {
   fill: none;
   stroke: #fff;
   stroke-miterlimit: 10;
@@ -267,7 +274,9 @@
 .about--svg .cls-17 {
   font-size: 41.32px; }
 
-.about--svg .cls-17, .about--svg .cls-19, .about--svg .cls-21 {
+.about--svg .cls-17,
+.about--svg .cls-19,
+.about--svg .cls-21 {
   fill: #194e7a;
   font-family: BebasNeue, BebasNeue; }
 

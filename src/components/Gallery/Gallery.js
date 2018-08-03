@@ -154,7 +154,7 @@ class Gallery extends React.Component {
 					<div style={{ textAlign: "center" }}>
 						<Link to="/gallery">
 							<button className="button-dark-1 LinkButton">
-								More Images
+								See All Images
 							</button>
 						</Link>
 					</div>

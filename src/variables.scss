@@ -8,12 +8,51 @@ $font-kirang: "Kirang Haerang", cursive;
 $font-hanalei: "Hanalei Fill", cursive;
 $font-ceveat: "Caveat", cursive;
 
+@mixin sectionStars {
+	position: relative;
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		clip-path: polygon(
+			50% 0%,
+			61% 35%,
+			98% 35%,
+			68% 57%,
+			79% 91%,
+			50% 70%,
+			21% 91%,
+			32% 57%,
+			2% 35%,
+			39% 35%
+		);
+		z-index: -1;
+		background-color: rgba(44, 58, 71, 0.04);
+	}
+
+	&::before {
+		width: 30rem;
+		height: 30rem;
+		top: 4rem;
+		left: 1rem;
+		transform: rotate(10deg);
+	}
+	&::after {
+		width: 15rem;
+		height: 15rem;
+		top: 2rem;
+		right: 4rem;
+		transform: rotate(50deg);
+	}
+}
+
 .heading,
 .heading-2 {
 	position: relative;
 	margin-bottom: 5rem;
 	display: inline-block;
 	left: 50%;
+	letter-spacing: 2px;
 	transform: translateX(-50%);
 	text-transform: uppercase;
 	font-size: 4.2rem;
@@ -172,7 +211,6 @@ $font-ceveat: "Caveat", cursive;
 	font-size: 1.8rem;
 	top: -11rem;
 	padding: 0.8rem 2rem;
-	// font-family: $font-roboto;
 	border-left: 4px solid #f78c8c;
 	color: #665555;
 	border-radius: 5px;
@@ -183,19 +221,19 @@ $font-ceveat: "Caveat", cursive;
 }
 
 .showJoinMessage.show {
-	animation: fadeinblogmessage 5s ease both;
+	animation: fadeinblogmessage 4s ease both;
 }
 .showSubscribeMessage.success {
 	border-left: 4px solid #1ac950;
 	background-color: #f7fffa;
 	color: #556655;
-	animation: fadeinsubscribemessage 5s ease both;
+	animation: fadeinsubscribemessage 4s ease both;
 }
 .showSubscribeMessage.failure {
 	border-left: 4px solid #f78c8c;
 	background-color: #fae6e6;
 	color: #665555;
-	animation: fadeinsubscribemessage 5s ease both;
+	animation: fadeinsubscribemessage 4s ease both;
 }
 @keyframes fadeinblogmessage {
 	0% {

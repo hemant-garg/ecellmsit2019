@@ -4,6 +4,7 @@
   margin-bottom: 5rem;
   display: inline-block;
   left: 50%;
+  letter-spacing: 2px;
   transform: translateX(-50%);
   text-transform: uppercase;
   font-size: 4.2rem;
@@ -141,19 +142,19 @@
   box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.3); }
 
 .showJoinMessage.show {
-  animation: fadeinblogmessage 5s ease both; }
+  animation: fadeinblogmessage 4s ease both; }
 
 .showSubscribeMessage.success {
   border-left: 4px solid #1ac950;
   background-color: #f7fffa;
   color: #556655;
-  animation: fadeinsubscribemessage 5s ease both; }
+  animation: fadeinsubscribemessage 4s ease both; }
 
 .showSubscribeMessage.failure {
   border-left: 4px solid #f78c8c;
   background-color: #fae6e6;
   color: #665555;
-  animation: fadeinsubscribemessage 5s ease both; }
+  animation: fadeinsubscribemessage 4s ease both; }
 
 @keyframes fadeinblogmessage {
   0% {
@@ -184,7 +185,26 @@
     top: -10rem; } }
 
 .blogs-section {
-  padding: 6rem 7rem; }
+  padding: 6rem 7rem;
+  position: relative; }
+  .blogs-section::before, .blogs-section::after {
+    content: "";
+    position: absolute;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    z-index: -1;
+    background-color: rgba(44, 58, 71, 0.04); }
+  .blogs-section::before {
+    width: 30rem;
+    height: 30rem;
+    top: 4rem;
+    left: 1rem;
+    transform: rotate(10deg); }
+  .blogs-section::after {
+    width: 15rem;
+    height: 15rem;
+    top: 2rem;
+    right: 4rem;
+    transform: rotate(50deg); }
 
 .blogs-container {
   display: flex;
@@ -200,13 +220,13 @@
   box-shadow: 0rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
   margin: 1.666%;
   margin-bottom: 3rem;
-  align-self: flex-start; }
+  align-self: center; }
 
 .blogs-box:hover .blogs-featureimage {
   transform: scale(1.05); }
 
 .blogs-featureimage {
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   overflow: hidden;
   width: 100%;
   height: 25rem;
