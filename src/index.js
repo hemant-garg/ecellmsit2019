@@ -9,7 +9,7 @@ import Header from "./components/Header/Header";
 import Gallery from "./components/Gallery/Gallery";
 import Blogs from "./components/Blogs/Blogs";
 import SingleBlog from "./components/SingleBlog/SingleBlog";
-import Footer from "../Footer/Footer";
+import Footer from "./components/Footer/Footer";
 
 ReactDOM.render(
 	<BrowserRouter>
