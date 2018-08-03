@@ -9,6 +9,7 @@ import Header from "./components/Header/Header";
 import Gallery from "./components/Gallery/Gallery";
 import Blogs from "./components/Blogs/Blogs";
 import SingleBlog from "./components/SingleBlog/SingleBlog";
+import Footer from "../Footer/Footer";
 
 ReactDOM.render(
 	<BrowserRouter>
@@ -20,6 +21,7 @@ ReactDOM.render(
 				<Route path="/blogs" component={Blogs} />
 				<Route path="/" component={Home} />
 			</Switch>
+			<Footer />
 		</div>
 	</BrowserRouter>,
 	document.getElementById("root")

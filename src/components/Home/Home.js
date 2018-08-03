@@ -6,7 +6,6 @@ import About from "../About/About";
 import Gallery from "../Gallery/Gallery";
 import Sponsors from "../sponsors/sponsors";
 import Blogs from "../Blogs/Blogs";
-import Footer from "../Footer/Footer";
 
 class Home extends Component {
   componentDidMount() {
@@ -33,7 +32,6 @@ class Home extends Component {
         <Gallery />
         <Sponsors />
         <Blogs />
-        <Footer />
       </div>
     );
   }
