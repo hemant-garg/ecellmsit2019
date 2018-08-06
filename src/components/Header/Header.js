@@ -64,9 +64,9 @@ class Header extends Component {
 						onClick={e => this.changeActiveClass(e.target)}
 						className="header_nav--item"
 					>
-						<Link className=" LinkButton header_nav--link" to="/">
+						<a href="/#about-section" className="header_nav--link">
 							About
-						</Link>
+						</a>
 					</li>
 
 					<li

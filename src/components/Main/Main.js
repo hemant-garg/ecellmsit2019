@@ -121,6 +121,9 @@ class Main extends Component {
 							className="main_subscribe--button"
 							id="subscribe_button"
 						>
+							<span className="main_subscribe--button--icon">
+								<i className="far fa-smile-beam fa-2x" />
+							</span>
 							<span id="subscribeText">Subscribe</span>
 							<div id="lds-ellipsis">
 								<div />

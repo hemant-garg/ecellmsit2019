@@ -4,7 +4,7 @@ import AboutSVG from "./about-svg";
 
 const About = () => {
 	return (
-		<section className="about-section">
+		<section id="about-section" className="about-section">
 			<div className="heading-2">about us</div>
 			<div className="about">
 				<div className="about--text">
@@ -30,9 +30,38 @@ const About = () => {
 						perferendis veniam quibusdam tempore, aut incidunt
 						temporibus?
 					</div>
-					<button className="button-light-2">
-						Our Facebook Page
-					</button>
+					<ul className="about--sociallist">
+						<li>
+							<a
+								className="about--sociallist-link"
+								target="_blank"
+								rel="noopener noreferrer"
+								href="https://www.facebook.com/ecellmsit/"
+							>
+								<i className="fab fa-facebook-f fa-2x footer--icon" />
+							</a>
+						</li>
+						<li>
+							<a
+								className="about--sociallist-link"
+								rel="noopener noreferrer"
+								target="_blank"
+								href="https://www.linkedin.com/company/ecellmsit/?originalSubdomain=in"
+							>
+								<i className="fab fa-linkedin-in fa-2x footer--icon" />
+							</a>
+						</li>
+						<li>
+							<a
+								className="about--sociallist-link"
+								target="_blank"
+								rel="noopener noreferrer"
+								href="https://twitter.com/ecellmsit"
+							>
+								<i className="fab fa-twitter fa-2x footer--icon" />
+							</a>
+						</li>
+					</ul>
 				</div>
 				<div className="about--svg">
 					<AboutSVG />

@@ -1,8 +1,94 @@
 @import "../../variables.scss";
 
 .footer-section {
-	height: 50vh;
+	padding: 5rem 10rem 2rem 10rem;
 	background-color: $primary-color-1;
-	clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(0% 10%, 50% 10%, 100% 0%, 100% 100%, 0% 100%);
 	margin-top: -4rem;
+}
+
+.footer {
+	display: flex;
+	color: $primary-color-4;
+	&--heading {
+		font-family: $font-hanalei;
+		font-size: 2.3rem;
+		letter-spacing: 4px;
+		color: $tertiary-color;
+		margin-bottom: 3rem;
+	}
+	&--list {
+		list-style: none;
+		padding: 0;
+		font-size: 1.4rem;
+		letter-spacing: 1px;
+	}
+	&--listitem {
+		margin-bottom: 1rem;
+	}
+	&--icon {
+		width: 3rem;
+		vertical-align: middle;
+	}
+	&--link {
+		text-decoration: none;
+		color: #ddd;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		&:active,
+		&:focus {
+			color: #ddd;
+		}
+		&:hover {
+			color: $primary-color-2;
+		}
+	}
+	&-1 {
+		width: 32%;
+		margin: 0.25%;
+		&-logo {
+			width: 13rem;
+			overflow: hidden;
+			height: 10rem;
+			filter: brightness(0.9);
+		}
+		& img {
+			width: 100%;
+		}
+		&--website {
+			font-size: 2.5rem;
+			font-family: $font-kirang;
+			margin-top: 1rem;
+			letter-spacing: 1px;
+		}
+		& .copyright {
+			font-size: 1.5rem;
+			margin-top: 1.5rem;
+			font-weight: lighter;
+			letter-spacing: 1px;
+			line-height: 2.3rem;
+			color: #aaa;
+		}
+	}
+	&-2,
+	&-3,
+	&-4 {
+		width: 22%;
+		padding-top: 3rem;
+		margin: 0.25%;
+	}
+
+	&-dev {
+		color: #ddd;
+		text-align: center;
+		font-size: 1.4rem;
+		&-link {
+			color: $primary-color-2;
+			text-decoration: none;
+			&:active,
+			&:focus {
+				color: $primary-color-2;
+			}
+		}
+	}
 }

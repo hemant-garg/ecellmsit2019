@@ -36,6 +36,24 @@
       font-family: $font-roboto !important;
     }
   }
+  &--sociallist {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    &-link {
+      text-decoration: none;
+      color: #ddd;
+      transition: all 0.3s ease;
+      margin-right: 1rem;
+      &:active,
+      &:focus {
+        color: #ddd;
+      }
+      &:hover {
+        color: $primary-color-2;
+      }
+    }
+  }
 }
 
 .about--svg {

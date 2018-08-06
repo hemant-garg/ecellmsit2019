@@ -3,6 +3,7 @@ $primary-color-2: #85e1d4;
 $primary-color-3: #efefef;
 $primary-color-4: #eee;
 $secondary-color: #f8efaf;
+$tertiary-color: #e66767;
 $font-roboto: "Roboto", sans-serif;
 $font-kirang: "Kirang Haerang", cursive;
 $font-hanalei: "Hanalei Fill", cursive;
@@ -83,17 +84,17 @@ $font-ceveat: "Caveat", cursive;
 }
 
 .heading-2 {
-	color: $primary-color-4;
+	color: #ddd;
 	&::before,
 	&::after {
-		background-color: $primary-color-4;
+		background-color: #ddd;
 	}
 }
 
 .para {
 	margin-top: 2.5rem;
 	margin-bottom: 3rem;
-	color: $primary-color-4;
+	color: #ddd;
 	letter-spacing: 1px;
 	line-height: 2.5rem;
 	font-family: $font-roboto;
@@ -130,8 +131,10 @@ $font-ceveat: "Caveat", cursive;
 }
 .button-light-2 {
 	background-color: transparent;
-	border: 2px solid $secondary-color;
+	border: 1px solid $secondary-color;
 	color: $secondary-color;
+	font-weight: lighter;
+	font-size: 1.6rem;
 	&:hover,
 	&:active {
 		background-color: $secondary-color;

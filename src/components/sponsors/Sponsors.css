@@ -31,14 +31,14 @@
     background-color: #2c3a47; }
 
 .heading-2 {
-  color: #eee; }
+  color: #ddd; }
   .heading-2::before, .heading-2::after {
-    background-color: #eee; }
+    background-color: #ddd; }
 
 .para {
   margin-top: 2.5rem;
   margin-bottom: 3rem;
-  color: #eee;
+  color: #ddd;
   letter-spacing: 1px;
   line-height: 2.5rem;
   font-family: "Roboto", sans-serif;
@@ -78,8 +78,10 @@
 
 .button-light-2 {
   background-color: transparent;
-  border: 2px solid #f8efaf;
-  color: #f8efaf; }
+  border: 1px solid #f8efaf;
+  color: #f8efaf;
+  font-weight: lighter;
+  font-size: 1.6rem; }
   .button-light-2:hover, .button-light-2:active {
     background-color: #f8efaf;
     color: #2c3a47; }
@@ -203,7 +205,8 @@
     box-sizing: border-box;
     height: 12rem;
     background-color: #eee;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    filter: brightness(0.9); }
     .sponsors-logobox:hover {
       filter: brightness(0.8); }
   .sponsors-logo {

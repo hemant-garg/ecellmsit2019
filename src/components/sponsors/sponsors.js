@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import "./Sponsors.css";
 
 class Sponsors extends Component {
-	constructor(props) {
-		super(props);
-	}
-
 	renderLOGO = images => {
 		return images.map(image => {
 			return (
@@ -13,6 +9,7 @@ class Sponsors extends Component {
 					<img
 						className="sponsors-logo"
 						src={require(`./${image}.png`)}
+						alt={image}
 					/>
 				</div>
 			);

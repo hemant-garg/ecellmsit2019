@@ -43,11 +43,9 @@ class Blogs extends Component {
 					"https://public-api.wordpress.com/rest/v1/sites/ecellblogs.wordpress.com/posts"
 				)
 				.then(res => {
-					const activeBlogs = res.data.posts.filter((post, i) => {
-						if (i < 3) {
-							return post;
-						}
-					});
+					const activeBlogs = res.data.posts.filter(
+						(post, i) => i < 3
+					);
 					this.setState({ activeBlogs });
 				})
 				.catch(error => console.log(error));
@@ -69,14 +67,14 @@ class Blogs extends Component {
 							{blog.title}
 						</h1>
 						<div className="blogs-dateandbutton">
+							<div className="blogs-date">
+								{new Date(blog.date).toLocaleDateString()}
+							</div>
 							<Link to={"/blog/" + blog.ID}>
 								<button className="btn button-light-2">
 									Read More
 								</button>
 							</Link>
-							<div className="blogs-date">
-								{new Date(blog.date).toLocaleDateString()}
-							</div>
 						</div>
 					</div>
 				</div>
