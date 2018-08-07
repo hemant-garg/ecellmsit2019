@@ -9,13 +9,17 @@
 		padding: 5rem 8rem 2rem 6rem;
 	}
 	@media (max-width: 850px) {
-		padding: 8rem 6rem 2rem 4rem;
+		padding: 8rem 6rem 4rem 4rem;
 	}
 	@media screen and (max-width: 600px) {
-		padding: 8rem 4rem 2rem 2rem;
+		padding: 8rem 4rem 4rem 4rem;
 	}
 	@media screen and (max-width: 450px) {
-		padding: 12rem 4rem 2rem 2rem;
+		padding: 8rem 2rem 4rem 2rem;
+		clip-path: polygon(0% 4%, 50% 4%, 100% 0%, 100% 100%, 0% 100%);
+	}
+	@media screen and (max-width: 360px) {
+		padding: 8rem 0.8rem 4rem 0.8rem;
 	}
 }
 
@@ -29,12 +33,21 @@
 		letter-spacing: 4px;
 		color: $tertiary-color;
 		margin-bottom: 3rem;
+		@media screen and (max-width: 450px) {
+			margin-bottom: 1rem;
+		}
 	}
 	&--list {
 		list-style: none;
 		padding: 0;
 		font-size: 1.4rem;
 		letter-spacing: 1px;
+		@media screen and (max-width: 800px) {
+			font-size: 1.5rem;
+		}
+		@media screen and (max-width: 700px) {
+			font-size: 1.7rem;
+		}
 	}
 	&--listitem {
 		margin-bottom: 1rem;
@@ -83,8 +96,11 @@
 			margin-top: 1.5rem;
 			font-weight: lighter;
 			letter-spacing: 1px;
-			line-height: 2.3rem;
+			line-height: 150%;
 			color: #aaa;
+			@media screen and (max-width: 500px) {
+				font-size: 1.7rem;
+			}
 		}
 	}
 	&-2,
@@ -101,6 +117,9 @@
 		color: #ddd;
 		text-align: center;
 		font-size: 1.4rem;
+		@media screen and (max-width: 500px) {
+			font-size: 1.7rem;
+		}
 		&-link {
 			color: $primary-color-2;
 			text-decoration: none;
@@ -133,6 +152,12 @@
 			flex-direction: row;
 			& li {
 				margin-right: 1.7rem;
+				@media screen and (max-width: 500px) {
+					margin-right: 1rem;
+				}
+				@media screen and (max-width: 400px) {
+					margin-right: 0.5rem;
+				}
 			}
 		}
 	}
@@ -158,10 +183,12 @@
 		}
 	}
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
 	.footer {
 		justify-content: center;
-
+		&-1 {
+			margin-bottom: 1.8rem;
+		}
 		&-2,
 		&-3 {
 			width: 100%;

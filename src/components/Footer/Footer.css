@@ -221,13 +221,17 @@
       padding: 5rem 8rem 2rem 6rem; } }
   @media (max-width: 850px) {
     .footer-section {
-      padding: 8rem 6rem 2rem 4rem; } }
+      padding: 8rem 6rem 4rem 4rem; } }
   @media screen and (max-width: 600px) {
     .footer-section {
-      padding: 8rem 4rem 2rem 2rem; } }
+      padding: 8rem 4rem 4rem 4rem; } }
   @media screen and (max-width: 450px) {
     .footer-section {
-      padding: 12rem 4rem 2rem 2rem; } }
+      padding: 8rem 2rem 4rem 2rem;
+      clip-path: polygon(0% 4%, 50% 4%, 100% 0%, 100% 100%, 0% 100%); } }
+  @media screen and (max-width: 360px) {
+    .footer-section {
+      padding: 8rem 0.8rem 4rem 0.8rem; } }
 
 .footer {
   display: flex;
@@ -239,11 +243,20 @@
     letter-spacing: 4px;
     color: #e66767;
     margin-bottom: 3rem; }
+    @media screen and (max-width: 450px) {
+      .footer--heading {
+        margin-bottom: 1rem; } }
   .footer--list {
     list-style: none;
     padding: 0;
     font-size: 1.4rem;
     letter-spacing: 1px; }
+    @media screen and (max-width: 800px) {
+      .footer--list {
+        font-size: 1.5rem; } }
+    @media screen and (max-width: 700px) {
+      .footer--list {
+        font-size: 1.7rem; } }
   .footer--listitem {
     margin-bottom: 1rem; }
   .footer--icon {
@@ -281,8 +294,11 @@
       margin-top: 1.5rem;
       font-weight: lighter;
       letter-spacing: 1px;
-      line-height: 2.3rem;
+      line-height: 150%;
       color: #aaa; }
+      @media screen and (max-width: 500px) {
+        .footer-1 .copyright {
+          font-size: 1.7rem; } }
   .footer-2, .footer-3, .footer-4 {
     width: 18%;
     padding-top: 3rem;
@@ -293,6 +309,9 @@
     color: #ddd;
     text-align: center;
     font-size: 1.4rem; }
+    @media screen and (max-width: 500px) {
+      .footer-dev {
+        font-size: 1.7rem; } }
     .footer-dev-link {
       color: #85e1d4;
       text-decoration: none; }
@@ -315,6 +334,12 @@
     flex-direction: row; }
     .footer--list-nav li {
       margin-right: 1.7rem; } }
+    @media screen and (max-width: 900px) and (max-width: 500px) {
+      .footer--list-nav li {
+        margin-right: 1rem; } }
+    @media screen and (max-width: 900px) and (max-width: 400px) {
+      .footer--list-nav li {
+        margin-right: 0.5rem; } }
 
 @media screen and (max-width: 700px) {
   .footer {
@@ -331,9 +356,11 @@
       padding-left: 5rem;
       box-sizing: border-box; } }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
   .footer {
     justify-content: center; }
+    .footer-1 {
+      margin-bottom: 1.8rem; }
     .footer-2, .footer-3 {
       width: 100%;
       padding: 0;
