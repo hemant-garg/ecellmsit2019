@@ -99,6 +99,9 @@ $font-ceveat: "Caveat", cursive;
 
 .heading-2 {
 	color: #ddd;
+	@media screen and (max-width: 400px) {
+		font-size: 3.8rem;
+	}
 	&::before,
 	&::after {
 		background-color: #ddd;

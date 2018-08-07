@@ -53,6 +53,9 @@
 
 .heading-2 {
   color: #ddd; }
+  @media screen and (max-width: 400px) {
+    .heading-2 {
+      font-size: 3.8rem; } }
   .heading-2::before, .heading-2::after {
     background-color: #ddd; }
 
@@ -240,6 +243,9 @@
   @media (max-width: 900px) {
     .initiatives-section {
       padding: 15rem 3rem 6rem 3rem; } }
+  @media screen and (max-width: 700px) {
+    .initiatives-section {
+      padding: 15rem 2rem 3rem 2rem; } }
   @media screen and (max-width: 700px) {
     .initiatives-section {
       padding: 15rem 2rem 3rem 2rem; } }

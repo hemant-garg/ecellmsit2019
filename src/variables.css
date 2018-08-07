@@ -53,6 +53,9 @@
 
 .heading-2 {
   color: #ddd; }
+  @media screen and (max-width: 400px) {
+    .heading-2 {
+      font-size: 3.8rem; } }
   .heading-2::before, .heading-2::after {
     background-color: #ddd; }
 

@@ -1,35 +1,105 @@
-.st0{clip-path:url(#SVGID_2_);}
-	.st1{fill:#7C9ABF;}
-	.st2{fill:#FFFFFF;}
-	.st3{fill:#86E2D5;}
-	.st4{fill:none;}
-	.st5{fill:#DEB300;}
-	.st6{fill:#F6C700;}
-	.st7{fill:#F0F21C;}
-	.st8{fill:#F86221;}
-	.st9{fill:#44403E;}
-	.st10{display:none;fill:#D9561D;}
-	.st11{display:none;fill:#F6C700;}
-	.st12{display:none;fill:#F0F268;}
-	.st13{display:none;fill:#F88452;}
-	.st14{fill:#F8763E;}
-	.st15{fill:#D1531C;}
-	.st16{fill:#D9561D;}
-	.st17{fill:#EB5D1F;}
-	.st18{fill:#E8BC00;}
-	.st19{fill:#3D3A38;}
-	.st20{fill:#6C707E;}
-	.st21{fill:#626673;}
-	.st22{fill:#F8D5A8;}
-	.st23{fill:#4A4D57;}
-	.st24{fill:#FFFEFF;}
-	.st25{fill:#D5525C;}
-	.st26{fill:#C74D56;}
-	.st27{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st28{display:none;}
-	.st29{display:none;fill:#86E2D5;}
-	.st30{display:none;fill:#FFFFFF;}
-
+.st0 {
+  clip-path: url(#SVGID_2_);
+}
+.st1 {
+  fill: #7c9abf;
+}
+.st2 {
+  fill: #ffffff;
+}
+.st3 {
+  fill: #86e2d5;
+}
+.st4 {
+  fill: none;
+}
+.st5 {
+  fill: #deb300;
+}
+.st6 {
+  fill: #f6c700;
+}
+.st7 {
+  fill: #f0f21c;
+}
+.st8 {
+  fill: #f86221;
+}
+.st9 {
+  fill: #44403e;
+}
+.st10 {
+  display: none;
+  fill: #d9561d;
+}
+.st11 {
+  display: none;
+  fill: #f6c700;
+}
+.st12 {
+  display: none;
+  fill: #f0f268;
+}
+.st13 {
+  display: none;
+  fill: #f88452;
+}
+.st14 {
+  fill: #f8763e;
+}
+.st15 {
+  fill: #d1531c;
+}
+.st16 {
+  fill: #d9561d;
+}
+.st17 {
+  fill: #eb5d1f;
+}
+.st18 {
+  fill: #e8bc00;
+}
+.st19 {
+  fill: #3d3a38;
+}
+.st20 {
+  fill: #6c707e;
+}
+.st21 {
+  fill: #626673;
+}
+.st22 {
+  fill: #f8d5a8;
+}
+.st23 {
+  fill: #4a4d57;
+}
+.st24 {
+  fill: #fffeff;
+}
+.st25 {
+  fill: #d5525c;
+}
+.st26 {
+  fill: #c74d56;
+}
+.st27 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+.st28 {
+  display: none;
+}
+.st29 {
+  display: none;
+  fill: #86e2d5;
+}
+.st30 {
+  display: none;
+  fill: #ffffff;
+}
 
 #svg {
   transform: scale(0.8);
@@ -37,6 +107,9 @@
   right: -5rem;
   bottom: -5rem;
   width: 50%;
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 }
 
 #rocket {
@@ -62,13 +135,13 @@
   transform-origin: 68% 50% 0;
 }
 
-.flames-small{
-	animation: flames 1s ease 1s infinite;
-	transform-origin: 48% 50% 0;
+.flames-small {
+  animation: flames 1s ease 1s infinite;
+  transform-origin: 48% 50% 0;
 }
-.flames-small-2{
-	animation: flames 1s linear 1s infinite;
-	transform-origin: 68% 50% 0;
+.flames-small-2 {
+  animation: flames 1s linear 1s infinite;
+  transform-origin: 68% 50% 0;
 }
 
 #smoke > * {
@@ -79,10 +152,6 @@
 .smoke-s {
   animation: flicker-in 2s linear both 0.8s;
 }
-
-
-
-
 
 @keyframes fadeIn {
   0% {
@@ -212,7 +281,6 @@
   }
 }
 
-
 @keyframes bounceInTop {
   0% {
     transform: translateY(-500px);
@@ -250,7 +318,6 @@
   }
 }
 
-
 @keyframes fade-in-fwd {
   0% {
     transform: scale(0);
@@ -262,11 +329,6 @@
   }
 }
 
-
-
-
-
-
 @media screen and (max-width: 1000px) {
   #svg {
     width: 50%;
@@ -274,7 +336,6 @@
   }
 }
 @media screen and (max-width: 900px) {
- 
   #svg {
     bottom: 5rem;
     right: -5rem;
