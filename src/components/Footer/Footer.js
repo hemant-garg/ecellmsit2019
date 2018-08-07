@@ -87,7 +87,7 @@ const Footer = () => {
 				</div>
 				<div className="footer-4">
 					<h2 className="footer--heading">NAVIGATION</h2>
-					<ul className="footer--list">
+					<ul className="footer--list footer--list-nav">
 						<li className="footer--listitem">
 							<Link to="/" className="footer--link LinkButton">
 								&#9656; Home

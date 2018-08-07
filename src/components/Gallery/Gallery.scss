@@ -4,6 +4,16 @@
 	// height: 100vh;
 	padding: 8rem 10rem;
 	@include sectionStars;
+
+	@media (max-width: 1200px) {
+		padding: 8rem 5rem;
+	}
+	@media (max-width: 1000px) {
+		padding: 8rem 3rem;
+	}
+	@media screen and (max-width: 600px) {
+		padding: 8rem 1.5rem;
+	}
 }
 .gallery {
 	display: flex;
@@ -24,6 +34,14 @@
 		cursor: pointer;
 		transition: all 0.3s ease;
 		box-shadow: 0rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
+
+		@media screen and (max-width: 700px) {
+			width: 47.66%;
+		}
+		@media screen and (max-width: 470px) {
+			width: 97.668%;
+			height: 30rem;
+		}
 	}
 	&-imageBox:hover &-image {
 		transform: scale(1.1);

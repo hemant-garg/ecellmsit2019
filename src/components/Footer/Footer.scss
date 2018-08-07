@@ -5,11 +5,24 @@
 	background-color: $primary-color-1;
 	clip-path: polygon(0% 10%, 50% 10%, 100% 0%, 100% 100%, 0% 100%);
 	margin-top: -4rem;
+	@media (max-width: 1200px) {
+		padding: 5rem 8rem 2rem 6rem;
+	}
+	@media (max-width: 850px) {
+		padding: 8rem 6rem 2rem 4rem;
+	}
+	@media screen and (max-width: 600px) {
+		padding: 8rem 4rem 2rem 2rem;
+	}
+	@media screen and (max-width: 450px) {
+		padding: 12rem 4rem 2rem 2rem;
+	}
 }
 
 .footer {
 	display: flex;
 	color: $primary-color-4;
+	flex-wrap: wrap;
 	&--heading {
 		font-family: $font-hanalei;
 		font-size: 2.3rem;
@@ -43,9 +56,13 @@
 			color: $primary-color-2;
 		}
 	}
+	&--list-nav {
+		display: flex;
+		flex-direction: column;
+	}
 	&-1 {
-		width: 32%;
-		margin: 0.25%;
+		width: 30%;
+		margin: 1%;
 		&-logo {
 			width: 13rem;
 			overflow: hidden;
@@ -73,11 +90,13 @@
 	&-2,
 	&-3,
 	&-4 {
-		width: 22%;
+		width: 18%;
 		padding-top: 3rem;
-		margin: 0.25%;
+		margin: 1%;
 	}
-
+	&-2 {
+		width: 26%;
+	}
 	&-dev {
 		color: #ddd;
 		text-align: center;
@@ -89,6 +108,69 @@
 			&:focus {
 				color: $primary-color-2;
 			}
+		}
+	}
+}
+@media screen and (max-width: 900px) {
+	.footer {
+		&-3 {
+			width: 25%;
+		}
+		&-2 {
+			margin-left: 4%;
+			width: 26%;
+		}
+		&-1 {
+			width: 40%;
+		}
+		&-4 {
+			width: 100%;
+
+			text-align: center;
+		}
+		&--list-nav {
+			justify-content: center;
+			flex-direction: row;
+			& li {
+				margin-right: 1.7rem;
+			}
+		}
+	}
+}
+@media screen and (max-width: 700px) {
+	.footer {
+		justify-content: center;
+		&-1 {
+			width: 100%;
+			text-align: center;
+			&-logo {
+				display: block;
+				margin: 0.5rem auto;
+			}
+		}
+		&-2,
+		&-3 {
+			width: 25rem;
+		}
+		&-3 {
+			padding-left: 5rem;
+			box-sizing: border-box;
+		}
+	}
+}
+@media screen and (max-width: 450px) {
+	.footer {
+		justify-content: center;
+
+		&-2,
+		&-3 {
+			width: 100%;
+			padding: 0;
+			margin: 1rem;
+			text-align: center;
+		}
+		&-4 {
+			padding: 0;
 		}
 	}
 }

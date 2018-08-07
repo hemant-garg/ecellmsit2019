@@ -1,8 +1,17 @@
 @import "../../variables.scss";
 
 .blogs-section {
-	padding: 6rem 7rem;
+	padding: 8rem 10rem;
 	@include sectionStars;
+	@media (max-width: 1200px) {
+		padding: 8rem 5rem;
+	}
+	@media (max-width: 1000px) {
+		padding: 8rem 3rem;
+	}
+	@media screen and (max-width: 600px) {
+		padding: 8rem 1.5rem;
+	}
 }
 
 .blogs {
@@ -11,16 +20,22 @@
 		flex-wrap: wrap;
 	}
 	&-box {
-		width: 30%;
+		width: 31%;
 		border-radius: 1rem;
 		border: 5px solid #fff;
 		box-sizing: border-box;
 		overflow: hidden;
 		background-color: rgba(44, 58, 71, 0.9);
 		box-shadow: 0rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
-		margin: 1.666%;
+		margin: 1.1666%;
 		margin-bottom: 3rem;
 		align-self: center;
+		@media screen and (max-width: 740px) {
+			width: 47.66%;
+		}
+		@media screen and (max-width: 500px) {
+			width: 97.668%;
+		}
 	}
 	&-box:hover &-featureimage {
 		transform: scale(1.05);
@@ -31,6 +46,9 @@
 		width: 100%;
 		height: 23rem;
 		filter: brightness(0.8);
+		@media screen and (max-width: 500px) {
+			height: 28rem;
+		}
 	}
 	&-description {
 		padding: 1rem 2rem 2rem 2rem;

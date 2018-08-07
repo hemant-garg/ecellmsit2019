@@ -58,7 +58,12 @@ $font-ceveat: "Caveat", cursive;
 	text-transform: uppercase;
 	font-size: 4.2rem;
 	font-family: $font-kirang;
-
+	@media screen and (max-width: 500px) {
+		font-size: 3.7rem;
+	}
+	@media screen and (max-width: 400px) {
+		font-size: 3.3rem;
+	}
 	&::before,
 	&::after {
 		content: "";
@@ -67,12 +72,21 @@ $font-ceveat: "Caveat", cursive;
 		top: 50%;
 		width: 8rem;
 		height: 0.5rem;
+		@media screen and (max-width: 500px) {
+			width: 5rem;
+		}
 	}
 	&::before {
 		left: -10rem;
+		@media screen and (max-width: 500px) {
+			left: -7rem;
+		}
 	}
 	&::after {
 		right: -10rem;
+		@media screen and (max-width: 500px) {
+			right: -7rem;
+		}
 	}
 }
 .heading {
@@ -182,11 +196,15 @@ $font-ceveat: "Caveat", cursive;
 	// justify-content: flex-end;
 	display: flex;
 	list-style-type: none;
+	flex-wrap: wrap;
 	&-item {
+		font-size: 1.5rem;
 		position: relative;
+		align-self: flex-start;
 	}
 	&-item:not(:last-child) {
 		margin-right: 1rem;
+		margin-bottom: 1.5rem;
 	}
 	&-item.activeFilter {
 		background-color: $primary-color-1;
