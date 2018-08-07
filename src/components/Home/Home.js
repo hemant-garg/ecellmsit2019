@@ -9,9 +9,9 @@ import Blogs from "../Blogs/Blogs";
 
 class Home extends Component {
   componentDidMount() {
-    const Navs = document.getElementById("header-navs").childNodes;
-    Navs.forEach(nav => nav.classList.remove("activeNav"));
-    document.getElementById("home").classList.add("activeNav");
+    // const Navs = document.getElementById("header-navs").childNodes;
+    // Navs.forEach(nav => nav.classList.remove("activeNav"));
+    // document.getElementById("home").classList.add("activeNav");
 
     document.querySelectorAll(".LinkButton").forEach(button => {
       button.addEventListener("click", () => {

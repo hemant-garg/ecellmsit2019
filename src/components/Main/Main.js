@@ -99,9 +99,7 @@ class Main extends Component {
 					{" "}
 				</div>
 				<div className="main_heading">
-					<div className="main_heading--primary">
-						Entrepreneurship
-					</div>
+					<div className="main_heading--primary">En</div>
 					<div className="main_heading--sub">
 						cell of <span>MSIT</span>
 					</div>

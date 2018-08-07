@@ -64,9 +64,9 @@ class Gallery extends React.Component {
 	}
 
 	componentDidMount() {
-		const Navs = document.getElementById("header-navs").childNodes;
-		Navs.forEach(nav => nav.classList.remove("activeNav"));
-		document.getElementById("gallery").classList.add("activeNav");
+		// const Navs = document.getElementById("header-navs").childNodes;
+		// Navs.forEach(nav => nav.classList.remove("activeNav"));
+		// document.getElementById("gallery").classList.add("activeNav");
 
 		if (this.props.match !== undefined) {
 			if (this.props.match.path === "/gallery") {

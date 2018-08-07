@@ -234,17 +234,32 @@
     top: 2rem;
     right: 4rem;
     transform: rotate(50deg); }
+  @media (max-width: 1200px) {
+    .initiatives-section {
+      padding: 15rem 4rem 8rem 4rem; } }
+  @media (max-width: 900px) {
+    .initiatives-section {
+      padding: 15rem 3rem 6rem 3rem; } }
+  @media screen and (max-width: 700px) {
+    .initiatives-section {
+      padding: 15rem 2rem 3rem 2rem; } }
 
 .initiatives {
   display: flex;
   justify-content: space-around;
   padding-top: 3rem; }
+  @media screen and (max-width: 550px) {
+    .initiatives {
+      flex-direction: column; } }
   .initiatives-title {
     text-align: center;
     font-size: 1.8rem;
     color: #2c3a47;
     margin-top: 1.7rem;
     letter-spacing: 1.5px; }
+    @media screen and (max-width: 550px) {
+      .initiatives-title {
+        margin-bottom: 5rem; } }
   .initiatives-svgs {
     width: 15.3rem;
     padding: 3rem;
@@ -253,6 +268,12 @@
     border: 6px solid #2c3a47;
     overflow: hidden;
     background-color: #2c3a47; }
+    @media screen and (max-width: 900px) {
+      .initiatives-svgs {
+        width: 13.3rem; } }
+    @media screen and (max-width: 550px) {
+      .initiatives-svgs {
+        margin: 0 auto; } }
 
 .svg1:hover #scale {
   animation: teacherScale 1s ease infinite;

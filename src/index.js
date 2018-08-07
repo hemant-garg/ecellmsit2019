@@ -14,7 +14,6 @@ import Footer from "./components/Footer/Footer";
 ReactDOM.render(
 	<BrowserRouter>
 		<div>
-			<Header />
 			<Switch>
 				<Route path="/gallery" component={Gallery} />
 				<Route path="/blog/:id" component={SingleBlog} />

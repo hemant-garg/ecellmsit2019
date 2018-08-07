@@ -6,11 +6,30 @@
   padding-bottom: 7rem;
 
   @include sectionStars;
+
+  @media (max-width: 1200px) {
+    padding: 15rem 4rem 8rem 4rem;
+  }
+  @media (max-width: 900px) {
+    padding: 15rem 3rem 6rem 3rem;
+  }
+  @media screen and (max-width: 700px) {
+    padding: 15rem 2rem 3rem 2rem;
+  }
+  @media screen and (max-width: 700px) {
+    padding: 15rem 2rem 3rem 2rem;
+  }
+  // @media screen and (max-width: 450px) {
+  //   padding: 15rem 3rem;
+  // }
 }
 .initiatives {
   display: flex;
   justify-content: space-around;
   padding-top: 3rem;
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+  }
   // margin-top: 9rem;
   &-title {
     text-align: center;
@@ -20,6 +39,9 @@
     margin-top: 1.7rem;
     // text-transform: uppercase;
     letter-spacing: 1.5px;
+    @media screen and (max-width: 550px) {
+      margin-bottom: 5rem;
+    }
   }
 
   &-svgs {
@@ -30,6 +52,12 @@
     border: 6px solid $primary-color-1;
     overflow: hidden;
     background-color: $primary-color-1;
+    @media screen and (max-width: 900px) {
+      width: 13.3rem;
+    }
+    @media screen and (max-width: 550px) {
+      margin: 0 auto;
+    }
   }
 }
 
