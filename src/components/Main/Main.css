@@ -106,6 +106,9 @@
   color: #f8efaf;
   font-weight: lighter;
   font-size: 1.6rem; }
+  @media screen and (max-width: 500px) {
+    .button-light-2 {
+      font-weight: bold; } }
   .button-light-2:hover, .button-light-2:active {
     background-color: #f8efaf;
     color: #2c3a47; }
@@ -285,7 +288,7 @@
         margin-top: 4rem; } }
     @media screen and (max-width: 400px) {
       .main_subscribe {
-        margin-top: 5rem; } }
+        margin-top: 6rem; } }
     .main_subscribe--input {
       padding: 1.3rem 2rem;
       border-radius: 4rem;

@@ -152,6 +152,9 @@ $font-ceveat: "Caveat", cursive;
 	color: $secondary-color;
 	font-weight: lighter;
 	font-size: 1.6rem;
+	@media screen and (max-width: 500px) {
+		font-weight: bold;
+	}
 	&:hover,
 	&:active {
 		background-color: $secondary-color;
