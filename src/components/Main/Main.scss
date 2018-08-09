@@ -83,9 +83,9 @@
       margin-top: 4rem;
     }
 
-    // @media screen and (max-width: 400px) {
-    //   margin-top: 6rem;
-    // }
+    @media screen and (max-width: 400px) {
+      margin-top: 6rem;
+    }
     &--input {
       padding: 1.3rem 2rem;
       border-radius: 4rem;
@@ -105,7 +105,7 @@
       &:active {
         width: 33rem;
         @media screen and (max-width: 500px) {
-          width: 60%;
+          width: 80%;
         }
       }
       @media screen and (max-width: 600px) {
@@ -113,7 +113,8 @@
       }
       @media screen and (max-width: 500px) {
         // margin: 0 auto;
-        width: 50%;
+        width: 70%;
+        border-radius: 1rem;
         // display: block;
         padding: 1.3rem 2rem;
       }
@@ -141,6 +142,7 @@
         // padding: 1rem 1.5rem;
         // font-size: 1.3rem;
         margin-top: 2rem;
+        border-radius: 1rem;
       }
       &:active,
       &:focus {
@@ -186,7 +188,7 @@
         font-size: 1.5rem;
         @media screen and (max-width: 500px) {
           font-size: 1.6rem;
-          margin-top: 1rem;
+          margin-top: 2rem;
         }
       }
     }

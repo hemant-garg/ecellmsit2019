@@ -282,6 +282,9 @@
     @media screen and (max-width: 600px) {
       .main_subscribe {
         margin-top: 4rem; } }
+    @media screen and (max-width: 400px) {
+      .main_subscribe {
+        margin-top: 6rem; } }
     .main_subscribe--input {
       padding: 1.3rem 2rem;
       border-radius: 4rem;
@@ -300,13 +303,14 @@
         width: 33rem; }
         @media screen and (max-width: 500px) {
           .main_subscribe--input:focus, .main_subscribe--input:active {
-            width: 60%; } }
+            width: 80%; } }
       @media screen and (max-width: 600px) {
         .main_subscribe--input {
           padding: 1.1rem 1.7rem; } }
       @media screen and (max-width: 500px) {
         .main_subscribe--input {
-          width: 50%;
+          width: 70%;
+          border-radius: 1rem;
           padding: 1.3rem 2rem; } }
     .main_subscribe--button {
       position: relative;
@@ -328,7 +332,8 @@
           font-size: 1.4rem; } }
       @media screen and (max-width: 500px) {
         .main_subscribe--button {
-          margin-top: 2rem; } }
+          margin-top: 2rem;
+          border-radius: 1rem; } }
       .main_subscribe--button:active, .main_subscribe--button:focus {
         outline: none; }
       .main_subscribe--button--icon {
@@ -368,7 +373,7 @@
         @media screen and (max-width: 500px) {
           .main_subscribe--note span {
             font-size: 1.6rem;
-            margin-top: 1rem; } }
+            margin-top: 2rem; } }
 
 #lds-ellipsis {
   display: none;
