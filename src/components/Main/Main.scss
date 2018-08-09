@@ -99,7 +99,7 @@
       box-sizing: border-box;
       &::placeholder {
         font-family: $font-roboto;
-        color: #555;
+        color: #666;
       }
       &:focus,
       &:active {
@@ -115,6 +115,8 @@
         margin: 0 auto;
         width: 70%;
         display: block;
+        padding: 1.3rem 2rem;
+        font-weight: bold;
       }
     }
 
@@ -155,12 +157,18 @@
         z-index: 100;
         background-color: $primary-color-2;
         transition: all 0.3s ease;
+        @media screen and (max-width: 500px) {
+          display: none;
+        }
       }
       &:hover &--icon {
         top: 12%;
       }
       &:hover #subscribeText {
         top: -100%;
+        @media screen and (max-width: 500px) {
+          top: 0;
+        }
       }
     }
     &--note {
@@ -185,31 +193,35 @@
   width: 0px;
   height: 0px;
   left: 45%;
-  top: 45%;
+  top: 38%;
   transform: translate(-50%, -50%);
 }
 #lds-ellipsis div {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   background: #fff;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  @media screen and (max-width: 500px) {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
 }
 #lds-ellipsis div:nth-child(1) {
-  left: -14px;
+  left: -1.4rem;
   animation: lds-ellipsis1 0.6s infinite;
 }
 #lds-ellipsis div:nth-child(2) {
-  left: -7px;
+  left: -0.7rem;
   animation: lds-ellipsis2 0.6s infinite;
 }
 #lds-ellipsis div:nth-child(3) {
-  left: 7px;
+  left: 0.7rem;
   animation: lds-ellipsis2 0.6s infinite;
 }
 #lds-ellipsis div:nth-child(4) {
-  left: 14px;
+  left: 1.4rem;
   animation: lds-ellipsis3 0.6s infinite;
 }
 @keyframes lds-ellipsis1 {
@@ -255,14 +267,14 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
   left: 40%;
   top: 15%;
   transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   display: none;
   stroke-width: 7;
   stroke: #fff;
   stroke-miterlimit: 10;
-  box-shadow: inset 0px 0px 0px $color--green;
+  box-shadow: inset 0rem 0rem 0rem $color--green;
   animation: fill 0.4s ease-in-out 0.4s forwards,
     scale 0.3s ease-in-out 0.9s both;
   z-index: 10;
@@ -293,7 +305,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
 
 @keyframes fill {
   100% {
-    box-shadow: inset 0px 0px 0px 30px $color--green;
+    box-shadow: inset 0rem 0rem 0rem 3rem $color--green;
   }
 }
 
@@ -312,14 +324,14 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
   }
   &.success {
     animation: scaleup 1s ease both;
-    width: 10px;
-    height: 10px;
+    width: 1rem;
+    height: 1rem;
     background-color: #7ac142;
   }
   &.error {
     animation: scaleup 1s ease both;
-    width: 10px;
-    height: 10px;
+    width: 1rem;
+    height: 1rem;
     background-color: #d45959;
   }
 }
