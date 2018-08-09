@@ -229,8 +229,7 @@
       padding: 2rem 3.5rem 12rem 3.5rem; } }
   @media screen and (max-width: 500px) {
     .main {
-      padding: 2rem 2rem 12rem 2rem;
-      text-align: center; } }
+      padding: 2rem 2rem 12rem 2rem; } }
   @media screen and (max-width: 400px) {
     .main {
       clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 100%); } }
@@ -310,9 +309,6 @@
           padding: 1.1rem 1.7rem; } }
       @media screen and (max-width: 500px) {
         .main_subscribe--input {
-          margin: 0 auto;
-          width: 70%;
-          display: block;
           padding: 1.3rem 2rem; } }
     .main_subscribe--button {
       position: relative;
@@ -364,7 +360,7 @@
       display: inline-block; }
       @media screen and (max-width: 500px) {
         .main_subscribe--note {
-          font-size: 1.6rem; } }
+          font-size: 1.5rem; } }
       .main_subscribe--note span {
         color: #f8efba;
         letter-spacing: 1px;
