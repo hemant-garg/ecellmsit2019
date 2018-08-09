@@ -260,7 +260,8 @@
         margin-bottom: 2rem; } }
     @media screen and (max-width: 450px) {
       .sponsors-logobox {
-        height: 8rem; } }
+        width: 30.333%;
+        border-radius: 0.6rem; } }
   .sponsors-logo {
     height: 100%;
     width: 100%;
