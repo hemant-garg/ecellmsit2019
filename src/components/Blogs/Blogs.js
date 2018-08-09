@@ -16,6 +16,15 @@ class Blogs extends Component {
 	}
 
 	componentDidMount() {
+		document.querySelectorAll(".LinkButton").forEach(button => {
+			button.addEventListener("click", () => {
+				window.scroll({
+					top: 0,
+					left: 0,
+					behavior: "smooth"
+				});
+			});
+		});
 		if (this.props.match !== undefined) {
 			if (this.props.match.path === "/blogs") {
 				this.setState({ inBlogs: true });
