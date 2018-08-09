@@ -41,6 +41,7 @@ class Header extends Component {
 				</li>
 				<li
 					onClick={e => this.changeActiveClass(e.target)}
+					id="blogs"
 					className={`${cls}--item`}
 				>
 					<Link className={`LinkButton ${cls}--link`} to="/blogs">

@@ -50,6 +50,9 @@ class Blogs extends Component {
 				})
 				.catch(error => console.log(error));
 		}
+		const Navs = document.getElementById("header-navs").childNodes;
+		Navs.forEach(nav => nav.classList.remove("activeNav"));
+		document.getElementById("blogs").classList.add("activeNav");
 	}
 	renderBlogs = () => {
 		const blogs = this.state.activeBlogs.map(blog => {
