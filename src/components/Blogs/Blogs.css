@@ -106,7 +106,7 @@
   color: #f8efaf;
   font-weight: lighter;
   font-size: 1.6rem; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .button-light-2 {
       font-weight: bold; } }
   .button-light-2:hover, .button-light-2:active {
@@ -171,6 +171,8 @@
   border-radius: 5px;
   left: 50%;
   box-sizing: border-box;
+  z-index: 1000;
+  min-width: 34rem;
   transform: translateX(-50%);
   box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.3); }
 
@@ -306,3 +308,6 @@
   color: #eee;
   font-size: 1.5rem;
   align-self: center; }
+  @media screen and (max-width: 600px) {
+    .blogs-date {
+      font-weight: bold; } }

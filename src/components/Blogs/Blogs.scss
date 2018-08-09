@@ -73,5 +73,8 @@
 		color: $primary-color-4;
 		font-size: 1.5rem;
 		align-self: center;
+		@media screen and (max-width: 600px) {
+			font-weight: bold;
+		}
 	}
 }

@@ -152,7 +152,7 @@ $font-ceveat: "Caveat", cursive;
 	color: $secondary-color;
 	font-weight: lighter;
 	font-size: 1.6rem;
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 600px) {
 		font-weight: bold;
 	}
 	&:hover,
@@ -243,6 +243,8 @@ $font-ceveat: "Caveat", cursive;
 	border-radius: 5px;
 	left: 50%;
 	box-sizing: border-box;
+	z-index: 1000;
+	min-width: 34rem;
 	transform: translateX(-50%);
 	box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.3);
 }

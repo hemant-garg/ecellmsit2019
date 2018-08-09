@@ -1,15 +1,69 @@
 @import "../../variables.scss";
 
-.nav_icon {
-  position: absolute;
-  right: 3rem;
-  top: 3rem;
+#nav-ham-button {
+  position: relative;
+  right: 0rem;
+  top: 5rem;
+  width: 2.5rem;
+  height: 0.3rem;
+  z-index: 100;
   display: none;
-  color: #ddd;
+  transition: all 0.5s ease;
+  background-color: #ddd;
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 130%;
+    background-color: #ddd;
+    height: 100%;
+    right: 0;
+    transition: all 0.5s ease;
+  }
+  &::before {
+    top: -1rem;
+  }
+  &::after {
+    top: 1rem;
+  }
+
+  &.toggleNavButton {
+    visibility: hidden;
+    &::before {
+      transform: rotate(45deg);
+      top: 0;
+      visibility: visible;
+    }
+    &::after {
+      top: 0;
+      visibility: visible;
+      transform: rotate(-45deg);
+    }
+  }
   @media screen and (max-width: 580px) {
     display: block;
   }
 }
+
+#nav-background {
+  width: 70%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  background-color: $primary-color-1;
+  transition: all 0.5s ease;
+  &.show {
+    left: 30%;
+  }
+  @media screen and (min-width: 580px) {
+    display: none;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -26,7 +80,8 @@
     width: 10rem;
     height: 10rem;
   }
-  &_nav {
+  &_nav,
+  &_nav_mob {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -52,4 +107,31 @@
       display: none;
     }
   }
+  &_nav_mob {
+    display: column;
+    padding: 0;
+
+    &--link {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      display: block;
+    }
+    &-join {
+      margin-top: 3rem;
+      padding: 1.5rem 3rem !important;
+      margin-left: -3rem;
+      font-size: 2.5rem !important;
+    }
+
+    @media screen and (max-width: 580px) {
+      display: block;
+    }
+  }
+}
+
+.nav-mob {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
