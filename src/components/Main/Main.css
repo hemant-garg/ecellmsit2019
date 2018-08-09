@@ -229,7 +229,8 @@
       padding: 2rem 3.5rem 12rem 3.5rem; } }
   @media screen and (max-width: 500px) {
     .main {
-      padding: 2rem 2rem 12rem 2rem; } }
+      padding: 2rem 2rem 12rem 2rem;
+      text-align: center; } }
   @media screen and (max-width: 400px) {
     .main {
       clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 100%); } }
@@ -310,7 +311,6 @@
       @media screen and (max-width: 500px) {
         .main_subscribe--input {
           width: 70%;
-          border-radius: 1rem;
           padding: 1.3rem 2rem; } }
     .main_subscribe--button {
       position: relative;
@@ -332,8 +332,7 @@
           font-size: 1.4rem; } }
       @media screen and (max-width: 500px) {
         .main_subscribe--button {
-          margin-top: 2rem;
-          border-radius: 1rem; } }
+          margin-top: 2rem; } }
       .main_subscribe--button:active, .main_subscribe--button:focus {
         outline: none; }
       .main_subscribe--button--icon {
