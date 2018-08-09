@@ -55,7 +55,10 @@ class Blogs extends Component {
 		const blogs = this.state.activeBlogs.map(blog => {
 			return (
 				<div className="blogs-box" key={blog.ID}>
-					<Link to={"/blog/" + blog.ID} className="blackLink">
+					<Link
+						to={"/blog/" + blog.ID}
+						className="blackLink LinkButton"
+					>
 						<img
 							className="blogs-featureimage"
 							alt="article header"
@@ -71,7 +74,7 @@ class Blogs extends Component {
 								{new Date(blog.date).toLocaleDateString()}
 							</div>
 							<Link to={"/blog/" + blog.ID}>
-								<button className="btn button-light-2">
+								<button className="btn button-light-2 LinkButton">
 									Read More
 								</button>
 							</Link>
