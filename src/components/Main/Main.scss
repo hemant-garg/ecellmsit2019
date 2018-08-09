@@ -99,7 +99,7 @@
       box-sizing: border-box;
       &::placeholder {
         font-family: $font-roboto;
-        color: #666;
+        color: #555;
       }
       &:focus,
       &:active {
@@ -116,7 +116,6 @@
         width: 70%;
         display: block;
         padding: 1.3rem 2rem;
-        font-weight: bold;
       }
     }
 
@@ -176,12 +175,18 @@
       font-size: 1.3rem;
       color: #aaa;
       display: inline-block;
+      @media screen and (max-width: 500px) {
+        font-size: 1.6rem;
+      }
       span {
         color: #f8efba;
         letter-spacing: 1px;
         display: block;
         margin-bottom: 1rem;
         font-size: 1.5rem;
+        @media screen and (max-width: 500px) {
+          font-size: 1.6rem;
+        }
       }
     }
   }

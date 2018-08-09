@@ -299,7 +299,7 @@
       box-sizing: border-box; }
       .main_subscribe--input::placeholder {
         font-family: "Roboto", sans-serif;
-        color: #666; }
+        color: #555; }
       .main_subscribe--input:focus, .main_subscribe--input:active {
         width: 33rem; }
         @media screen and (max-width: 500px) {
@@ -313,8 +313,7 @@
           margin: 0 auto;
           width: 70%;
           display: block;
-          padding: 1.3rem 2rem;
-          font-weight: bold; } }
+          padding: 1.3rem 2rem; } }
     .main_subscribe--button {
       position: relative;
       padding: 1.2rem 2rem;
@@ -363,12 +362,18 @@
       font-size: 1.3rem;
       color: #aaa;
       display: inline-block; }
+      @media screen and (max-width: 500px) {
+        .main_subscribe--note {
+          font-size: 1.6rem; } }
       .main_subscribe--note span {
         color: #f8efba;
         letter-spacing: 1px;
         display: block;
         margin-bottom: 1rem;
         font-size: 1.5rem; }
+        @media screen and (max-width: 500px) {
+          .main_subscribe--note span {
+            font-size: 1.6rem; } }
 
 #lds-ellipsis {
   display: none;
