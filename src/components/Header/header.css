@@ -214,6 +214,16 @@
     opacity: 0;
     top: -10rem; } }
 
+.nav_icon {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  display: none;
+  color: #ddd; }
+  @media screen and (max-width: 580px) {
+    .nav_icon {
+      display: block; } }
+
 .header {
   position: fixed;
   top: 0;
@@ -246,3 +256,6 @@
       transition: all 0.3s ease; }
       .header_nav--link:hover {
         color: #85e1d4; }
+    @media screen and (max-width: 580px) {
+      .header_nav {
+        display: none; } }

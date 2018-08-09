@@ -27,6 +27,7 @@ class Header extends Component {
 				<Link to="/" className="LinkButton">
 					<img className="header_logo" src={Logo} alt="" />
 				</Link>
+				<i class="fas fa-bars fa-3x nav_icon" />
 				<ul className="header_nav" id="header-navs">
 					<li
 						onClick={e => this.changeActiveClass(e.target)}

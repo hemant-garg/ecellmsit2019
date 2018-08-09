@@ -223,13 +223,13 @@
   overflow: hidden; }
   @media (max-width: 1000px) {
     .main {
-      padding: 5rem 0 9rem 3rem; } }
+      padding: 2rem 0 12rem 3rem; } }
   @media screen and (max-width: 600px) {
     .main {
-      padding: 5rem 3.5rem 9rem 3.5rem; } }
+      padding: 2rem 3.5rem 12rem 3.5rem; } }
   @media screen and (max-width: 500px) {
     .main {
-      padding: 3rem 2rem 9rem 2rem;
+      padding: 2rem 2rem 12rem 2rem;
       text-align: center; } }
   @media screen and (max-width: 400px) {
     .main {
@@ -238,7 +238,7 @@
     text-transform: uppercase;
     margin-top: 10rem;
     color: #eee;
-    font-weight: bold;
+    font-weight: bolder;
     text-shadow: 6px 0 6px #239081, 5px 5px 5px #14534a, 0 6px 6px #0f3e38; }
     .main_heading--primary {
       letter-spacing: 0.8rem;
@@ -248,13 +248,14 @@
           font-size: 4.7rem; } }
       @media screen and (max-width: 500px) {
         .main_heading--primary {
-          font-size: 4.5rem; } }
+          font-size: 4.5rem;
+          letter-spacing: 0.5rem; } }
       @media screen and (max-width: 450px) {
         .main_heading--primary {
-          font-size: 3.9rem; } }
+          font-size: 4.1rem; } }
       @media screen and (max-width: 400px) {
         .main_heading--primary {
-          font-size: 3.2rem; } }
+          font-size: 3.65rem; } }
     .main_heading--sub {
       font-size: 3.8rem;
       letter-spacing: 0.5rem; }
@@ -263,14 +264,16 @@
           font-size: 3.4rem; } }
       @media screen and (max-width: 500px) {
         .main_heading--sub {
-          font-size: 3.2rem; } }
+          font-size: 4rem;
+          margin-top: 0;
+          letter-spacing: 0.3rem; } }
       @media screen and (max-width: 450px) {
         .main_heading--sub {
-          font-size: 2.8rem;
-          margin-top: 1rem; } }
+          margin-top: 1rem;
+          font-size: 4rem; } }
       @media screen and (max-width: 400px) {
         .main_heading--sub {
-          font-size: 2.5rem; } }
+          font-size: 3.8rem; } }
       .main_heading--sub span {
         color: #85e1d4;
         font-size: 170%;
@@ -304,7 +307,6 @@
             width: 80%; } }
       @media screen and (max-width: 600px) {
         .main_subscribe--input {
-          font-size: 1.4rem;
           padding: 1.1rem 1.7rem; } }
       @media screen and (max-width: 500px) {
         .main_subscribe--input {
@@ -329,10 +331,8 @@
         .main_subscribe--button {
           padding: 1.1rem 1.7rem;
           font-size: 1.4rem; } }
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 500px) {
         .main_subscribe--button {
-          padding: 1rem 1.5rem;
-          font-size: 1.3rem;
           margin-top: 2rem; } }
       .main_subscribe--button:active, .main_subscribe--button:focus {
         outline: none; }

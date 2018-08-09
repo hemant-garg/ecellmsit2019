@@ -1,5 +1,15 @@
 @import "../../variables.scss";
 
+.nav_icon {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  display: none;
+  color: #ddd;
+  @media screen and (max-width: 580px) {
+    display: block;
+  }
+}
 .header {
   position: fixed;
   top: 0;
@@ -38,6 +48,8 @@
         color: $primary-color-2;
       }
     }
+    @media screen and (max-width: 580px) {
+      display: none;
+    }
   }
 }
-
