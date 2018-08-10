@@ -221,6 +221,7 @@
 
 body {
   margin: 0;
+  font-display: swap;
   font-family: "Roboto", sans-serif;
   padding: 0;
   background-color: #efefef; }

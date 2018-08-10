@@ -26,7 +26,11 @@ class Header extends Component {
 					id="home"
 					className={`${cls}--item`}
 				>
-					<Link className={`LinkButton ${cls}--link`} to="/">
+					<Link
+						aria-label="Home"
+						className={`LinkButton ${cls}--link`}
+						to="/"
+					>
 						Home
 					</Link>
 				</li>
@@ -35,7 +39,11 @@ class Header extends Component {
 					id="gallery"
 					className={`${cls}--item`}
 				>
-					<Link className={`LinkButton ${cls}--link`} to="/gallery">
+					<Link
+						aria-label="Gallery"
+						className={`LinkButton ${cls}--link`}
+						to="/gallery"
+					>
 						Gallery
 					</Link>
 				</li>
@@ -44,7 +52,11 @@ class Header extends Component {
 					id="blogs"
 					className={`${cls}--item`}
 				>
-					<Link className={`LinkButton ${cls}--link`} to="/blogs">
+					<Link
+						aria-label="Blogs"
+						className={`LinkButton ${cls}--link`}
+						to="/blogs"
+					>
 						Blogs
 					</Link>
 				</li>
@@ -52,13 +64,20 @@ class Header extends Component {
 					onClick={e => this.changeActiveClass(e.target)}
 					className={`${cls}--item`}
 				>
-					<a href="/#about-section" className={`${cls}--link`}>
+					<a
+						aria-label="About"
+						href="/#about-section"
+						className={`${cls}--link`}
+					>
 						About
 					</a>
 				</li>
 
 				<li onClick={this.showJoinUsMessage} className={`${cls}--item`}>
-					<button className={`LinkButton button-light ${cls}-join`}>
+					<button
+						aria-label="Joinus"
+						className={`LinkButton button-light ${cls}-join`}
+					>
 						Join Us
 					</button>
 				</li>
@@ -80,7 +99,11 @@ class Header extends Component {
 					Sorry, Registrations has been Closed... Subscribe to get
 					upcoming updates
 				</div>
-				<Link to="/" className="LinkButton">
+				<Link
+					aria-label="ecell msit logo"
+					to="/"
+					className="LinkButton"
+				>
 					<img className="header_logo" src={Logo} alt="" />
 				</Link>
 				<div onClick={this.toggleNavForMobile} id="nav-ham-button" />
