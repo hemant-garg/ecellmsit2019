@@ -315,7 +315,9 @@
       @media screen and (max-width: 500px) {
         .main_subscribe--input {
           width: 70%;
-          padding: 1.3rem 2rem; } }
+          border-radius: 3rem;
+          font-size: 1.8rem;
+          padding: 1.4rem 2rem; } }
     .main_subscribe--button {
       position: relative;
       padding: 1.2rem 2rem;
@@ -336,6 +338,8 @@
           font-size: 1.4rem; } }
       @media screen and (max-width: 500px) {
         .main_subscribe--button {
+          padding: 1.3rem 1.8rem;
+          font-size: 1.6rem;
           margin-top: 2rem; } }
       .main_subscribe--button:active, .main_subscribe--button:focus {
         outline: none; }
@@ -366,7 +370,7 @@
       display: inline-block; }
       @media screen and (max-width: 500px) {
         .main_subscribe--note {
-          font-size: 1.5rem; } }
+          font-size: 1.6rem; } }
       .main_subscribe--note span {
         color: #f8efba;
         letter-spacing: 1px;
@@ -375,8 +379,8 @@
         font-size: 1.5rem; }
         @media screen and (max-width: 500px) {
           .main_subscribe--note span {
-            font-size: 1.6rem;
-            margin-top: 2rem; } }
+            font-size: 1.7rem;
+            margin-top: 1.5rem; } }
 
 #lds-ellipsis {
   display: none;
