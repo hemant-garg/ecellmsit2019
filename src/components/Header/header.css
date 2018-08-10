@@ -313,7 +313,8 @@
     .header_nav_mob--link {
       font-size: 3rem;
       margin-bottom: 2rem;
-      display: block; }
+      display: block;
+      font-weight: bold; }
     .header_nav_mob-join {
       margin-top: 3rem;
       padding: 1.5rem 3rem !important;
