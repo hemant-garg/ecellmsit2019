@@ -28,9 +28,9 @@
     margin-top: 10rem;
     color: $primary-color-4;
     font-weight: bolder;
-    text-shadow: 6px 0 6px darken($primary-color-2, 35%),
-      5px 5px 5px darken($primary-color-2, 50%),
-      0 6px 6px darken($primary-color-2, 55%);
+    text-shadow: 0.6rem 0 0.6rem darken($primary-color-2, 35%),
+      0.5rem 0.5rem 0.5rem darken($primary-color-2, 50%),
+      0 0.6rem 0.6rem darken($primary-color-2, 55%);
 
     &--primary {
       letter-spacing: 0.8rem;
@@ -47,6 +47,9 @@
         font-size: 4.1rem;
       }
       @media screen and (max-width: 400px) {
+        font-size: 3.75rem;
+      }
+      @media screen and (max-width: 350px) {
         font-size: 3.65rem;
       }
     }
@@ -73,7 +76,7 @@
         color: $primary-color-2;
         font-size: 170%;
         // font-weight: bolder;
-        text-shadow: 4px 2px 6px darken($primary-color-2, 35%);
+        text-shadow: 0.4rem 0.2rem 0.6rem darken($primary-color-2, 35%);
       }
     }
   }
@@ -105,7 +108,7 @@
       &:active {
         width: 33rem;
         @media screen and (max-width: 500px) {
-          width: 80%;
+          width: 25rem;
         }
       }
       @media screen and (max-width: 600px) {
@@ -113,11 +116,11 @@
       }
       @media screen and (max-width: 500px) {
         // margin: 0 auto;
-        width: 70%;
-        border-radius: 3rem;
+        width: 23rem;
+        // border-radius: 3rem;
         // display: block;
         font-size: 1.8rem;
-        padding: 1.4rem 2rem;
+        // padding: 1.3rem 2rem;
       }
     }
 
@@ -140,9 +143,9 @@
         font-size: 1.4rem;
       }
       @media screen and (max-width: 500px) {
-        padding: 1.3rem 1.8rem;
-        font-size: 1.6rem;
-        margin-top: 2rem;
+        padding: 1.1rem 1.5rem;
+        font-size: 1.5rem;
+        margin-top: 1rem;
         // border-radius: 1rem;
       }
       &:active,

@@ -243,7 +243,7 @@
     margin-top: 10rem;
     color: #eee;
     font-weight: bolder;
-    text-shadow: 6px 0 6px #239081, 5px 5px 5px #14534a, 0 6px 6px #0f3e38; }
+    text-shadow: 0.6rem 0 0.6rem #239081, 0.5rem 0.5rem 0.5rem #14534a, 0 0.6rem 0.6rem #0f3e38; }
     .main_heading--primary {
       letter-spacing: 0.8rem;
       font-size: 5.5rem; }
@@ -258,6 +258,9 @@
         .main_heading--primary {
           font-size: 4.1rem; } }
       @media screen and (max-width: 400px) {
+        .main_heading--primary {
+          font-size: 3.75rem; } }
+      @media screen and (max-width: 350px) {
         .main_heading--primary {
           font-size: 3.65rem; } }
     .main_heading--sub {
@@ -281,7 +284,7 @@
       .main_heading--sub span {
         color: #85e1d4;
         font-size: 170%;
-        text-shadow: 4px 2px 6px #239081; }
+        text-shadow: 0.4rem 0.2rem 0.6rem #239081; }
   .main_subscribe {
     margin-top: 5rem; }
     @media screen and (max-width: 600px) {
@@ -308,16 +311,14 @@
         width: 33rem; }
         @media screen and (max-width: 500px) {
           .main_subscribe--input:focus, .main_subscribe--input:active {
-            width: 80%; } }
+            width: 25rem; } }
       @media screen and (max-width: 600px) {
         .main_subscribe--input {
           padding: 1.1rem 1.7rem; } }
       @media screen and (max-width: 500px) {
         .main_subscribe--input {
-          width: 70%;
-          border-radius: 3rem;
-          font-size: 1.8rem;
-          padding: 1.4rem 2rem; } }
+          width: 23rem;
+          font-size: 1.8rem; } }
     .main_subscribe--button {
       position: relative;
       padding: 1.2rem 2rem;
@@ -338,9 +339,9 @@
           font-size: 1.4rem; } }
       @media screen and (max-width: 500px) {
         .main_subscribe--button {
-          padding: 1.3rem 1.8rem;
-          font-size: 1.6rem;
-          margin-top: 2rem; } }
+          padding: 1.1rem 1.5rem;
+          font-size: 1.5rem;
+          margin-top: 1rem; } }
       .main_subscribe--button:active, .main_subscribe--button:focus {
         outline: none; }
       .main_subscribe--button--icon {
