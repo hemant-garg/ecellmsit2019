@@ -11,15 +11,19 @@ import Blogs from "./components/Blogs/Blogs";
 import SingleBlog from "./components/SingleBlog/SingleBlog";
 import Footer from "./components/Footer/Footer";
 
+import HttpsRedirect from "react-https-redirect";
+
 ReactDOM.render(
 	<BrowserRouter>
 		<div>
 			<Header />
 			<Switch>
-				<Route path="/gallery" component={Gallery} />
-				<Route path="/blog/:id" component={SingleBlog} />
-				<Route path="/blogs" component={Blogs} />
-				<Route path="/" component={Home} />
+				<HttpsRedirect>
+					<Route path="/gallery" component={Gallery} />
+					<Route path="/blog/:id" component={SingleBlog} />
+					<Route path="/blogs" component={Blogs} />
+					<Route path="/" component={Home} />
+				</HttpsRedirect>
 			</Switch>
 			<Footer />
 		</div>
