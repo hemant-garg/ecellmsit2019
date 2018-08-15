@@ -2,7 +2,8 @@
 
 .about-section {
   background-color: $primary-color-1;
-  clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
+          clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
   padding: 13rem 5rem 10rem 7rem;
 
   @media (max-width: 1200px) {
@@ -16,17 +17,25 @@
   }
   @media screen and (max-width: 550px) {
     padding-top: 12rem;
-    clip-path: polygon(0% 5%, 50% 5%, 100% 0%, 100% 95%, 50% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0% 5%, 50% 5%, 100% 0%, 100% 95%, 50% 100%, 0% 100%);
+            clip-path: polygon(0% 5%, 50% 5%, 100% 0%, 100% 95%, 50% 100%, 0% 100%);
   }
   @media screen and (max-width: 450px) {
     padding: 12rem 2rem 8rem 2rem;
-    clip-path: polygon(0% 4%, 50% 4%, 100% 0%, 100% 96%, 50% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0% 4%, 50% 4%, 100% 0%, 100% 96%, 50% 100%, 0% 100%);
+            clip-path: polygon(0% 4%, 50% 4%, 100% 0%, 100% 96%, 50% 100%, 0% 100%);
   }
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+          justify-content: space-between;
 
   &--text {
     width: 55%;
@@ -58,12 +67,17 @@
     }
   }
   &--sociallist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     list-style: none;
     padding: 0;
     &-link {
       text-decoration: none;
       color: #ddd;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
       transition: all 0.3s ease;
       margin-right: 1rem;
       &:active,

@@ -1,5 +1,6 @@
 .st0 {
-  clip-path: url(#SVGID_2_);
+  -webkit-clip-path: url(#SVGID_2_);
+          clip-path: url(#SVGID_2_);
 }
 .st1 {
   fill: #7c9abf;
@@ -102,7 +103,9 @@
 }
 
 #svg {
-  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
   position: absolute;
   right: -5rem;
   bottom: -5rem;
@@ -116,49 +119,175 @@
 }
 
 #rocket {
-  animation: bounceInTop 1.5s both 0.3s;
+  -webkit-animation: bounceInTop 1.5s both 0.3s;
+          animation: bounceInTop 1.5s both 0.3s;
 }
 #man {
-  transform-origin: 50% 50% 0;
-  animation: fade-in-fwd 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-transform-origin: 50% 50% 0;
+      -ms-transform-origin: 50% 50% 0;
+          transform-origin: 50% 50% 0;
+  -webkit-animation: fade-in-fwd 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+          animation: fade-in-fwd 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 #manwithrocket,
 #board {
-  animation: animate 3s ease infinite;
+  -webkit-animation: animate 3s ease infinite;
+          animation: animate 3s ease infinite;
 }
 .flames,
 .inner-flame {
-  animation: flicker-in 1s linear both 1.7s;
-  transform-origin: 48% 50% 0;
+  -webkit-animation: flicker-in 1s linear both 1.7s;
+          animation: flicker-in 1s linear both 1.7s;
+  -webkit-transform-origin: 48% 50% 0;
+      -ms-transform-origin: 48% 50% 0;
+          transform-origin: 48% 50% 0;
 }
 .flame2,
 .inner-flame2 {
-  animation: flicker-in 1s linear both 1.7s;
-  transform-origin: 68% 50% 0;
+  -webkit-animation: flicker-in 1s linear both 1.7s;
+          animation: flicker-in 1s linear both 1.7s;
+  -webkit-transform-origin: 68% 50% 0;
+      -ms-transform-origin: 68% 50% 0;
+          transform-origin: 68% 50% 0;
 }
 
 .flames-small {
-  animation: flames 1s ease 1s infinite;
-  transform-origin: 48% 50% 0;
+  -webkit-animation: flames 1s ease 1s infinite;
+          animation: flames 1s ease 1s infinite;
+  -webkit-transform-origin: 48% 50% 0;
+      -ms-transform-origin: 48% 50% 0;
+          transform-origin: 48% 50% 0;
 }
 .flames-small-2 {
-  animation: flames 1s linear 1s infinite;
-  transform-origin: 68% 50% 0;
+  -webkit-animation: flames 1s linear 1s infinite;
+          animation: flames 1s linear 1s infinite;
+  -webkit-transform-origin: 68% 50% 0;
+      -ms-transform-origin: 68% 50% 0;
+          transform-origin: 68% 50% 0;
 }
 
 #smoke > * {
-  animation: fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.8s both;
+  -webkit-animation: fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.8s both;
+          animation: fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.8s both;
   z-index: 10;
-  transform-origin: 50% 100% 0;
+  -webkit-transform-origin: 50% 100% 0;
+      -ms-transform-origin: 50% 100% 0;
+          transform-origin: 50% 100% 0;
 }
 .smoke-s {
-  animation: flicker-in 2s linear both 0.8s;
+  -webkit-animation: flicker-in 2s linear both 0.8s;
+          animation: flicker-in 2s linear both 0.8s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes flicker-in {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  10.1% {
+    opacity: 1;
+  }
+  10.2% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  20.1% {
+    opacity: 1;
+  }
+  20.6% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  30.1% {
+    opacity: 1;
+  }
+  30.5% {
+    opacity: 1;
+  }
+  30.6% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  45.1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  55.1% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0;
+  }
+  57.1% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.1% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  65.1% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  75.1% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 0;
+  }
+  77.1% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  85.1% {
+    opacity: 0;
+  }
+  86% {
+    opacity: 0;
+  }
+  86.1% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
@@ -261,91 +390,208 @@
   }
 }
 
-@keyframes flames {
+@-webkit-keyframes flames {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes flames {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translate(9px, -30px);
+            transform: translate(9px, -30px);
+  }
+  50% {
+    -webkit-transform: translate(-5px, 50px);
+            transform: translate(-5px, 50px);
+  }
+  100% {
+    -webkit-transform: translate(8px, -45px);
+            transform: translate(8px, -45px);
   }
 }
 @keyframes animate {
   0% {
-    transform: translate(9px, -30px);
+    -webkit-transform: translate(9px, -30px);
+            transform: translate(9px, -30px);
   }
   50% {
-    transform: translate(-5px, 50px);
+    -webkit-transform: translate(-5px, 50px);
+            transform: translate(-5px, 50px);
   }
   100% {
-    transform: translate(8px, -45px);
+    -webkit-transform: translate(8px, -45px);
+            transform: translate(8px, -45px);
+  }
+}
+
+@-webkit-keyframes bounceInTop {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
 }
 
 @keyframes bounceInTop {
   0% {
-    transform: translateY(-500px);
-    animation-timing-function: ease-in;
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
     opacity: 0;
   }
   38% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
     opacity: 1;
   }
   55% {
-    transform: translateY(-65px);
-    animation-timing-function: ease-in;
+    -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
   }
   72% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
   81% {
-    transform: translateY(-28px);
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
     -webkit-animation-timing-function: ease-in;
   }
   90% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
   95% {
-    transform: translateY(-8px);
-    animation-timing-function: ease-in;
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
   }
   100% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
   }
 }
 
 @keyframes fade-in-fwd {
   0% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
     opacity: 0;
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
   }
 }
 
-// @media screen and (max-width: 1000px) {
-//   #svg {
-//     width: 50%;
-//     right: -3rem;
-//   }
-// }
-// @media screen and (max-width: 900px) {
-//   #svg {
-//     bottom: 5rem;
-//     right: -5rem;
-//   }
-// }
-// @media screen and (max-width: 800px) {
-//   #svg {
-//     right: -4rem;
-//   }
-// }
+/* @media screen and (max-width: 1000px) {*/
+/*   #svg {*/
+/*     width: 50%;*/
+/*     right: -3rem;*/
+/*   }*/
+/* }*/
+/* @media screen and (max-width: 900px) {*/
+/*   #svg {*/
+/*     bottom: 5rem;*/
+/*     right: -5rem;*/
+/*   }*/
+/* }*/
+/* @media screen and (max-width: 800px) {*/
+/*   #svg {*/
+/*     right: -4rem;*/
+/*   }*/
+/* }*/

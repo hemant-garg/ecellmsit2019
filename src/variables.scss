@@ -15,7 +15,19 @@ $font-ceveat: "Caveat", cursive;
 	&::after {
 		content: "";
 		position: absolute;
-		clip-path: polygon(
+		-webkit-clip-path: polygon(
+			50% 0%,
+			61% 35%,
+			98% 35%,
+			68% 57%,
+			79% 91%,
+			50% 70%,
+			21% 91%,
+			32% 57%,
+			2% 35%,
+			39% 35%
+		);
+		        clip-path: polygon(
 			50% 0%,
 			61% 35%,
 			98% 35%,
@@ -36,14 +48,18 @@ $font-ceveat: "Caveat", cursive;
 		height: 30rem;
 		top: 4rem;
 		left: 1rem;
-		transform: rotate(10deg);
+		-webkit-transform: rotate(10deg);
+		    -ms-transform: rotate(10deg);
+		        transform: rotate(10deg);
 	}
 	&::after {
 		width: 15rem;
 		height: 15rem;
 		top: 2rem;
 		right: 4rem;
-		transform: rotate(50deg);
+		-webkit-transform: rotate(50deg);
+		    -ms-transform: rotate(50deg);
+		        transform: rotate(50deg);
 	}
 }
 
@@ -54,7 +70,9 @@ $font-ceveat: "Caveat", cursive;
 	display: inline-block;
 	left: 50%;
 	letter-spacing: 2px;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	text-transform: uppercase;
 	font-size: 4.2rem;
 	font-family: $font-kirang;
@@ -122,12 +140,16 @@ $font-ceveat: "Caveat", cursive;
 .button-light-2,
 .button-light-3,
 .button-dark-1 {
-	border-radius: 3rem;
+	-webkit-border-radius: 3rem;
+	        border-radius: 3rem;
 	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	padding: 0.8rem 1.7rem;
 	font-size: 1.7rem;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	letter-spacing: 1px;
 	font-weight: bold;
 	&:hover,
@@ -172,17 +194,17 @@ $font-ceveat: "Caveat", cursive;
 		color: $primary-color-4;
 	}
 }
-// .button-light-4 {
-// background-color: transparent;
-//   border: 2px solid #F8EFAF;
-//   color: #F8EFAF;
-//   padding: .5rem 1.5rem;
-//   &:hover,
-//   &:active {
-//     background-color: #F8EFAF;
-//     color: $primary-color-1;
-//   }
-// }
+/* .button-light-4 {*/
+/* background-color: transparent;*/
+/*   border: 2px solid #F8EFAF;*/
+/*   color: #F8EFAF;*/
+/*   padding: .5rem 1.5rem;*/
+/*   &:hover,*/
+/*   &:active {*/
+/*     background-color: #F8EFAF;*/
+/*     color: $primary-color-1;*/
+/*   }*/
+/* }*/
 .button-dark-1 {
 	border: 2px solid $primary-color-1;
 	background-color: $primary-color-1;
@@ -199,14 +221,21 @@ $font-ceveat: "Caveat", cursive;
 	padding-left: 2rem;
 	margin-top: 2rem;
 	margin-bottom: 3rem;
-	// justify-content: flex-end;
+	/* justify-content: flex-end;*/
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	list-style-type: none;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    -webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
 	&-item {
 		font-size: 1.5rem;
 		position: relative;
-		align-self: flex-start;
+		-ms-flex-item-align: start;
+		    -webkit-align-self: flex-start;
+		        align-self: flex-start;
 	}
 	&-item:not(:last-child) {
 		margin-right: 1rem;
@@ -224,11 +253,15 @@ $font-ceveat: "Caveat", cursive;
 }
 .checksvg {
 	width: 0;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	position: absolute;
 	left: 1rem;
 	top: 50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
 
 .showJoinMessage,
@@ -240,29 +273,55 @@ $font-ceveat: "Caveat", cursive;
 	padding: 0.8rem 2rem;
 	border-left: 4px solid #f78c8c;
 	color: #665555;
-	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
 	left: 50%;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	z-index: 1000;
 	min-width: 34rem;
-	transform: translateX(-50%);
-	box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.3);
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	-webkit-box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.3);
+	        box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.3);
 }
 
 .showJoinMessage.show {
-	animation: fadeinblogmessage 4s ease both;
+	-webkit-animation: fadeinblogmessage 4s ease both;
+	        animation: fadeinblogmessage 4s ease both;
 }
 .showSubscribeMessage.success {
 	border-left: 4px solid #1ac950;
 	background-color: #f7fffa;
 	color: #556655;
-	animation: fadeinsubscribemessage 4s ease both;
+	-webkit-animation: fadeinsubscribemessage 4s ease both;
+	        animation: fadeinsubscribemessage 4s ease both;
 }
 .showSubscribeMessage.failure {
 	border-left: 4px solid #f78c8c;
 	background-color: #fae6e6;
 	color: #665555;
-	animation: fadeinsubscribemessage 4s ease both;
+	-webkit-animation: fadeinsubscribemessage 4s ease both;
+	        animation: fadeinsubscribemessage 4s ease both;
+}
+@-webkit-keyframes fadeinblogmessage {
+	0% {
+		top: -10rem;
+		opacity: 0;
+	}
+	7% {
+		top: 11rem;
+		opacity: 1;
+	}
+	90% {
+		top: 11rem;
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		top: -10rem;
+	}
 }
 @keyframes fadeinblogmessage {
 	0% {
@@ -275,6 +334,24 @@ $font-ceveat: "Caveat", cursive;
 	}
 	90% {
 		top: 11rem;
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		top: -10rem;
+	}
+}
+@-webkit-keyframes fadeinsubscribemessage {
+	0% {
+		top: -10rem;
+		opacity: 0;
+	}
+	7% {
+		top: 3rem;
+		opacity: 1;
+	}
+	90% {
+		top: 3rem;
 		opacity: 1;
 	}
 	100% {

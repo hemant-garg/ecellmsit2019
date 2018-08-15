@@ -4,8 +4,9 @@
   padding: 2rem 0 11rem 3rem;
   position: relative;
   background-color: $primary-color-1;
-  // height: calc(100vh - 15rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 100%);
+  /* height: calc(100vh - 15rem);*/
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 100%);
   margin: 0;
   overflow: hidden;
 
@@ -17,10 +18,11 @@
   }
   @media screen and (max-width: 500px) {
     padding: 2rem 2rem 11rem 2rem;
-    // text-align: center;
+    /* text-align: center;*/
   }
   @media screen and (max-width: 400px) {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 100%);
   }
 
   &_heading {
@@ -55,7 +57,7 @@
     }
     &--sub {
       font-size: 3.8rem;
-      // margin-top: 0.5rem;
+      /* margin-top: 0.5rem;*/
       letter-spacing: 0.5rem;
       @media screen and (max-width: 600px) {
         font-size: 3.4rem;
@@ -75,7 +77,7 @@
       span {
         color: $primary-color-2;
         font-size: 170%;
-        // font-weight: bolder;
+        /* font-weight: bolder;*/
         text-shadow: 0.4rem 0.2rem 0.6rem darken($primary-color-2, 35%);
       }
     }
@@ -91,15 +93,35 @@
     }
     &--input {
       padding: 1.3rem 2rem;
-      border-radius: 4rem;
+      -webkit-border-radius: 4rem;
+              border-radius: 4rem;
       font-size: 1.5rem;
       width: 30rem;
       margin-right: 2rem;
       outline: none;
       border: none;
       background-color: $primary-color-4;
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
       transition: all 0.4s ease;
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      &::-webkit-input-placeholder {
+        font-family: $font-roboto;
+        color: #555;
+      }
+      &:-ms-input-placeholder {
+        font-family: $font-roboto;
+        color: #555;
+      }
+      &::-ms-input-placeholder {
+        font-family: $font-roboto;
+        color: #555;
+      }
+      &::-moz-placeholder {
+        font-family: $font-roboto;
+        color: #555;
+      }
       &::placeholder {
         font-family: $font-roboto;
         color: #555;
@@ -115,12 +137,12 @@
         padding: 1.1rem 1.7rem;
       }
       @media screen and (max-width: 500px) {
-        // margin: 0 auto;
+        /* margin: 0 auto;*/
         width: 23rem;
-        // border-radius: 3rem;
-        // display: block;
+        /* border-radius: 3rem;*/
+        /* display: block;*/
         font-size: 1.8rem;
-        // padding: 1.3rem 2rem;
+        /* padding: 1.3rem 2rem;*/
       }
     }
 
@@ -129,7 +151,8 @@
       padding: 1.2rem 2rem;
       background-color: rgb(134, 225, 212);
       color: #2c3a47;
-      border-radius: 4rem;
+      -webkit-border-radius: 4rem;
+              border-radius: 4rem;
       font-weight: bold;
       letter-spacing: 3px;
       font-size: 1.5rem;
@@ -137,6 +160,8 @@
       cursor: pointer;
       border: none;
       overflow: hidden;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
       transition: all 0.3s ease;
       @media screen and (max-width: 600px) {
         padding: 1.1rem 1.7rem;
@@ -146,7 +171,7 @@
         padding: 1.1rem 1.5rem;
         font-size: 1.5rem;
         margin-top: 1rem;
-        // border-radius: 1rem;
+        /* border-radius: 1rem;*/
       }
       &:active,
       &:focus {
@@ -158,9 +183,13 @@
         height: 100%;
         width: 81%;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
         z-index: 100;
         background-color: $primary-color-2;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
         @media screen and (max-width: 500px) {
           display: none;
@@ -206,15 +235,19 @@
   height: 0px;
   left: 45%;
   top: 38%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 #lds-ellipsis div {
   position: absolute;
   width: 1rem;
   height: 1rem;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   background: #fff;
-  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
+          animation-timing-function: cubic-bezier(0, 1, 1, 0);
   @media screen and (max-width: 500px) {
     width: 0.9rem;
     height: 0.9rem;
@@ -222,42 +255,82 @@
 }
 #lds-ellipsis div:nth-child(1) {
   left: -1.4rem;
-  animation: lds-ellipsis1 0.6s infinite;
+  -webkit-animation: lds-ellipsis1 0.6s infinite;
+          animation: lds-ellipsis1 0.6s infinite;
 }
 #lds-ellipsis div:nth-child(2) {
   left: -0.7rem;
-  animation: lds-ellipsis2 0.6s infinite;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
 }
 #lds-ellipsis div:nth-child(3) {
   left: 0.7rem;
-  animation: lds-ellipsis2 0.6s infinite;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
 }
 #lds-ellipsis div:nth-child(4) {
   left: 1.4rem;
-  animation: lds-ellipsis3 0.6s infinite;
+  -webkit-animation: lds-ellipsis3 0.6s infinite;
+          animation: lds-ellipsis3 0.6s infinite;
+}
+@-webkit-keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 @keyframes lds-ellipsis1 {
   0% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 @keyframes lds-ellipsis3 {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+@-webkit-keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(10px, 0);
+            transform: translate(10px, 0);
   }
 }
 @keyframes lds-ellipsis2 {
   0% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   100% {
-    transform: translate(10px, 0);
+    -webkit-transform: translate(10px, 0);
+            transform: translate(10px, 0);
   }
 }
 
@@ -271,32 +344,48 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
   stroke-miterlimit: 10;
   stroke: $color--green;
   fill: none;
-  animation: stroke 0.6s $curve forwards;
+  -webkit-animation: stroke 0.6s $curve forwards;
+          animation: stroke 0.6s $curve forwards;
 }
 
 #checkmark {
   position: absolute;
   left: 40%;
   top: 15%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 3rem;
   height: 3rem;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   display: none;
   stroke-width: 7;
   stroke: #fff;
   stroke-miterlimit: 10;
-  box-shadow: inset 0rem 0rem 0rem $color--green;
-  animation: fill 0.4s ease-in-out 0.4s forwards,
+  -webkit-box-shadow: inset 0rem 0rem 0rem $color--green;
+          box-shadow: inset 0rem 0rem 0rem $color--green;
+  -webkit-animation: fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
+          animation: fill 0.4s ease-in-out 0.4s forwards,
     scale 0.3s ease-in-out 0.9s both;
   z-index: 10;
 }
 
 .checkmark__check {
-  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
   stroke-dasharray: 48;
   stroke-dashoffset: 48;
-  animation: stroke 0.3s $curve 0.8s forwards;
+  -webkit-animation: stroke 0.3s $curve 0.8s forwards;
+          animation: stroke 0.3s $curve 0.8s forwards;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes stroke {
@@ -305,19 +394,41 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
   }
 }
 
+@-webkit-keyframes scale {
+  0%,
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+            transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
 @keyframes scale {
   0%,
   100% {
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
   50% {
-    transform: scale3d(1.1, 1.1, 1);
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+            transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@-webkit-keyframes fill {
+  100% {
+    -webkit-box-shadow: inset 0rem 0rem 0rem 3rem $color--green;
+            box-shadow: inset 0rem 0rem 0rem 3rem $color--green;
   }
 }
 
 @keyframes fill {
   100% {
-    box-shadow: inset 0rem 0rem 0rem 3rem $color--green;
+    -webkit-box-shadow: inset 0rem 0rem 0rem 3rem $color--green;
+            box-shadow: inset 0rem 0rem 0rem 3rem $color--green;
   }
 }
 
@@ -329,27 +440,42 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
     top: 50%;
     left: 50%;
 
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
 
-    transform: translate(-50%, -50%) scale(0);
+            border-radius: 50%;
+
+    -webkit-transform: translate(-50%, -50%) scale(0);
+
+        -ms-transform: translate(-50%, -50%) scale(0);
+
+            transform: translate(-50%, -50%) scale(0);
     z-index: 1;
   }
   &.success {
-    animation: scaleup 1s ease both;
+    -webkit-animation: scaleup 1s ease both;
+            animation: scaleup 1s ease both;
     width: 1rem;
     height: 1rem;
     background-color: #7ac142;
   }
   &.error {
-    animation: scaleup 1s ease both;
+    -webkit-animation: scaleup 1s ease both;
+            animation: scaleup 1s ease both;
     width: 1rem;
     height: 1rem;
     background-color: #d45959;
   }
 }
+@-webkit-keyframes scaleup {
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(20);
+            transform: translate(-50%, -50%) scale(20);
+  }
+}
 @keyframes scaleup {
   100% {
-    transform: translate(-50%, -50%) scale(20);
+    -webkit-transform: translate(-50%, -50%) scale(20);
+            transform: translate(-50%, -50%) scale(20);
   }
 }
 
@@ -360,7 +486,11 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
   top: 50%;
   z-index: 11;
   left: 50%;
-  transform: translate(-50%, -50%);
-  animation: fadeIn 1s ease;
-  filter: contrast(0.6);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: fadeIn 1s ease;
+          animation: fadeIn 1s ease;
+  -webkit-filter: contrast(0.6);
+          filter: contrast(0.6);
 }

@@ -1,7 +1,8 @@
 @import "../../variables.scss";
 
 .sponsors-section {
-	clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
+	-webkit-clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
+	        clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
 	background-color: $primary-color-1;
 	padding: 12rem 10rem 9rem 10rem;
 	margin-top: -5rem;
@@ -20,29 +21,41 @@
 	}
 	@media screen and (max-width: 550px) {
 		padding: 9rem 2rem;
-		clip-path: polygon(0% 4%, 50% 4%, 100% 0%, 100% 96%, 50% 100%, 0% 100%);
+		-webkit-clip-path: polygon(0% 4%, 50% 4%, 100% 0%, 100% 96%, 50% 100%, 0% 100%);
+		        clip-path: polygon(0% 4%, 50% 4%, 100% 0%, 100% 96%, 50% 100%, 0% 100%);
 	}
 }
 
 .sponsors {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    -webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
 	margin-top: 2rem;
-	// justify-content:
+	/* justify-content:*/
 	&-logobox {
 		width: 17%;
 		margin: 1.5%;
-		border-radius: 1rem;
+		-webkit-border-radius: 1rem;
+		        border-radius: 1rem;
 		overflow: hidden;
 		cursor: pointer;
-		// padding: 0.3rem;
-		box-sizing: border-box;
+		/* padding: 0.3rem;*/
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
 		height: 12rem;
 		background-color: $primary-color-4;
+		-webkit-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
 		transition: all 0.3s ease;
-		filter: brightness(0.9);
+		-webkit-filter: brightness(0.9);
+		        filter: brightness(0.9);
 		&:hover {
-			filter: brightness(0.8);
+			-webkit-filter: brightness(0.8);
+			        filter: brightness(0.8);
 		}
 		@media screen and (max-width: 600px) {
 			width: 21.4%;
@@ -51,7 +64,8 @@
 		}
 		@media screen and (max-width: 450px) {
 			width: 30.333%;
-			border-radius: 0.6rem;
+			-webkit-border-radius: 0.6rem;
+			        border-radius: 0.6rem;
 		}
 	}
 	&-logo {
