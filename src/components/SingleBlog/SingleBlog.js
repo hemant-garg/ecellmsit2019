@@ -12,6 +12,11 @@ class SingleBlog extends Component {
 	}
 
 	componentDidMount() {
+		window.scroll({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        });
 		axios
 			.get(
 				"https://public-api.wordpress.com/rest/v1/sites/ecellblogs.wordpress.com/posts/" +
