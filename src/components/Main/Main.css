@@ -111,10 +111,10 @@
 
 .button-light-2 {
   background-color: transparent;
-  border: 1px solid #f8efaf;
+  border: 1.4px solid #f8efaf;
   color: #f8efaf;
-  font-weight: lighter;
-  font-size: 1.6rem; }
+  font-weight: 600;
+  font-size: 1.4rem; }
   @media screen and (max-width: 600px) {
     .button-light-2 {
       font-weight: bold; } }
@@ -476,7 +476,8 @@
         letter-spacing: 1px;
         display: block;
         margin-bottom: 1rem;
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        font-weight: 600; }
         @media screen and (max-width: 500px) {
           .main_subscribe--note span {
             font-size: 1.7rem;
