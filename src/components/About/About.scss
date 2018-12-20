@@ -1,5 +1,6 @@
 @import "../../variables.scss";
 
+
 .about-section {
   background-color: $primary-color-1;
   -webkit-clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
@@ -44,11 +45,11 @@
       width: 100%;
     }
     &-heading {
-      font-size: 3.2rem;
-      letter-spacing: 2px;
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 1px;
       text-transform: uppercase;
       color: #e66767;
-      font-family: $font-hanalei;
     }
     &-moto {
       color: $primary-color-2;

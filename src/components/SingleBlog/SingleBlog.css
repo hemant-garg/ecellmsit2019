@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 .heading,
 .heading-2 {
   position: relative;
@@ -10,7 +11,9 @@
   transform: translateX(-50%);
   text-transform: uppercase;
   font-size: 4.2rem;
-  font-family: "Kirang Haerang", cursive; }
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin-top: 2rem; }
   @media screen and (max-width: 500px) {
     .heading,
     .heading-2 {
@@ -65,9 +68,8 @@
   margin-top: 2.5rem;
   margin-bottom: 3rem;
   color: #ddd;
-  letter-spacing: 1px;
-  line-height: 2.5rem;
-  font-family: "Roboto", sans-serif;
+  line-height: 2.6rem;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem; }
 
 .button-light,
@@ -287,7 +289,7 @@
 .singleblog-section {
   padding: 5rem 5rem;
   background-color: #fff;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
   @media (max-width: 1000px) {
     .singleblog-section {
       padding: 5rem 3rem; } }

@@ -119,12 +119,11 @@
       text-decoration: none;
       color: #ddd;
       font-size: 1.7rem;
-      font-weight: lighter;
+      font-weight: 600;
       letter-spacing: 2px;
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease;
-
       &:hover {
         color: $primary-color-2;
       }

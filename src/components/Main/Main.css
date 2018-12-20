@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Roboto:900");
 .heading,
 .heading-2 {
   position: relative;
@@ -10,7 +12,9 @@
   transform: translateX(-50%);
   text-transform: uppercase;
   font-size: 4.2rem;
-  font-family: "Kirang Haerang", cursive; }
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin-top: 2rem; }
   @media screen and (max-width: 500px) {
     .heading,
     .heading-2 {
@@ -65,9 +69,8 @@
   margin-top: 2.5rem;
   margin-bottom: 3rem;
   color: #ddd;
-  letter-spacing: 1px;
-  line-height: 2.5rem;
-  font-family: "Roboto", sans-serif;
+  line-height: 2.6rem;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem; }
 
 .button-light,
@@ -311,10 +314,9 @@
     text-transform: uppercase;
     margin-top: 10rem;
     color: #eee;
-    font-weight: bolder;
-    text-shadow: 0.6rem 0 0.6rem #239081, 0.5rem 0.5rem 0.5rem #14534a, 0 0.6rem 0.6rem #0f3e38; }
+    font-weight: 900; }
     .main_heading--primary {
-      letter-spacing: 0.8rem;
+      letter-spacing: 0.6rem;
       font-size: 5.5rem; }
       @media screen and (max-width: 600px) {
         .main_heading--primary {
@@ -335,7 +337,7 @@
     .main_heading--sub {
       font-size: 3.8rem;
       /* margin-top: 0.5rem;*/
-      letter-spacing: 0.5rem; }
+      letter-spacing: 0.3rem; }
       @media screen and (max-width: 600px) {
         .main_heading--sub {
           font-size: 3.4rem; } }
@@ -353,9 +355,7 @@
           font-size: 3.8rem; } }
       .main_heading--sub span {
         color: #85e1d4;
-        font-size: 170%;
-        /* font-weight: bolder;*/
-        text-shadow: 0.4rem 0.2rem 0.6rem #239081; }
+        font-size: 170%; }
   .main_subscribe {
     margin-top: 5rem; }
     @media screen and (max-width: 600px) {
@@ -380,19 +380,19 @@
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
       .main_subscribe--input::-webkit-input-placeholder {
-        font-family: "Roboto", sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: #555; }
       .main_subscribe--input:-ms-input-placeholder {
-        font-family: "Roboto", sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: #555; }
       .main_subscribe--input::-ms-input-placeholder {
-        font-family: "Roboto", sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: #555; }
       .main_subscribe--input::-moz-placeholder {
-        font-family: "Roboto", sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: #555; }
       .main_subscribe--input::placeholder {
-        font-family: "Roboto", sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: #555; }
       .main_subscribe--input:focus, .main_subscribe--input:active {
         width: 33rem; }
@@ -602,8 +602,8 @@
   stroke-miterlimit: 10;
   -webkit-box-shadow: inset 0rem 0rem 0rem #7ac142;
   box-shadow: inset 0rem 0rem 0rem #7ac142;
-  -webkit-animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
-  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+  -webkit-animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
   z-index: 10; }
 
 .checkmark__check {

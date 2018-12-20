@@ -1,5 +1,5 @@
 @import "../../variables.scss";
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:900');
 .main {
   padding: 2rem 0 11rem 3rem;
   position: relative;
@@ -29,13 +29,10 @@
     text-transform: uppercase;
     margin-top: 10rem;
     color: $primary-color-4;
-    font-weight: bolder;
-    text-shadow: 0.6rem 0 0.6rem darken($primary-color-2, 35%),
-      0.5rem 0.5rem 0.5rem darken($primary-color-2, 50%),
-      0 0.6rem 0.6rem darken($primary-color-2, 55%);
-
+    font-weight: 900;
+    
     &--primary {
-      letter-spacing: 0.8rem;
+      letter-spacing: 0.6rem;
       font-size: 5.5rem;
       @media screen and (max-width: 600px) {
         font-size: 4.7rem;
@@ -58,7 +55,7 @@
     &--sub {
       font-size: 3.8rem;
       /* margin-top: 0.5rem;*/
-      letter-spacing: 0.5rem;
+      letter-spacing: 0.3rem;
       @media screen and (max-width: 600px) {
         font-size: 3.4rem;
       }
@@ -77,8 +74,6 @@
       span {
         color: $primary-color-2;
         font-size: 170%;
-        /* font-weight: bolder;*/
-        text-shadow: 0.4rem 0.2rem 0.6rem darken($primary-color-2, 35%);
       }
     }
   }
@@ -107,23 +102,23 @@
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       &::-webkit-input-placeholder {
-        font-family: $font-roboto;
+        font-family: 'Open Sans', sans-serif;
         color: #555;
       }
       &:-ms-input-placeholder {
-        font-family: $font-roboto;
+        font-family: 'Open Sans', sans-serif;
         color: #555;
       }
       &::-ms-input-placeholder {
-        font-family: $font-roboto;
+        font-family: 'Open Sans', sans-serif;
         color: #555;
       }
       &::-moz-placeholder {
-        font-family: $font-roboto;
+        font-family: 'Open Sans', sans-serif;
         color: #555;
       }
       &::placeholder {
-        font-family: $font-roboto;
+        font-family: 'Open Sans', sans-serif;
         color: #555;
       }
       &:focus,

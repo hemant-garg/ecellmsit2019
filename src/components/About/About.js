@@ -15,20 +15,9 @@ const About = () => {
 						Ideate &#x25cf; Inspire &#x25cf; Invest
 					</div>
 					<div className="para">
-						Lorem ipsum dolor sit amet, consectetur adipisicing
-						elit. Saepe obcaecati rem ea, temporibus asperiores
-						molestias magni, est magnam omnis quaerat commodi
-						accusantium ut, fugit quibusdam velit quae doloribus
-						numquam animi? Lorem ipsum dolor sit amet, <br />
-						consectetur adipisicing elit. Deserunt quae iusto illo
-						odit pariatur. Eligendi numquam velit nam maiores
-						possimus veritatis, earum illo cumque ea expedita
-						excepturi aut dolores in. Lorem ipsum dolor sit amet,
-						consectetur adipisicing elit. Ratione hic praesentium
-						similique consequatur, illum vel quia obcaecati
-						blanditiis excepturi ut nesciunt velit consequuntur
-						perferendis veniam quibusdam tempore, aut incidunt
-						temporibus?
+					The eCell of MSIT gives innovative geniuses an open platform to gain knowledge about entrepreneurship, startups, ventures and the A-B-Cs of building businesses. Our sole aim is to let the concept of entrepreneurship burgeon and evolve. Founded in 2014, eCell MSIT works to ignite the spark of risk-taking, responsibility and the creative execution of ideas. In February 2017, CNBC India listed us among top 120 eCells in India.
+					</div><div className="para">
+					The eCell of MSIT gives innovative geniuses an open platform to gain knowledge about entrepreneurship, startups, ventures and the A-B-Cs of building businesses.
 					</div>
 					<ul className="about--sociallist">
 						<li>

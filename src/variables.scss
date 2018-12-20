@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
 $primary-color-1: #2c3a47;
 $primary-color-2: #85e1d4;
 $primary-color-3: #efefef;
 $primary-color-4: #eee;
 $secondary-color: #f8efaf;
 $tertiary-color: #e66767;
-$font-roboto: "Roboto", sans-serif;
+$font-roboto: 'Open Sans', sans-serif;
 $font-kirang: "Kirang Haerang", cursive;
 $font-hanalei: "Hanalei Fill", cursive;
 $font-ceveat: "Caveat", cursive;
@@ -75,7 +76,9 @@ $font-ceveat: "Caveat", cursive;
 	        transform: translateX(-50%);
 	text-transform: uppercase;
 	font-size: 4.2rem;
-	font-family: $font-kirang;
+	font-family: $font-roboto;
+	font-weight: 800;
+	margin-top: 2rem;
 	@media screen and (max-width: 500px) {
 		font-size: 3.7rem;
 	}
@@ -130,9 +133,8 @@ $font-ceveat: "Caveat", cursive;
 	margin-top: 2.5rem;
 	margin-bottom: 3rem;
 	color: #ddd;
-	letter-spacing: 1px;
-	line-height: 2.5rem;
-	font-family: $font-roboto;
+	line-height: 2.6rem;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
 }
 
