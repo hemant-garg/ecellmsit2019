@@ -320,11 +320,12 @@
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
   .footer--heading {
-    font-family: "Hanalei Fill", cursive;
+    text-transform: uppercase;
+    font-weight: 800;
     font-size: 2.3rem;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     color: #e66767;
-    margin-bottom: 3rem; }
+    margin-bottom: 2.6rem; }
     @media screen and (max-width: 450px) {
       .footer--heading {
         margin-bottom: 1rem; } }
@@ -347,6 +348,7 @@
   .footer--link {
     text-decoration: none;
     color: #ddd;
+    font-weight: 600;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
