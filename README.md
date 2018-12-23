@@ -1,2 +1,2 @@
 eCell MSIT Website
-Link - https://hemant-garg.github.io/ecellmsit2019.in
+Link - https://hemant-garg.github.io/ecellmsit2019
