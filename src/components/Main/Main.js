@@ -101,8 +101,8 @@ class Main extends Component {
 					{" "}
 				</div>
 				<Link aria-label="ecell msit logo" to="/" className="LinkButton">
-108						<img className="main_logo" src={Logo} alt="" />
-109				</Link>
+						<img className="main_logo" src={Logo} alt="" />
+			</Link>
 				<div className="main_heading">
 					<div className="main_heading--primary">
 						Entrepreneurship
