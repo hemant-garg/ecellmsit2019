@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./Main.css";
+import Logo from "./logo.png";
 import SVG from "./svg/svg";
 import axios from "axios";
 import unchecked from "./unchecked.svg";
@@ -98,6 +100,9 @@ class Main extends Component {
 				<div id="subscribeMessage" className="showSubscribeMessage">
 					{" "}
 				</div>
+				<Link aria-label="ecell msit logo" to="/" className="LinkButton">
+108						<img className="main_logo" src={Logo} alt="" />
+109				</Link>
 				<div className="main_heading">
 					<div className="main_heading--primary">
 						Entrepreneurship
