@@ -372,6 +372,15 @@
     filter: contrast(0.7) brightness(1.1);
     width: 10rem;
     height: 10rem; }
+    @media screen and (max-width: 600px) {
+      .header_logo {
+        visibility: hidden; } }
+    @media screen and (max-width: 500px) {
+      .header_logo {
+        visibility: hidden; } }
+    @media screen and (max-width: 450px) {
+      .header_logo {
+        visibility: hidden; } }
   .header_nav, .header_nav_mob {
     list-style-type: none;
     display: -webkit-box;
@@ -397,7 +406,7 @@
       transition: all 0.3s ease; }
       .header_nav--link:hover, .header_nav_mob--link:hover {
         color: #85e1d4; }
-    @media screen and (max-width: 580px) {
+    @media screen and (max-width: 600px) {
       .header_nav, .header_nav_mob {
         display: none; } }
   .header_nav_mob {

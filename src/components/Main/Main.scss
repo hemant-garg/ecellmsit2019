@@ -1,5 +1,6 @@
 @import "../../variables.scss";
 @import url('https://fonts.googleapis.com/css?family=Roboto:900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:900|Squada+One|Hammersmith+One');
 .main {
   padding: 2rem 0 11rem 3rem;
   position: relative;
@@ -15,6 +16,7 @@
   }
   @media screen and (max-width: 600px) {
     padding: 2rem 3.5rem 12rem 3.5rem;
+    text-align: center;
   }
   @media screen and (max-width: 500px) {
     padding: 2rem 2rem 11rem 2rem;
@@ -24,6 +26,24 @@
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 100%);
             clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 100%);
   }
+
+  &_logo {
+    -webkit-filter: contrast(0.7) brightness(1.1);
+            filter: contrast(0.7) brightness(1.1);
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0;    
+    @media screen and (max-width: 600px) {
+      visibility: visible;
+      width: 40%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      opacity: 1;
+    }
+  }
+
 
   &_heading {
     text-transform: uppercase;
@@ -35,7 +55,9 @@
       letter-spacing: 0.6rem;
       font-size: 5.5rem;
       @media screen and (max-width: 600px) {
+        margin-top: 4rem;
         font-size: 4.7rem;
+        font-family: 'Hammersmith One', sans-serif!important;
       }
       @media screen and (max-width: 500px) {
         font-size: 4.5rem;
