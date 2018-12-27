@@ -59,17 +59,17 @@
     background-color: #2c3a47; }
 
 .heading-2 {
-  color: #ddd; }
+  color: #eee; }
   @media screen and (max-width: 400px) {
     .heading-2 {
       font-size: 3.8rem; } }
   .heading-2::before, .heading-2::after {
-    background-color: #ddd; }
+    background-color: #eee; }
 
 .para {
   margin-top: 2.5rem;
   margin-bottom: 3rem;
-  color: #ddd;
+  color: #eee;
   line-height: 2.6rem;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem; }

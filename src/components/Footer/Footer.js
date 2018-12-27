@@ -15,7 +15,7 @@ const Footer = () => {
 						Enterpreneurship Cell of MSIT
 					</div>
 					<div className="copyright">
-						Copyright &copy; 2018 eCell MSIT. <br />All Rights
+						Copyright &copy; 2019 eCell MSIT. <br />All Rights
 						Reserved.
 					</div>
 				</div>

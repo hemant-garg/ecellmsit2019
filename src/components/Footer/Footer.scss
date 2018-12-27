@@ -66,7 +66,7 @@
 	}
 	&--link {
 		text-decoration: none;
-		color: #ddd;
+		color: #eee;
 		font-weight: 600;
 		-webkit-transition: all 0.3s ease;
 		-o-transition: all 0.3s ease;
@@ -74,7 +74,7 @@
 		cursor: pointer;
 		&:active,
 		&:focus {
-			color: #ddd;
+			color: #eee;
 		}
 		&:hover {
 			color: $primary-color-2;
@@ -98,17 +98,19 @@
 			width: 13rem;
 			overflow: hidden;
 			height: 10rem;
-			-webkit-filter: brightness(0.9);
-			        filter: brightness(0.9);
+			-webkit-filter: brightness(0.85);
+			        filter: brightness(0.85);
 		}
 		& img {
 			width: 100%;
 		}
 		&--website {
-			font-size: 2.5rem;
-			font-family: $font-kirang;
+			font-size: 2rem;
+			// font-family: $font-kirang;
 			margin-top: 1rem;
-			letter-spacing: 1px;
+			font-weight: 400;
+			color: #eee;
+			// letter-spacing: 1px;
 		}
 		& .copyright {
 			font-size: 1.5rem;
@@ -133,7 +135,7 @@
 		width: 26%;
 	}
 	&-dev {
-		color: #ddd;
+		color: #eee;
 		text-align: center;
 		font-size: 1.4rem;
 		@media screen and (max-width: 500px) {

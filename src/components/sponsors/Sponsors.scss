@@ -30,8 +30,10 @@
 	height: 100%;
 	width: 80%;
 	margin: 0 auto;
+	margin-top: 2rem;
 	vertical-align: middle;
 	border-radius: 1rem;
 	margin-bottom: 3rem;
 	// filter: grayscale(1)
+	filter: contrast(.9);
 }

@@ -119,20 +119,20 @@ $font-ceveat: "Caveat", cursive;
 }
 
 .heading-2 {
-	color: #ddd;
+	color: #eee;
 	@media screen and (max-width: 400px) {
 		font-size: 3.8rem;
 	}
 	&::before,
 	&::after {
-		background-color: #ddd;
+		background-color: #eee;
 	}
 }
 
 .para {
 	margin-top: 2.5rem;
 	margin-bottom: 3rem;
-	color: #ddd;
+	color: #eee;
 	line-height: 2.6rem;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
