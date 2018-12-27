@@ -50,14 +50,17 @@
     margin-top: 10rem;
     color: $primary-color-4;
     font-weight: 900;
-    
+    font-family: 'Hammersmith One', sans-serif!important;
+    @media screen and (max-width: 600px) {
+      margin-top: 2rem;
+      
+    }
     &--primary {
       letter-spacing: 0.6rem;
       font-size: 5.5rem;
       @media screen and (max-width: 600px) {
-        margin-top: 4rem;
         font-size: 4.7rem;
-        font-family: 'Hammersmith One', sans-serif!important;
+        
       }
       @media screen and (max-width: 500px) {
         font-size: 4.5rem;
