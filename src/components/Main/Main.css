@@ -351,10 +351,7 @@
           font-size: 4.1rem; } }
       @media screen and (max-width: 400px) {
         .main_heading--primary {
-          font-size: 3.75rem; } }
-      @media screen and (max-width: 350px) {
-        .main_heading--primary {
-          font-size: 3.65rem; } }
+          font-size: 4rem; } }
     .main_heading--sub {
       font-size: 3.8rem;
       /* margin-top: 0.5rem;*/
@@ -371,9 +368,6 @@
         .main_heading--sub {
           margin-top: 1rem;
           font-size: 4rem; } }
-      @media screen and (max-width: 400px) {
-        .main_heading--sub {
-          font-size: 3.8rem; } }
       .main_heading--sub span {
         color: #85e1d4;
         font-size: 170%; }
@@ -457,6 +451,7 @@
           padding: 1.1rem 1.5rem;
           font-size: 1.5rem;
           margin-top: 1rem;
+          letter-spacing: 2px;
           /* border-radius: 1rem;*/ } }
       .main_subscribe--button:active, .main_subscribe--button:focus {
         outline: none; }
