@@ -97,7 +97,15 @@
             filter: contrast(0.7) brightness(1.1);
     width: 10rem;
     height: 10rem;
-  }
+    @media screen and (max-width: 600px) {
+      visibility: hidden;
+    }
+    @media screen and (max-width: 500px) {
+      visibility: hidden;
+    }
+    @media screen and (max-width: 450px) {
+      visibility: hidden;
+  }}
   &_nav,
   &_nav_mob {
     list-style-type: none;
@@ -128,7 +136,7 @@
         color: $primary-color-2;
       }
     }
-    @media screen and (max-width: 580px) {
+    @media screen and (max-width: 600px) {
       display: none;
     }
   }

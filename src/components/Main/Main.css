@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Roboto:900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:900|Squada+One|Hammersmith+One");
 .heading,
 .heading-2 {
   position: relative;
@@ -301,7 +302,8 @@
       padding: 2rem 0 12rem 3rem; } }
   @media screen and (max-width: 600px) {
     .main {
-      padding: 2rem 3.5rem 12rem 3.5rem; } }
+      padding: 2rem 3.5rem 12rem 3.5rem;
+      text-align: center; } }
   @media screen and (max-width: 500px) {
     .main {
       padding: 2rem 2rem 11rem 2rem;
@@ -310,6 +312,21 @@
     .main {
       -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 100%);
       clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 100%); } }
+  .main_logo {
+    -webkit-filter: contrast(0.7) brightness(1.1);
+    filter: contrast(0.7) brightness(1.1);
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0; }
+    @media screen and (max-width: 600px) {
+      .main_logo {
+        visibility: visible;
+        width: 40%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        opacity: 1; } }
   .main_heading {
     text-transform: uppercase;
     margin-top: 10rem;
@@ -320,7 +337,9 @@
       font-size: 5.5rem; }
       @media screen and (max-width: 600px) {
         .main_heading--primary {
-          font-size: 4.7rem; } }
+          margin-top: 4rem;
+          font-size: 4.7rem;
+          font-family: "Hammersmith One", sans-serif !important; } }
       @media screen and (max-width: 500px) {
         .main_heading--primary {
           font-size: 4.5rem;
@@ -603,8 +622,8 @@
   stroke-miterlimit: 10;
   -webkit-box-shadow: inset 0rem 0rem 0rem #7ac142;
   box-shadow: inset 0rem 0rem 0rem #7ac142;
-  -webkit-animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
-  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+  -webkit-animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
   z-index: 10; }
 
 .checkmark__check {

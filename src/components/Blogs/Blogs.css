@@ -367,7 +367,7 @@
   overflow: hidden;
   width: 100%;
   height: 23rem;
-  -webkit-filter: brightness(0.8);
+  -webkit-filter: brightness(0.7);
   filter: brightness(0.8); }
   @media screen and (max-width: 500px) {
     .blogs-featureimage {
@@ -392,10 +392,9 @@
 
 .blogs-title {
   font-size: 1.5rem;
-  letter-spacing: 1px;
-  font-family: "Open Sans", sans-serif;
   color: #eee;
-  line-height: 2.5rem; }
+  line-height: 2.5rem;
+  margin-bottom: 2rem; }
 
 .blogs-dateandbutton {
   display: -webkit-box;
