@@ -79,7 +79,7 @@ $font-ceveat: "Caveat", cursive;
 	font-family: $font-roboto;
 	font-weight: 800;
 	margin-top: 2rem;
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 600px) {
 		font-size: 3.5rem;
 	}
 	&::before,

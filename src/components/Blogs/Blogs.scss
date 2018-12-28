@@ -10,7 +10,7 @@
 		padding: 8rem 3rem;
 	}
 	@media screen and (max-width: 600px) {
-		padding: 8rem 1.5rem;
+		padding: 6rem 1.5rem;
 	}
 }
 
@@ -81,13 +81,16 @@
 		    -ms-flex-pack: justify;
 		        -webkit-justify-content: space-between;
 		        justify-content: space-between;
-		font-weight: lighter;
+		
 	}
 	&-title {
-		font-size: 1.5rem;
+		font-size: 1.6rem;
 		color: $primary-color-4;
 		line-height: 2.5rem;
 		margin-bottom: 2rem;
+		@media screen and (max-width: 600px) {
+			font-size: 1.8rem;
+		}
 	}
 	&-dateandbutton {
 		display: -webkit-box;

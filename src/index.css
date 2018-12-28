@@ -14,7 +14,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   margin-top: 2rem; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .heading,
     .heading-2 {
       font-size: 3.5rem; } }
@@ -300,3 +300,6 @@ html {
 
 #root {
   padding-top: 10rem; }
+  @media screen and (max-width: 600px) {
+    #root {
+      padding-top: 8rem; } }

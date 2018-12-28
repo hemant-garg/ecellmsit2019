@@ -14,7 +14,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   margin-top: 2rem; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .heading,
     .heading-2 {
       font-size: 3.5rem; } }
@@ -309,6 +309,9 @@
     top: -1rem; }
   #nav-ham-button::after {
     top: 1rem; }
+  @media screen and (max-width: 600px) {
+    #nav-ham-button {
+      top: 4rem; } }
   #nav-ham-button.toggleNavButton {
     visibility: hidden; }
     #nav-ham-button.toggleNavButton::before {
@@ -323,7 +326,7 @@
       -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
       transform: rotate(-45deg); }
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 600px) {
     #nav-ham-button {
       display: block; } }
 
@@ -341,7 +344,7 @@
   transition: all 0.5s ease; }
   #nav-background.show {
     left: 30%; }
-  @media screen and (min-width: 580px) {
+  @media screen and (min-width: 600px) {
     #nav-background {
       display: none; } }
 
@@ -370,13 +373,9 @@
     height: 10rem; }
     @media screen and (max-width: 600px) {
       .header_logo {
-        visibility: hidden; } }
-    @media screen and (max-width: 500px) {
-      .header_logo {
-        visibility: hidden; } }
-    @media screen and (max-width: 450px) {
-      .header_logo {
-        visibility: hidden; } }
+        visibility: hidden;
+        height: 8rem;
+        width: 8rem; } }
   .header_nav, .header_nav_mob {
     list-style-type: none;
     display: -webkit-box;
@@ -394,7 +393,7 @@
     .header_nav--link, .header_nav_mob--link {
       text-decoration: none;
       color: #eee;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       font-weight: 600;
       letter-spacing: 2px;
       -webkit-transition: all 0.3s ease;
@@ -409,16 +408,16 @@
     display: column;
     padding: 0; }
     .header_nav_mob--link {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 2rem;
       display: block;
       font-weight: 400; }
     .header_nav_mob-join {
       margin-top: 3rem;
-      padding: 1.5rem 3rem !important;
-      margin-left: -3rem;
-      font-size: 2.5rem !important; }
-    @media screen and (max-width: 580px) {
+      padding: 1.2rem 2.4rem !important;
+      margin-left: -2.6rem;
+      font-size: 2rem !important; }
+    @media screen and (max-width: 600px) {
       .header_nav_mob {
         display: block; } }
 

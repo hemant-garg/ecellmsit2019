@@ -4,6 +4,7 @@ import "./header.css";
 import Logo from "./logo.png";
 
 class Header extends Component {
+
 	changeActiveClass = target => {
 		this.toggleNavForMobile();
 		const allNavs = target.parentNode.parentNode.childNodes;
@@ -104,7 +105,7 @@ class Header extends Component {
 					to="/"
 					className="LinkButton"
 				>
-					<img className="header_logo" src={Logo} alt="" />
+					<img id="website-logo" className="header_logo" src={Logo} alt="" />
 				</Link>
 				<div onClick={this.toggleNavForMobile} id="nav-ham-button" />
 				<div id="nav-background">

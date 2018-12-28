@@ -20,4 +20,7 @@ html {
 
 #root {
   padding-top: 10rem;
+  @media screen and (max-width: 600px) {
+    padding-top: 8rem;
+  }
 }

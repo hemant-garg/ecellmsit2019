@@ -14,7 +14,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   margin-top: 2rem; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .heading,
     .heading-2 {
       font-size: 3.5rem; } }
@@ -316,7 +316,7 @@
       padding: 8rem 3rem; } }
   @media screen and (max-width: 600px) {
     .blogs-section {
-      padding: 8rem 1.5rem; } }
+      padding: 6rem 1.5rem; } }
 
 .blogs-container {
   display: -webkit-box;
@@ -383,14 +383,16 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
-  justify-content: space-between;
-  font-weight: lighter; }
+  justify-content: space-between; }
 
 .blogs-title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #eee;
   line-height: 2.5rem;
   margin-bottom: 2rem; }
+  @media screen and (max-width: 600px) {
+    .blogs-title {
+      font-size: 1.8rem; } }
 
 .blogs-dateandbutton {
   display: -webkit-box;
