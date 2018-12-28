@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import SVG1 from "./svg1";
 import SVG2 from "./svg2";
 import SVG3 from "./svg3";
@@ -11,7 +12,9 @@ const Initiatives = () => {
 			<div className="heading">What We Do</div>
 			<div className="initiatives">
 				<div className="initiatives-div">
+					<Link to="/bplan" >
 					<SVG1 />
+					</Link>
 					<h2 className="initiatives-title">B-plan Competitions</h2>
 				</div>
 				<div className="initiatives-div">

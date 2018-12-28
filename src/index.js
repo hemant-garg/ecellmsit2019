@@ -10,6 +10,7 @@ import Gallery from "./components/Gallery/Gallery";
 import Blogs from "./components/Blogs/Blogs";
 import SingleBlog from "./components/SingleBlog/SingleBlog";
 import Footer from "./components/Footer/Footer";
+import Bplan from "./components/Bplan/Bplan";
 
 ReactDOM.render(
 	<BrowserRouter>
@@ -19,6 +20,7 @@ ReactDOM.render(
 				<Route path="/gallery" component={Gallery} />
 				<Route path="/blog/:id" component={SingleBlog} />
 				<Route path="/blogs" component={Blogs} />
+				<Route path="/bplan" component={Bplan} />
 				<Route path="/" component={Home} />
 			</Switch>
 			<Footer />

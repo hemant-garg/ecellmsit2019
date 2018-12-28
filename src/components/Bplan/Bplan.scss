@@ -1,0 +1,80 @@
+
+@import "../../variables.scss";
+
+.bplan-section {
+    padding: 5rem 10rem;
+	@include sectionStars;
+    font-size: 150%;
+	@media (max-width: 1200px) {
+		padding: 8rem 5rem;
+	}
+	@media (max-width: 1000px) {
+		padding: 8rem 3rem;
+	}
+	@media screen and (max-width: 600px) {
+		padding: 8rem 1.5rem;
+	}
+}
+.b-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 700px) {
+    .b-row {
+      flex-direction: column;
+    }
+    .bplanBox-group {
+      margin: 0px;
+      border-bottom: 2px solid #f1f1f1;
+    }
+  
+  }
+  
+  .bplan-group{
+    justify-content: center;
+    margin-bottom: 7rem;
+  }
+  .bplanBox {
+    margin: 10px;
+    border: 4px solid #c4cad3;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 5px 10px #e1e7ef;
+  }
+  
+  .bplanBox:hover {
+    border: 2px solid #777;
+  }
+  
+  .bplanBox img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .desc {
+    padding: 20px;
+    text-align: center;
+  }
+
+  
+  .sub-content{
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .A{
+    flex: 30%;
+    padding: 20px;
+    max-width: 300px;
+    border: 3px solid #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.4);
+
+    border-radius: 8px;
+  }
+  .B{
+    flex: 70%;
+    padding: 20px;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+  }
