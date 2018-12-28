@@ -339,13 +339,19 @@
   margin: 10px;
   border: 4px solid #c4cad3;
   width: 350px;
+  background-color: #efefef;
   border-radius: 10px;
-  box-shadow: 5px 10px #e1e7ef; }
+  box-shadow: 5px 10px #e1e7ef;
+  overflow: hidden; }
 
-.bplanBox:hover {
-  border: 2px solid #777; }
+.bplan-img-box {
+  overflow: hidden; }
 
-.bplanBox img {
+.bplanBox:hover .bplan-img {
+  transform: scale(1.1); }
+
+.bplan-img {
+  transition: all .3s ease;
   width: 100%;
   height: auto; }
 

@@ -8,8 +8,9 @@ class Bplan extends Component {
 			return (
 				
 				<div class="bplanBox">
-					<a href={`#${bplan.title}`}><img src={require(`./pics/${bplan.image}`)} alt="Quiz" width="300" height="200"/>
-			  </a>
+					<div className="bplan-img-box">
+					<a href={`#${bplan.title}`}><img className="bplan-img" src={require(`./pics/${bplan.image}`)} alt="Quiz" width="300" height="200"/>
+			  </a></div>
 				<div class="desc"><strong>{bplan.title}</strong><br />{bplan.about}</div>
 			  </div>
 			);

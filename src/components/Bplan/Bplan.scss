@@ -39,15 +39,20 @@
     margin: 10px;
     border: 4px solid #c4cad3;
     width: 350px;
+    background-color: #efefef;
     border-radius: 10px;
     box-shadow: 5px 10px #e1e7ef;
+    overflow: hidden;
+  }
+  .bplan-img-box{
+    overflow:hidden;
+  }
+  .bplanBox:hover .bplan-img{
+    transform: scale(1.1);
   }
   
-  .bplanBox:hover {
-    border: 2px solid #777;
-  }
-  
-  .bplanBox img {
+  .bplan-img {
+    transition: all .3s ease;
     width: 100%;
     height: auto;
   }

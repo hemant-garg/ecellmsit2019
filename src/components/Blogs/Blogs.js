@@ -86,7 +86,7 @@ class Blogs extends Component {
 								{new Date(blog.date).toLocaleDateString()}
 							</div>
 							<Link to={"/blog/" + blog.ID}>
-								<button className="btn button-light-2 LinkButton">
+								<button className="btn button-light-3 LinkButton">
 									Read More
 								</button>
 							</Link>
