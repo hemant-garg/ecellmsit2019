@@ -289,7 +289,7 @@
     top: -10rem; } }
 
 .main {
-  padding: 2rem 0 11rem 3rem;
+  padding: 2rem 0 12rem 3rem;
   position: relative;
   background-color: #2c3a47;
   /* height: calc(100vh - 15rem);*/
@@ -329,7 +329,7 @@
         opacity: 1; } }
   .main_heading {
     text-transform: uppercase;
-    margin-top: 10rem;
+    margin-top: 11rem;
     color: #eee;
     font-weight: 900;
     font-family: "Hammersmith One", sans-serif !important; }
@@ -372,7 +372,7 @@
         color: #85e1d4;
         font-size: 170%; }
   .main_subscribe {
-    margin-top: 5rem; }
+    margin-top: 3rem; }
     @media screen and (max-width: 600px) {
       .main_subscribe {
         margin-top: 2.5rem; } }

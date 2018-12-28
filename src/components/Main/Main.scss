@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:900');
 @import url('https://fonts.googleapis.com/css?family=Roboto:900|Squada+One|Hammersmith+One');
 .main {
-  padding: 2rem 0 11rem 3rem;
+  padding: 2rem 0 12rem 3rem;
   position: relative;
   background-color: $primary-color-1;
   /* height: calc(100vh - 15rem);*/
@@ -47,7 +47,7 @@
 
   &_heading {
     text-transform: uppercase;
-    margin-top: 10rem;
+    margin-top: 11rem;
     color: $primary-color-4;
     font-weight: 900;
     font-family: 'Hammersmith One', sans-serif!important;
@@ -96,7 +96,7 @@
     }
   }
   &_subscribe {
-    margin-top: 5rem;
+    margin-top: 3rem;
     @media screen and (max-width: 600px) {
       margin-top: 2.5rem;
     }
