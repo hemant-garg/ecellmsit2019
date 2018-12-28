@@ -24,6 +24,10 @@
 		text-transform: uppercase;
 		position: relative;
 		margin-bottom: 3rem;
+		@media screen and (max-width: 600px) {
+			letter-spacing: 1px;
+			font-size: 3.5rem;
+		}
 	}
 	&-details {
 		display: -webkit-box;

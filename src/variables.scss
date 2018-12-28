@@ -80,10 +80,7 @@ $font-ceveat: "Caveat", cursive;
 	font-weight: 800;
 	margin-top: 2rem;
 	@media screen and (max-width: 500px) {
-		font-size: 3.7rem;
-	}
-	@media screen and (max-width: 400px) {
-		font-size: 3.3rem;
+		font-size: 3.5rem;
 	}
 	&::before,
 	&::after {
@@ -121,7 +118,7 @@ $font-ceveat: "Caveat", cursive;
 .heading-2 {
 	color: #eee;
 	@media screen and (max-width: 400px) {
-		font-size: 3.8rem;
+		font-size: 3.5rem;
 	}
 	&::before,
 	&::after {

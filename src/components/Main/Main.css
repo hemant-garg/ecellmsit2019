@@ -19,11 +19,7 @@
   @media screen and (max-width: 500px) {
     .heading,
     .heading-2 {
-      font-size: 3.7rem; } }
-  @media screen and (max-width: 400px) {
-    .heading,
-    .heading-2 {
-      font-size: 3.3rem; } }
+      font-size: 3.5rem; } }
   .heading::before, .heading::after,
   .heading-2::before,
   .heading-2::after {
@@ -62,7 +58,7 @@
   color: #eee; }
   @media screen and (max-width: 400px) {
     .heading-2 {
-      font-size: 3.8rem; } }
+      font-size: 3.5rem; } }
   .heading-2::before, .heading-2::after {
     background-color: #eee; }
 
@@ -336,6 +332,9 @@
     @media screen and (max-width: 600px) {
       .main_heading {
         margin-top: 7rem; } }
+    @media screen and (max-width: 400px) {
+      .main_heading {
+        margin-top: 4rem; } }
     .main_heading--primary {
       letter-spacing: 0.6rem;
       font-size: 5.5rem; }
@@ -351,7 +350,10 @@
           font-size: 4.1rem; } }
       @media screen and (max-width: 400px) {
         .main_heading--primary {
-          font-size: 4rem; } }
+          font-size: 3.8rem; } }
+      @media screen and (max-width: 350px) {
+        .main_heading--primary {
+          font-size: 3.6rem; } }
     .main_heading--sub {
       font-size: 3.8rem;
       /* margin-top: 0.5rem;*/
@@ -368,6 +370,9 @@
         .main_heading--sub {
           margin-top: 1rem;
           font-size: 4rem; } }
+      @media screen and (max-width: 400px) {
+        .main_heading--sub {
+          margin-top: .8rem; } }
       .main_heading--sub span {
         color: #85e1d4;
         font-size: 170%; }
@@ -378,7 +383,7 @@
         margin-top: 2.5rem; } }
     @media screen and (max-width: 400px) {
       .main_subscribe {
-        margin-top: 6rem; } }
+        margin-top: 3rem; } }
     .main_subscribe--input {
       padding: 1.3rem 2rem;
       -webkit-border-radius: 4rem;
@@ -416,7 +421,8 @@
             width: 25rem; } }
       @media screen and (max-width: 600px) {
         .main_subscribe--input {
-          padding: 1.1rem 1.7rem; } }
+          padding: 1.2rem 1.8rem .8rem 1.9rem;
+          border-radius: 2rem; } }
       @media screen and (max-width: 500px) {
         .main_subscribe--input {
           /* margin: 0 auto;*/
@@ -445,7 +451,8 @@
       @media screen and (max-width: 600px) {
         .main_subscribe--button {
           padding: 1.1rem 1.7rem;
-          font-size: 1.4rem; } }
+          font-size: 1.4rem;
+          border-radiud: 2rem; } }
       @media screen and (max-width: 500px) {
         .main_subscribe--button {
           padding: 1.1rem 1.5rem;

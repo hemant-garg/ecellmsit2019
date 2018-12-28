@@ -134,7 +134,7 @@ class Blogs extends Component {
 		if (!inBlogs) {
 			return (
 				<section className="blogs-section">
-					<div className="heading">Blogs & Articles</div>
+					<div className="heading">Blogs</div>
 					<div className="blogs">
 						<div className="blogs-container">
 							{this.renderBlogs()}
@@ -152,7 +152,7 @@ class Blogs extends Component {
 		}
 		return (
 			<section className="blogs-section">
-				<div className="heading">Blogs & Articles</div>
+				<div className="heading">Blogs</div>
 				<ul className="filter">
 					<li
 						className="filter-item button-dark-1 activeFilter"

@@ -12,7 +12,7 @@ const Initiatives = () => {
 			<div className="heading">What We Do</div>
 			<div className="initiatives">
 				<div className="initiatives-div">
-					<Link to="/bplan" >
+					<Link className="LinkButton" to="/bplan" >
 					<SVG1 />
 					</Link>
 					<h2 className="initiatives-title">B-plan Competitions</h2>
