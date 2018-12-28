@@ -85,3 +85,25 @@ html{
   background-color: #f1f1f1;
   border-radius: 8px;
 }
+.diff {
+  background-color: #2c3a47;
+}
+.diff-heading {
+  padding-top: 3rem;
+  margin: auto;
+  font-weight: 800;
+  font-size: 3rem;
+  color: #2c3a47;
+  letter-spacing: 2px;
+  color: white;
+  justify-content: center;
+}
+
+.speaker {
+  margin: 10px;
+  width: 350px;
+  border-radius: 10px;
+  background-color: #2c3a47;
+  color: white;
+  text-align: center;
+}
