@@ -27,7 +27,7 @@ html{
   .A {
     margin-left: 4rem;
   }
-  .gallery-group {
+  .gallery-group, .gb {
     display: inline-block;
     padding-top: 0;
   }
@@ -84,6 +84,9 @@ html{
   max-width: 700px;
   background-color: #f1f1f1;
   border-radius: 8px;
+}
+.gb {
+  justify-content: center;
 }
 .diff {
   background-color: #2c3a47;
