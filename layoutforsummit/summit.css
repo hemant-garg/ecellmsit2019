@@ -1,5 +1,5 @@
 
-.heading{
+/* .heading{
   margin: auto;
   font-weight: 800;
   font-size: 3rem;
@@ -8,14 +8,14 @@
   max-width: 70%;
   padding: 20px;
   justify-content: center;
-}
+} */
 
-html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{
   -ms-text-size-adjust:100%;
   -webkit-text-size-adjust:100%;
   font-family: "Open Sans", sans-serif;
-}
+} */
 .row {
   display: flex;
   flex-wrap: wrap;

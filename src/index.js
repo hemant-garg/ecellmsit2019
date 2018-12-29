@@ -11,6 +11,7 @@ import Blogs from "./components/Blogs/Blogs";
 import SingleBlog from "./components/SingleBlog/SingleBlog";
 import Footer from "./components/Footer/Footer";
 import Bplan from "./components/Bplan/Bplan";
+import Esummit from "./components/Esummit/Esummit";
 
 ReactDOM.render(
 	<BrowserRouter>
@@ -21,6 +22,7 @@ ReactDOM.render(
 				<Route path="/blog/:id" component={SingleBlog} />
 				<Route path="/blogs" component={Blogs} />
 				<Route path="/bplan" component={Bplan} />
+				<Route path="/esummit" component={Esummit} />
 				<Route path="/" component={Home} />
 			</Switch>
 			<Footer />

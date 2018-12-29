@@ -1,0 +1,136 @@
+@import "../../variables.scss";
+
+.esummit-section {
+    padding: 5rem 0;
+	@include sectionStars;
+    font-size: 150%;
+	@media (max-width: 1200px) {
+		padding: 8rem 0;
+	}
+	
+	@media screen and (max-width: 600px) {
+    padding: 3rem 0rem;
+	}
+}
+// @media (max-width: 700px) {
+//     .e-row {
+//       flex-direction: column;
+//     }
+//     .A {
+//       margin-left: 4rem;
+//     }
+//     .esummit-group, .gb {
+//       display: inline-block;
+//       padding-top: 0;
+//     }
+    
+//   }
+  
+.sliderBox{
+    max-width: 110rem;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: .1rem .1rem 1rem $primary-color-1;
+    @media screen and (max-width: 1200px) {
+        margin: 0 3rem;
+    }
+    @media screen and (max-width: 500px) {
+        margin: 0 2rem;
+    }
+    & img{
+        width: 100%;
+        height: 100%;
+        filter: contrast(.9);
+    }
+}
+.e-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .esummit-group{
+    padding-top: 4rem;
+    justify-content: center;
+  }
+  .esummit-titlebox {
+    margin: 1rem;
+    width: 28rem;
+    border-radius: 1rem;
+    background-color: #2c3a47;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+  }
+  
+  .diff {
+    -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+	        clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+	background-color: $primary-color-1;
+	padding: 12rem 2rem;
+    margin-top: 3rem;
+	
+	@media screen and (max-width: 550px) {
+		padding: 9rem 2rem;
+		-webkit-clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
+	        clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
+	}
+    @media screen and (max-width: 450px) {
+		padding: 9rem 2rem;
+		-webkit-clip-path: polygon(0% 2%, 100% 0%, 100% 98%, 0% 100%);
+	        clip-path: polygon(0% 2%, 100% 0%, 100% 98%, 0% 100%);
+	}
+}
+  .speakers-details-section {
+    justify-content: center;
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+  .speaker-box {
+    // background-color: red;
+    color: white;
+    text-align: center;
+    margin: 2rem;
+    width: 20rem;
+    
+    &:hover .speaker-image-box{
+        transform: scale(1.05);
+    }
+}
+  .speaker-image-box{
+    border-radius: 50%;
+    width: 18rem;
+    height: 18rem;
+    overflow: hidden;
+    margin: 0 auto;
+    transition: all .3s ease;
+  }
+  .speaker-box img {
+   width: 100%;
+   filter: contrast(.9);
+   height: 100%;
+    // border: 4px solid #85e1d4;
+    transform: scale(1.1);
+  }
+
+
+
+  .esummit-sponsors{
+    padding: 5rem 0;
+    &--logoContainer{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100rem;
+        margin: 0 auto;
+        justify-content: center;
+       
+        & img{
+            width: auto;
+            height: 10rem;
+            margin: 3rem;
+            @media screen and (max-width: 500px) {
+                height: 8rem;   
+                margin: 2rem;  
+             }
+        }
+    }
+
+  }
