@@ -18,7 +18,7 @@
   @media screen and (max-width: 600px) {
     .heading,
     .heading-2 {
-      font-size: 3.5rem; } }
+      font-size: 3.45rem; } }
   .heading::before, .heading::after,
   .heading-2::before,
   .heading-2::after {
@@ -32,21 +32,21 @@
       .heading::before, .heading::after,
       .heading-2::before,
       .heading-2::after {
-        width: 5rem; } }
+        width: 3rem; } }
   .heading::before,
   .heading-2::before {
     left: -10rem; }
     @media screen and (max-width: 500px) {
       .heading::before,
       .heading-2::before {
-        left: -7rem; } }
+        left: -4.5rem; } }
   .heading::after,
   .heading-2::after {
     right: -10rem; }
     @media screen and (max-width: 500px) {
       .heading::after,
       .heading-2::after {
-        right: -7rem; } }
+        right: -4.5rem; } }
 
 .heading {
   color: #2c3a47; }
@@ -55,9 +55,6 @@
 
 .heading-2 {
   color: #eee; }
-  @media screen and (max-width: 400px) {
-    .heading-2 {
-      font-size: 3.5rem; } }
   .heading-2::before, .heading-2::after {
     background-color: #eee; }
 
@@ -305,8 +302,8 @@
 
 .about-section {
   background-color: #2c3a47;
-  -webkit-clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
-  clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 7%, 100% 0%, 100% 93%, 0% 100%);
+  clip-path: polygon(0% 7%, 100% 0%, 100% 93%, 0% 100%);
   padding: 13rem 5rem 10rem 7rem; }
   @media (max-width: 1200px) {
     .about-section {
@@ -320,13 +317,13 @@
   @media screen and (max-width: 550px) {
     .about-section {
       padding-top: 12rem;
-      -webkit-clip-path: polygon(0% 5%, 50% 5%, 100% 0%, 100% 95%, 50% 100%, 0% 100%);
-      clip-path: polygon(0% 5%, 50% 5%, 100% 0%, 100% 95%, 50% 100%, 0% 100%); } }
+      -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+      clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%); } }
   @media screen and (max-width: 450px) {
     .about-section {
       padding: 12rem 2rem 8rem 2rem;
-      -webkit-clip-path: polygon(0% 4%, 50% 4%, 100% 0%, 100% 96%, 50% 100%, 0% 100%);
-      clip-path: polygon(0% 4%, 50% 4%, 100% 0%, 100% 96%, 50% 100%, 0% 100%); } }
+      -webkit-clip-path: polygon(0% 4%, 100% 0%, 100% 96%, 0% 100%);
+      clip-path: polygon(0% 4%, 100% 0%, 100% 96%, 0% 100%); } }
 
 .about {
   display: -webkit-box;

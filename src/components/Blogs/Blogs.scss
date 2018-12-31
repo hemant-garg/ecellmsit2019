@@ -1,8 +1,8 @@
 @import "../../variables.scss";
 
 .blogs-section {
-	-webkit-clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
-	        clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
+	-webkit-clip-path: polygon(0% 7%, 100% 0%, 100% 93%, 0% 100%);
+	        clip-path: polygon(0% 7%, 100% 0%, 100% 93%, 0% 100%);
 	padding: 12rem 10rem ;
 	background-color: $primary-color-1;
 	@include sectionStars;
@@ -14,8 +14,8 @@
 	}
 	@media screen and (max-width: 600px) {
 		padding: 8rem 1.5rem;
-		-webkit-clip-path: polygon(0% 2%, 50% 2%, 100% 0%, 100% 98%, 50% 100%, 0% 100%);
-	        clip-path: polygon(0% 2%, 50% 2%, 100% 0%, 100% 98%, 50% 100%, 0% 100%);
+		-webkit-clip-path: polygon(0% 2%, 100% 0%, 100% 98%, 0% 100%);
+	        clip-path: polygon(0% 2%, 100% 0%, 100% 98%, 0% 100%);
 	}
 }
 

@@ -3,8 +3,8 @@
 .footer-section {
 	padding: 5rem 10rem 2rem 10rem;
 	background-color: $primary-color-1;
-	-webkit-clip-path: polygon(0% 10%, 50% 10%, 100% 0%, 100% 100%, 0% 100%);
-	        clip-path: polygon(0% 10%, 50% 10%, 100% 0%, 100% 100%, 0% 100%);
+	-webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+	        clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
 	margin-top: 0rem;
 	@media (max-width: 1200px) {
 		padding: 5rem 8rem 2rem 6rem;
@@ -12,13 +12,13 @@
 	@media (max-width: 850px) {
 		padding: 8rem 6rem 4rem 4rem;
 		padding: 8rem 2rem 4rem 2rem;
-		-webkit-clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 100%, 0% 100%);
-		        clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 100%, 0% 100%);
+		-webkit-clip-path: polygon(0% 7%, 100% 0%, 100% 100%, 0% 100%);
+		        clip-path: polygon(0% 7%, 100% 0%, 100% 100%, 0% 100%);
 	}
 	@media screen and (max-width: 600px) {
 		padding: 8rem 4rem 4rem 4rem;
-		-webkit-clip-path: polygon(0% 5%, 50% 5%, 100% 0%, 100% 100%, 0% 100%);
-		        clip-path: polygon(0% 5%, 50% 5%, 100% 0%, 100% 100%, 0% 100%);
+		-webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
+		        clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
 	}
 	@media screen and (max-width: 450px) {
 		padding: 8rem 2rem 4rem 2rem;

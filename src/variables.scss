@@ -81,7 +81,7 @@ $font-ceveat: "Caveat", cursive;
 	text-align: center;
 	margin-top: 2rem;
 	@media screen and (max-width: 600px) {
-		font-size: 3.5rem;
+		font-size: 3.45rem;
 	}
 	&::before,
 	&::after {
@@ -92,19 +92,19 @@ $font-ceveat: "Caveat", cursive;
 		width: 8rem;
 		height: 0.5rem;
 		@media screen and (max-width: 500px) {
-			width: 5rem;
+			width: 3rem;
 		}
 	}
 	&::before {
 		left: -10rem;
 		@media screen and (max-width: 500px) {
-			left: -7rem;
+			left: -4.5rem;
 		}
 	}
 	&::after {
 		right: -10rem;
 		@media screen and (max-width: 500px) {
-			right: -7rem;
+			right: -4.5rem;
 		}
 	}
 }
@@ -118,9 +118,6 @@ $font-ceveat: "Caveat", cursive;
 
 .heading-2 {
 	color: #eee;
-	@media screen and (max-width: 400px) {
-		font-size: 3.5rem;
-	}
 	&::before,
 	&::after {
 		background-color: #eee;

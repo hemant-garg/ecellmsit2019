@@ -18,7 +18,7 @@
   @media screen and (max-width: 600px) {
     .heading,
     .heading-2 {
-      font-size: 3.5rem; } }
+      font-size: 3.45rem; } }
   .heading::before, .heading::after,
   .heading-2::before,
   .heading-2::after {
@@ -32,21 +32,21 @@
       .heading::before, .heading::after,
       .heading-2::before,
       .heading-2::after {
-        width: 5rem; } }
+        width: 3rem; } }
   .heading::before,
   .heading-2::before {
     left: -10rem; }
     @media screen and (max-width: 500px) {
       .heading::before,
       .heading-2::before {
-        left: -7rem; } }
+        left: -4.5rem; } }
   .heading::after,
   .heading-2::after {
     right: -10rem; }
     @media screen and (max-width: 500px) {
       .heading::after,
       .heading-2::after {
-        right: -7rem; } }
+        right: -4.5rem; } }
 
 .heading {
   color: #2c3a47; }
@@ -55,9 +55,6 @@
 
 .heading-2 {
   color: #eee; }
-  @media screen and (max-width: 400px) {
-    .heading-2 {
-      font-size: 3.5rem; } }
   .heading-2::before, .heading-2::after {
     background-color: #eee; }
 
@@ -304,8 +301,8 @@
     top: -10rem; } }
 
 .blogs-section {
-  -webkit-clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
-  clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 7%, 100% 0%, 100% 93%, 0% 100%);
+  clip-path: polygon(0% 7%, 100% 0%, 100% 93%, 0% 100%);
   padding: 12rem 10rem;
   background-color: #2c3a47;
   position: relative; }
@@ -341,8 +338,8 @@
   @media screen and (max-width: 600px) {
     .blogs-section {
       padding: 8rem 1.5rem;
-      -webkit-clip-path: polygon(0% 2%, 50% 2%, 100% 0%, 100% 98%, 50% 100%, 0% 100%);
-      clip-path: polygon(0% 2%, 50% 2%, 100% 0%, 100% 98%, 50% 100%, 0% 100%); } }
+      -webkit-clip-path: polygon(0% 2%, 100% 0%, 100% 98%, 0% 100%);
+      clip-path: polygon(0% 2%, 100% 0%, 100% 98%, 0% 100%); } }
 
 .blogs-container {
   display: -webkit-box;
