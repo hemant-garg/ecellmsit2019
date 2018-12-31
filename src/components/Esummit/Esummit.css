@@ -332,7 +332,7 @@
       padding: 8rem 0; } }
   @media screen and (max-width: 600px) {
     .esummit-section {
-      padding: 3rem 0rem; } }
+      padding: 5rem 0rem; } }
 
 .sliderBox {
   max-width: 110rem;
@@ -366,6 +366,10 @@
   color: white;
   text-align: center;
   padding: 3rem; }
+  @media screen and (max-width: 450px) {
+    .esummit-titlebox div {
+      width: 100% !important;
+      height: auto; } }
 
 .diff {
   -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
