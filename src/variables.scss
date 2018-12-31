@@ -78,6 +78,7 @@ $font-ceveat: "Caveat", cursive;
 	font-size: 4.2rem;
 	font-family: $font-roboto;
 	font-weight: 800;
+	text-align: center;
 	margin-top: 2rem;
 	@media screen and (max-width: 600px) {
 		font-size: 3.5rem;
@@ -138,7 +139,9 @@ $font-ceveat: "Caveat", cursive;
 .button-light,
 .button-light-2,
 .button-light-3,
-.button-dark-1 {
+.button-light-4,
+.button-dark-1,
+.button-dark-2 {
 	-webkit-border-radius: 3rem;
 	        border-radius: 3rem;
 	cursor: pointer;
@@ -209,12 +212,30 @@ $font-ceveat: "Caveat", cursive;
 	background-color: $primary-color-1;
 	color: $primary-color-4;
 	padding: 1rem 2.1rem;
+	border-radius: 1rem;
+
 	&:hover,
 	&:active {
 		background-color: transparent;
 		color: $primary-color-1;
 	}
 }
+
+.button-light-4 {
+	border: 2px solid #efefef;
+	background-color: transparent;
+	color: #efefef;
+	border-radius: 1rem;
+	padding: 1rem 2.1rem;
+	&:hover,
+	&:active {
+		background-color: transparent;
+		border: 2px solid #eee;
+		color: #eee;
+	}
+}
+
+
 
 .filter {
 	padding-left: 2rem;

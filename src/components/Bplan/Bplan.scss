@@ -19,13 +19,7 @@
 .b-row {
     display: flex;
     flex-wrap: wrap;
-    @media (max-width: 700px) {
-        flex-direction: column;
-        align-items: center;
-    }
-    @media screen and (max-width: 430px) {
-      align-items: start;
-    }
+    
   }
   
   
@@ -71,24 +65,33 @@
   .sub-content{
     justify-content: center;
     padding: 10px;
-    @media screen and (max-width: 600px) {
-      justify-content: start;
-    }
+    
   }
   
   .A{
     flex: 30%;
     padding: 20px;
-    max-width: 300px;
+    max-width: 20%;
     border: 3px solid #f1f1f1;
     background-color: rgba(255, 255, 255, 0.4);
-
     border-radius: 8px;
+    @media screen and (max-width: 800px) {
+      max-width: 80%;
+    }
+    @media screen and (max-width: 400px) {
+      max-width: 85%;
+    }
   }
   .B{
     flex: 70%;
     padding: 20px;
-    max-width: 700px;
+    max-width: 55%;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 8px;
+    @media screen and (max-width: 800px) {
+      max-width: 80%;
+    }
+    @media screen and (max-width: 400px) {
+      max-width: 85%;
+    }
   }

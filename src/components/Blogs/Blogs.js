@@ -27,6 +27,9 @@ class Blogs extends Component {
 		});
 		if (this.props.match !== undefined) {
 			if (this.props.match.path === "/blogs") {
+
+				document.getElementById('blogs-section').style.backgroundColor = '#efefef';
+								
 				this.setState({ inBlogs: true });
 				axios
 					.get(
@@ -133,15 +136,15 @@ class Blogs extends Component {
 		const { inBlogs } = this.state;
 		if (!inBlogs) {
 			return (
-				<section className="blogs-section">
-					<div className="heading">Blogs</div>
+				<section id="blogs-section" className="blogs-section">
+					<div className="heading-2">Blogs</div>
 					<div className="blogs">
 						<div className="blogs-container">
 							{this.renderBlogs()}
 						</div>
 						<div style={{ textAlign: "center", marginTop: "3rem" }}>
 							<Link to="/blogs">
-								<button className="button-dark-1 LinkButton">
+								<button className="button-light-4 LinkButton">
 									See all Blogs
 								</button>
 							</Link>

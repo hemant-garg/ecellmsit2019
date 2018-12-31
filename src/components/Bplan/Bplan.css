@@ -13,6 +13,7 @@
   font-size: 4.2rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
+  text-align: center;
   margin-top: 2rem; }
   @media screen and (max-width: 600px) {
     .heading,
@@ -71,7 +72,9 @@
 .button-light,
 .button-light-2,
 .button-light-3,
-.button-dark-1 {
+.button-light-4,
+.button-dark-1,
+.button-dark-2 {
   -webkit-border-radius: 3rem;
   border-radius: 3rem;
   cursor: pointer;
@@ -91,9 +94,15 @@
   .button-light-3:hover,
   .button-light-3:active,
   .button-light-3:focus,
+  .button-light-4:hover,
+  .button-light-4:active,
+  .button-light-4:focus,
   .button-dark-1:hover,
   .button-dark-1:active,
-  .button-dark-1:focus {
+  .button-dark-1:focus,
+  .button-dark-2:hover,
+  .button-dark-2:active,
+  .button-dark-2:focus {
     outline: none; }
 
 .button-light {
@@ -140,10 +149,22 @@
   border: 2px solid #2c3a47;
   background-color: #2c3a47;
   color: #eee;
-  padding: 1rem 2.1rem; }
+  padding: 1rem 2.1rem;
+  border-radius: 1rem; }
   .button-dark-1:hover, .button-dark-1:active {
     background-color: transparent;
     color: #2c3a47; }
+
+.button-light-4 {
+  border: 2px solid #efefef;
+  background-color: transparent;
+  color: #efefef;
+  border-radius: 1rem;
+  padding: 1rem 2.1rem; }
+  .button-light-4:hover, .button-light-4:active {
+    background-color: transparent;
+    border: 2px solid #eee;
+    color: #eee; }
 
 .filter {
   padding-left: 2rem;
@@ -323,13 +344,6 @@
 .b-row {
   display: flex;
   flex-wrap: wrap; }
-  @media (max-width: 700px) {
-    .b-row {
-      flex-direction: column;
-      align-items: center; } }
-  @media screen and (max-width: 430px) {
-    .b-row {
-      align-items: start; } }
 
 .bplan-group {
   justify-content: center;
@@ -369,21 +383,30 @@
 .sub-content {
   justify-content: center;
   padding: 10px; }
-  @media screen and (max-width: 600px) {
-    .sub-content {
-      justify-content: start; } }
 
 .A {
   flex: 30%;
   padding: 20px;
-  max-width: 300px;
+  max-width: 20%;
   border: 3px solid #f1f1f1;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 8px; }
+  @media screen and (max-width: 800px) {
+    .A {
+      max-width: 80%; } }
+  @media screen and (max-width: 400px) {
+    .A {
+      max-width: 85%; } }
 
 .B {
   flex: 70%;
   padding: 20px;
-  max-width: 700px;
+  max-width: 55%;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 8px; }
+  @media screen and (max-width: 800px) {
+    .B {
+      max-width: 80%; } }
+  @media screen and (max-width: 400px) {
+    .B {
+      max-width: 85%; } }

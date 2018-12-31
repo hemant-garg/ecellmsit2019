@@ -30,8 +30,8 @@ class Home extends Component {
         <Initiatives />
         <About />
         <Gallery />
-        <Sponsors />
         <Blogs />
+        <Sponsors />
       </div>
     );
   }

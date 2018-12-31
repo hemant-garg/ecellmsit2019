@@ -1,7 +1,10 @@
 @import "../../variables.scss";
 
 .blogs-section {
-	padding: 8rem 10rem;
+	-webkit-clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
+	        clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 93%, 50% 100%, 0% 100%);
+	padding: 12rem 10rem ;
+	background-color: $primary-color-1;
 	@include sectionStars;
 	@media (max-width: 1200px) {
 		padding: 8rem 5rem;
@@ -10,7 +13,9 @@
 		padding: 8rem 3rem;
 	}
 	@media screen and (max-width: 600px) {
-		padding: 6rem 1.5rem;
+		padding: 8rem 1.5rem;
+		-webkit-clip-path: polygon(0% 2%, 50% 2%, 100% 0%, 100% 98%, 50% 100%, 0% 100%);
+	        clip-path: polygon(0% 2%, 50% 2%, 100% 0%, 100% 98%, 50% 100%, 0% 100%);
 	}
 }
 
@@ -31,16 +36,23 @@
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 		overflow: hidden;
-		border: 4px solid #c4cad3;
+		// border: 4px solid #c4cad3;
+		border: 2px solid $primary-color-1;
 		// background-color: rgba(44, 58, 71, 0.9);
-		background-color: #efefef;
-		box-shadow: 5px 10px #e1e7ef;
+		background-color: #eee;
+		// box-shadow: 5px 10px #e1e7ef;
 		margin: 1.1666%;
 		margin-bottom: 3rem;
 		-ms-flex-item-align: center;
 		    -ms-grid-row-align: center;
 		    -webkit-align-self: center;
-		        align-self: center;
+				align-self: center;
+				
+		
+		&.blogsOpened{
+			border: 4px solid #c4cad3;
+			box-shadow: 5px 10px #e1e7ef;
+		}
 		@media screen and (max-width: 740px) {
 			width: 47.66%;
 		}
@@ -48,6 +60,8 @@
 			width: 97.668%;
 		}
 	}
+
+
 	&-box:hover &-featureimage {
 		-webkit-transform: scale(1.05);
 		    -ms-transform: scale(1.05);

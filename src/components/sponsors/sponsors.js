@@ -1,15 +1,14 @@
 import React, { Component } from "react";
-import Slider from "react-slick";
 import "./Sponsors.css";
 
 class Sponsors extends Component {
 	renderLOGO = images => {
-		return images.map(image => {
+		return images.map((image,i) => {
 			return (
-				<div key={image}>
+				<div key={image} className="startup-image-box">
 					<img
 						className="sponsors-logo"
-						src={require(`./images/${image}.png`)}
+						src={require(`./images/${i+1}.png`)}
 						alt={image}
 					/>
 				</div>
@@ -30,47 +29,17 @@ class Sponsors extends Component {
 			"Shopwati",
 			"WedAbout",
 			"Hungry Bulb",
-			"India E Learn",
-			"ReligiousKart",
-			"Saizen  Global",
-			"YoungDesk"
+			"India E Learn"
 		];
-		const settings = {
-			dots: true,
-			speed: 500,
-			infinite: true,
-			slidesToShow: 6,
-			slidesToScroll: 2,
-			autoplay: true,
-  			autoplaySpeed: 2000,
-			responsive: [
-				{
-				  breakpoint: 1024,
-				  settings: {
-					slidesToShow: 5,
-					slidesToScroll: 2,
-					infinite: true,
-					dots: true
-				  }
-				},
-				{
-				  breakpoint: 600,
-				  settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3
-				  }
-				}
-			  ]
-		  };
-	  
-
+		
 		return (
 
 			<section className="sponsors-section">
-				<h1 className="heading-2">Sponsors</h1>
-				<Slider {...settings}>
+				<h1 className="heading"> Sponsors &<br />Collaboration</h1>
+				
+					<div className="startups-container">
 					{this.renderLOGO(images)}
-				</Slider>
+					</div>
 				
 			</section>
 		);
