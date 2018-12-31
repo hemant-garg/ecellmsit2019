@@ -293,10 +293,15 @@
       padding: 5rem 8rem 2rem 6rem; } }
   @media (max-width: 850px) {
     .footer-section {
-      padding: 8rem 6rem 4rem 4rem; } }
+      padding: 8rem 6rem 4rem 4rem;
+      padding: 8rem 2rem 4rem 2rem;
+      -webkit-clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 100%, 0% 100%);
+      clip-path: polygon(0% 7%, 50% 7%, 100% 0%, 100% 100%, 0% 100%); } }
   @media screen and (max-width: 600px) {
     .footer-section {
-      padding: 8rem 4rem 4rem 4rem; } }
+      padding: 8rem 4rem 4rem 4rem;
+      -webkit-clip-path: polygon(0% 5%, 50% 5%, 100% 0%, 100% 100%, 0% 100%);
+      clip-path: polygon(0% 5%, 50% 5%, 100% 0%, 100% 100%, 0% 100%); } }
   @media screen and (max-width: 450px) {
     .footer-section {
       padding: 8rem 2rem 4rem 2rem;

@@ -323,18 +323,21 @@
 .b-row {
   display: flex;
   flex-wrap: wrap; }
-
-@media (max-width: 700px) {
-  .b-row {
-    flex-direction: column;
-    align-items: center; }
-  .bplanBox-group {
-    margin: 0px;
-    border-bottom: 2px solid #f1f1f1; } }
+  @media (max-width: 700px) {
+    .b-row {
+      flex-direction: column;
+      align-items: center; } }
+  @media screen and (max-width: 430px) {
+    .b-row {
+      align-items: start; } }
 
 .bplan-group {
   justify-content: center;
   margin-bottom: 7rem; }
+  @media (max-width: 700px) {
+    .bplan-group {
+      margin: 0px;
+      border-bottom: 2px solid #f1f1f1; } }
 
 .bplanBox {
   margin: 10px;
@@ -344,6 +347,9 @@
   border-radius: 10px;
   box-shadow: 5px 10px #e1e7ef;
   overflow: hidden; }
+  @media (max-width: 400px) {
+    .bplanBox {
+      margin-left: -3px; } }
 
 .bplan-img-box {
   overflow: hidden; }
@@ -363,6 +369,9 @@
 .sub-content {
   justify-content: center;
   padding: 10px; }
+  @media screen and (max-width: 600px) {
+    .sub-content {
+      justify-content: start; } }
 
 .A {
   flex: 30%;
