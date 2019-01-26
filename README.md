@@ -1,2 +1,1 @@
-eCell MSIT Website
-Link - https://ecellmsit.netlify.com/
+**Updated: Website Link  - https://ecellmsit.netlify.com/ **
