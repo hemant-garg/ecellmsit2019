@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Helmet} from "react-helmet";
 import axios from "axios";
 import checked from "./checked.svg";
 import { Link } from "react-router-dom";
@@ -155,6 +156,10 @@ class Blogs extends Component {
 		}
 		return (
 			<section className="blogs-section">
+				<Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Blogs and Articles | eCell MSIT</title>
+                </Helmet>
 				<div className="heading">Blogs</div>
 				<ul className="filter">
 					<li

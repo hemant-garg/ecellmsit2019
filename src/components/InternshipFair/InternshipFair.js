@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Helmet} from "react-helmet";
 import Slider from "react-slick";
 import "./InternshipFair.css";
 
@@ -17,11 +18,29 @@ class InternshipFair extends Component {
 	render() {
 		return (
 			<section className="InternshipFair-section">
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Internship Fair 2018 | eCell MSIT</title>
+                    <meta name="description" content="The Internship Drive organised by eCell MSIT. We believe that an internship assists career development by providing real work experiences and opportunities that help students explore their interests. It also helps them develop/refine professional skills and competencies. 
+This drive will help the students connect to the corporate world and chase their dreams."></meta>
+                </Helmet>
 				<h1 className="heading">Internship Fair</h1>	
 
                 <div class="sub-content e-row">
                     <p class="A"><strong>Event Details</strong><br /><br /><strong>Date:</strong> Mar 11th, 2018<br /><br /><strong>Venue:</strong>   Classrooms, MSIT<br /><br /><strong>Time:</strong>   11:00 a.m. - 3:30 p.m.</p>
-                    <p class="B"><strong>Description</strong><br /><br />The objective of <b>Internship & Job Fair</b> is to bring students and professionals to a common platform to exchange their resources and skills to help each other. Through internships, a student experiences the feel of working in a corporate and a professional gets to work with young minds having originality in innovations.</p>
+                    <div class="B">
+                    <p><strong>Description</strong></p>
+                    <p><b>"The expert in anything was once a beginner!"</b></p>
+                    <p>- Wanna work with qualified professionals and gain the experience of working in an MNC?<br />
+                    - Wanna make your resume stand out?<br />
+                    - Wanna earn a good salary?<br />
+                    </p>
+                    <p>
+                    The <strong>"Internship Drive"</strong> organised by eCell MSIT is what you are looking for!
+We believe that an internship assists career development by providing real work experiences and opportunities that help students explore their interests. It also helps them develop/refine professional skills and competencies. 
+This drive will help the students connect to the corporate world and chase their dreams.
+                    </p>
+                    </div>
                 </div>
 
                 <br /><br />

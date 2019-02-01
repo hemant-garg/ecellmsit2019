@@ -1,4 +1,5 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 import { Link } from "react-router-dom";
 import "./Gallery.css";
 import checked from "./checked.svg";
@@ -121,6 +122,11 @@ class Gallery extends React.Component {
 		}
 		return (
 			<section className="gallery-section">
+				<Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Gallery 2018 | eCell MSIT</title>
+					<meta name="description" content="The beautiful memories we had made in year 2018"></meta>
+                </Helmet>
 				<div className="heading"> Gallery 2k18</div>
 				<ul className="filter">
 					<li

@@ -1,13 +1,21 @@
 import React, { Component } from "react";
+import {Helmet} from "react-helmet";
 import Slider from "react-slick";
 import "./Esummit.css";
 
 
 class Esummit extends Component {
+    
 	renderSpeaker = () => {
 		return SPEAKERS.map(speaker => {
 			return (
+                
 				<div class="speaker-box">
+                    <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>E-Summit 2018 | eCell MSIT</title>
+                    <meta name="description" content="The Entrepreneurship Summit is the annual flagship event of eCell MSIT which includes conclave, competitions, internship and job fair. This year, we have come up with theme 'Upgrading to Upstand' which aims to highlight the importance of upgradation of resources and skills to sustain in this challenging world. Guest speakers are from vivid backgrounds that have got priceless knowledge to share through their experiences."></meta>
+                </Helmet>
                     <div className="speaker-image-box">
                     <img src={require(`./pics/${speaker.image}`)} alt={speaker.name} />
                     </div>

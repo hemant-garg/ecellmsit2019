@@ -332,7 +332,8 @@
       padding: 8rem 0; } }
   @media screen and (max-width: 600px) {
     .InternshipFair-section {
-      padding: 5rem 0rem; } }
+      padding: 6.5rem 0rem;
+      font-size: 180%; } }
 
 .startups-container {
   display: flex;

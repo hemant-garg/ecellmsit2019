@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Helmet} from "react-helmet";
 import "./Bplan.css";
 
 
@@ -8,6 +9,11 @@ class Bplan extends Component {
 			return (
 				
 				<div class="bplanBox">
+				 <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Bplan Competitions 2018 | eCell MSIT</title>
+					<meta name="description" content="All the entrepreneurs who have a business idea need money to make their idea into reality. That is exactly what this competition is all about! Getting the investors to invest in your idea! "></meta>
+                </Helmet>
 					<div className="bplan-img-box">
 					<a href={`#${bplan.title}`}><img className="bplan-img" src={require(`./pics/${bplan.image}`)} alt="Quiz" width="300" height="200"/>
 			  </a></div>

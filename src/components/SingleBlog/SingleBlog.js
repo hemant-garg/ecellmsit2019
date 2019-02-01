@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Helmet} from "react-helmet";
 import axios from "axios";
 import Disqus from "disqus-react";
 import "./SingleBlog.css";
@@ -51,6 +52,10 @@ class SingleBlog extends Component {
 		}
 		return (
 			<section className="singleblog-section">
+				<Helmet>
+                    <meta charSet="utf-8" />
+                    <title>{blog.title}</title>
+                </Helmet>
 				<div className="singleblog">
 					<h1 className=" singleblog-title text-center">
 						{blog.title}

@@ -332,7 +332,8 @@
       padding: 8rem 0; } }
   @media screen and (max-width: 600px) {
     .esummit-section {
-      padding: 5rem 0rem; } }
+      padding: 6.5rem 0rem;
+      font-size: 180%; } }
 
 .sliderBox {
   max-width: 110rem;

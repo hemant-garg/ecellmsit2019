@@ -15,9 +15,23 @@ const About = () => {
 						Ideate &#x25cf; Inspire &#x25cf; Invest
 					</div>
 					<div className="para">
-					The eCell of MSIT gives innovative geniuses an open platform to gain knowledge about entrepreneurship, startups, ventures and the A-B-Cs of building businesses. Our sole aim is to let the concept of entrepreneurship burgeon and evolve. Founded in 2014, eCell MSIT works to ignite the spark of risk-taking, responsibility and the creative execution of ideas. In February 2017, CNBC India listed us among top 120 eCells in India.
-					</div><div className="para">
-					The eCell of MSIT gives innovative geniuses an open platform to gain knowledge about entrepreneurship, startups, ventures and the A-B-Cs of building businesses.
+					<p><strong>You have IDEAS and we give them the WINGS</strong></p>
+					<p>
+					The <strong>E-Cell of MSIT</strong> gives innovative geniuses an open platform to gain knowledge
+					 about entrepreneurship, startups, ventures and the A-B-Cs of building businesses.
+					 Our sole aim is to let the concept of entrepreneurship burgeon and evolve.
+					 We believe that the desired support and guidance given at the right time can 
+					 earn laurels. E-Cell MSIT has always motivated students to come up with innovative 
+					 ideas and groomed them to the right note making them the desired and suitable 
+					 for the industry and <strong>Ideal Entrepreneur</strong>.
+					 </p>
+					 <p>
+					 <strong>Founded in 2014, E-Cell MSIT</strong> works to ignite the spark of risk-taking,
+					  responsibility and the creative execution of ideas. Since then under the
+					   immense guidance of our mentors and seniors we have learnt and evolved 
+					   to a large extent. Our team's hardwork has earned us immense appreciation 
+					   and wide acceptance. In <strong>February 2017, CNBC India listed us among top 120 eCells in India.</strong>
+					 </p>
 					</div>
 					<ul className="about--sociallist">
 						<li>

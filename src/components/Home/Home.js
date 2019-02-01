@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Helmet} from "react-helmet";
 import "./Home.css";
 import Main from "../Main/Main";
 import Initiatives from "../initiatives/initiatives";
@@ -26,6 +27,17 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
+         <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>eCell MSIT | Entrepreneurship Cell of MSIT | E-summit | Internship Fairs</title>
+                    <meta name="description" content="The E-Cell of MSIT gives innovative geniuses an open platform to gain knowledge
+					 about entrepreneurship, startups, ventures and the A-B-Cs of building businesses.
+					 Our sole aim is to let the concept of entrepreneurship burgeon and evolve.
+					 We believe that the desired support and guidance given at the right time can 
+					 earn laurels."></meta>
+           
+                    <link rel="canonical" href="https://www.ecellmsit.in/" />
+        </Helmet>
         <Main />
         <Initiatives />
         <About />
