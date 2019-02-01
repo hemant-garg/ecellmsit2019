@@ -29,7 +29,7 @@ class Home extends Component {
       <div className="Home">
          <Helmet>
                     <meta charSet="utf-8" />
-                    <title>eCell MSIT | Entrepreneurship Cell of MSIT | E-summit | Internship Fairs</title>
+                    <title>eCell MSIT 2019| Entrepreneurship Cell of MSIT | E-summit | Internship Fairs</title>
                     <meta name="description" content="The E-Cell of MSIT gives innovative geniuses an open platform to gain knowledge
 					 about entrepreneurship, startups, ventures and the A-B-Cs of building businesses.
 					 Our sole aim is to let the concept of entrepreneurship burgeon and evolve.
