@@ -28,15 +28,15 @@ const Footer = () => {
 								className="footer--link"
 							>
 								<i className="far fa-envelope footer--icon" />
-								Hmtcool4u@gmail.com
+								ecellmsit@gmail.com
 							</a>
 						</li>
-						<li className="footer--listitem">
+						{/* <li className="footer--listitem">
 							<a className="footer--link">
 								<i className="fas fa-phone footer--icon" />+91
-								8383067164
+								phone
 							</a>
-						</li>
+						</li> */}
 						<li className="footer--listitem">
 							<a
 								href="https://goo.gl/maps/2U76WTTwxy52"
@@ -131,7 +131,7 @@ const Footer = () => {
 			<div className="footer-dev">
 				Made with <i className="fas fa-coffee" /> by{" "}
 				<a
-					href="https://www.linkedin.com/in/hemantgarg6/"
+					href="https://hemant-garg.github.io/"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="footer-dev-link"
