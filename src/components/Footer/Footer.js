@@ -24,7 +24,7 @@ const Footer = () => {
 					<ul className="footer--list">
 						<li className="footer--listitem">
 							<a
-								href="mailto:hmtcool4u@gmail.com?Subject=Message%20from%20eCell%20Website"
+								href="mailto:ecellmsit@gmail.com?Subject=Message%20from%20eCell%20Website"
 								className="footer--link"
 							>
 								<i className="far fa-envelope footer--icon" />
