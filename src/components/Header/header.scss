@@ -32,14 +32,14 @@
     top: 1rem;
   }
   @media screen and (max-width: 600px) {
-    top:4rem;
-  }  
+    top: 4rem;
+  }
   &.toggleNavButton {
     visibility: hidden;
     &::before {
       -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-              transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
       top: 0;
       visibility: visible;
     }
@@ -47,8 +47,8 @@
       top: 0;
       visibility: visible;
       -webkit-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-              transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
     }
   }
   @media screen and (max-width: 600px) {
@@ -81,7 +81,7 @@
   top: 0;
   left: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   z-index: 110;
   width: 100%;
   background-color: $primary-color-1;
@@ -91,18 +91,18 @@
   display: -webkit-flex;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          -webkit-justify-content: space-between;
-          justify-content: space-between;
-        
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+
   &_logo {
     -webkit-filter: contrast(0.7) brightness(1.1);
-            filter: contrast(0.7) brightness(1.1);
+    filter: contrast(0.7) brightness(1.1);
     width: 10rem;
     height: 10rem;
     @media screen and (max-width: 600px) {
       visibility: hidden;
-      height:8rem;
+      height: 8rem;
       width: 8rem;
     }
   }
@@ -114,9 +114,9 @@
     display: -webkit-flex;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
     &--item {
       margin-left: 2rem;
     }
@@ -168,6 +168,34 @@
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite backwards;
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1.05);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.93);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.94);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1.05);
+    animation-timing-function: ease-out;
+  }
 }

@@ -63,7 +63,7 @@
   margin-bottom: 3rem;
   color: #eee;
   line-height: 2.6rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem; }
 
 .button-light,
@@ -446,3 +446,24 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+
+.heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite backwards; }
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1.05);
+    transform-origin: center center;
+    animation-timing-function: ease-out; }
+  10% {
+    transform: scale(0.93);
+    animation-timing-function: ease-in; }
+  17% {
+    transform: scale(1);
+    animation-timing-function: ease-out; }
+  33% {
+    transform: scale(0.94);
+    animation-timing-function: ease-in; }
+  45% {
+    transform: scale(1.05);
+    animation-timing-function: ease-out; } }
