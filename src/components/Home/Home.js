@@ -7,8 +7,9 @@ import About from "../About/About";
 import Gallery from "../Gallery/Gallery";
 import Sponsors from "../sponsors/sponsors";
 import Blogs from "../Blogs/Blogs";
-
+import EsummitBanner from "../EsummitBanner/EsummitBanner";
 class Home extends Component {
+  state = { showBanner: true };
   componentDidMount() {
     const Navs = document.getElementById("header-navs").childNodes;
     Navs.forEach(nav => nav.classList.remove("activeNav"));
@@ -27,6 +28,11 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
+        {this.state.showBanner ? (
+          <EsummitBanner
+            changeBannerView={() => this.setState({ showBanner: false })}
+          />
+        ) : null}
         <Helmet>
           <meta charSet="utf-8" />
           <title>
