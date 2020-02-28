@@ -32,9 +32,19 @@ class Header extends Component {
         </li>
         <li
           onClick={e => this.changeActiveClass(e.target)}
+          id="FacultyConvention"
+          className={`${cls}--item`}
+        >
+          <Link aria-label="FacultyConvention" className={`LinkButton ${cls}--link`} to="/FacultyConvention">
+            <span style={{color: 'crimson'}}>Faculty Convention 2019</span>
+          </Link>
+        </li>
+        <li
+          onClick={e => this.changeActiveClass(e.target)}
           id="gallery"
           className={`${cls}--item heartbeat`}
         >
+          
           <a className={`${cls}--link`} href="https://esummit.ecellmsit.in/">
             E-Summit'19
           </a>

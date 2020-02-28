@@ -13,16 +13,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 1rem;
-  max-width: 100rem;
+  max-width: 50rem;
   animation: showBanner 1s ease forwards;
   width: 0%; }
   @media (max-width: 600px) {
     #banner-img {
-      height: 75rem;
+      height: 35rem;
       top: 50%; } }
   @media (max-width: 450px) {
     #banner-img {
-      height: 70rem; } }
+      height: 30rem; } }
 
 @keyframes showBanner {
   from {

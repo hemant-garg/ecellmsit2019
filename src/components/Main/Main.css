@@ -644,8 +644,8 @@
   stroke-miterlimit: 10;
   -webkit-box-shadow: inset 0rem 0rem 0rem #7ac142;
   box-shadow: inset 0rem 0rem 0rem #7ac142;
-  -webkit-animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
-  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+  -webkit-animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
   z-index: 10; }
 
 .checkmark__check {

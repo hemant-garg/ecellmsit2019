@@ -13,6 +13,7 @@ import Footer from "./components/Footer/Footer";
 import Bplan from "./components/Bplan/Bplan";
 import Esummit from "./components/Esummit/Esummit";
 import InternshipFair from "./components/InternshipFair/InternshipFair";
+import FacultyConvention from "./components/FacultyConvention/FacultyConvention";
 
 ReactDOM.render(
 	<BrowserRouter>
@@ -25,6 +26,7 @@ ReactDOM.render(
 				<Route path="/bplan" component={Bplan} />
 				<Route path="/internshipfair" component={InternshipFair} />
 				<Route path="/esummit" component={Esummit} />
+				<Route path="/FacultyConvention" component={FacultyConvention} />
 				<Route path="/" component={Home} />
 			</Switch>
 			<Footer />
